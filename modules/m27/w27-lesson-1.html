@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: Napoleon: From General to Emperor</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">Napoleon and the Napoleonic Wars</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">Napoleon: From General to Emperor</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">Napoleon: From General to Emperor</div>
+        <div style="font-size: 16px; color: #666;">Napoleon and the Napoleonic Wars</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;Napoleon and the Napoleonic Wars.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how Napoleon rose from an obscure officer to ruler of France.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain what Napoleon built at home and what he took away.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate how chance, talent, and the weakness of the Directory each helped him seize power.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-concordat" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Concordat</strong><button class="gloss-audio" onclick="speakGloss(event,'kon-KOR-dat')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">kon-KOR-dat</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A formal agreement between a government and the pope about the Church's place in that country.</div>
+    </div><div id="gloss-conscription" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>conscription</strong><button class="gloss-audio" onclick="speakGloss(event,'kun-SKRIP-shun')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">kun-SKRIP-shun</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A required call-up of citizens for military service, also called the draft.</div>
+    </div><div id="gloss-plebiscite" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>plebiscite</strong><button class="gloss-audio" onclick="speakGloss(event,'PLEB-ih-syt')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">PLEB-ih-syt</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A vote in which all citizens say yes or no to a single proposal.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Burke predicted that a revolution would end in the rule of a popular general. Today you will meet that general. You will see how a Corsican officer rose in ten years from obscurity to the crown of France, and why so many French people were glad to give it to him.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A CORSICAN IN FRANCE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Napoleon Bonaparte was born in 1769 on the island of Corsica, a year after France bought it from Genoa. His family belonged to the minor nobility, and at home they spoke Italian. When he won a place at a French military school at the age of nine, the other boys mocked his accent. He answered with hard work. He was especially good at mathematics, which suited the artillery, and he read widely, including Plutarch's Lives, until the ancient heroes became his models. At sixteen he held an officer's commission. In the old royal army, though, promotion went mostly to men of great family and good connections, and a young man from a poor island with no friends at court could expect to wait a very long time. When the Revolution came, the old rules that kept officers of humble birth from rising no longer held.</p>
+<p style="margin:0 0 14px;">Corsica itself pulled at him. His family had once fought beside the island's patriot leader, Pasquale Paoli, and as a young officer Napoleon dreamed of serving Corsica more than France. He spent long leaves there and took a hand in its politics. Then the Revolution split the island. In 1793 Paoli broke with the government in Paris, and Napoleon, who had sided with the Republic, found that he and his family were now on the wrong side at home. The Bonapartes fled to the mainland with little more than they could carry. From then on his future lay in France.</p>
+<p style="margin:0 0 14px;">His first chance came in 1793, when British ships held the port of Toulon, which French royalists had handed over to them. The army besieging the town had no plan that worked. Napoleon, a captain of artillery, saw that the harbor was ringed by hills, and that guns placed on one height above the roadstead would make it too dangerous for the fleet to stay. He pressed the plan on his superiors until they accepted it, and the British sailed away. At twenty-four he was a general.</p>
+<p style="margin:0 0 14px;">His rise nearly ended the next summer. After Robespierre fell in July 1794, Napoleon was arrested for a short time because he had been friendly with Robespierre's younger brother. He was freed, but he spent the following year without a command, short of money, and looking for any post that would have him. Then, in October 1795, a royalist uprising threatened the Convention in Paris. The man in charge of the defense, Paul Barras, remembered Napoleon from Toulon and called him in the night before. Napoleon sent a young cavalry officer, Joachim Murat, galloping across the city to bring up cannon before the crowd could seize them. Napoleon fired cannon into the crowd and ended the rising in an afternoon. The Directory, grateful, gave him command of the army in Italy. Within months he had married Josephine de Beauharnais, a widow whose first husband had died on the guillotine and who moved in Barras's circle. Two days later he left for the front.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">ITALY AND EGYPT</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1796 he took over a ragged army whose soldiers were hungry, badly paid, and in some cases without shoes. He told them they would find glory and wealth if they followed him. The enemy armies, one from Austria and one from the kingdom of Piedmont, stood side by side but were poorly joined. He moved fast, struck at the place where they met, and defeated them one by one. His men marched light and lived on what they could take from the countryside instead of waiting for wagons, so they often arrived before the enemy thought they could. Piedmont was out of the war in weeks. Then came a series of victories at Lodi, Arcole, and Rivoli. At Lodi his men rushed a narrow bridge under cannon fire.</p>
+<p style="margin:0 0 14px;">In 1797 he forced Austria to sign a peace at Campo Formio, which gave France the Austrian Netherlands, and he negotiated the terms himself. The Directory in Paris, which had expected only a sideshow in Italy, now found that its general was making treaties on his own and sending home gold and famous paintings and statues from Italian cities. He was already acting like a ruler. Newspapers he supported, some of them founded for his own army, made him famous in Paris.</p>
+<p style="margin:0 0 14px;">Notice what kind of leader he was. He slept little, remembered the names of soldiers, and worked out the details of supply and marching himself. His men followed him because he won, and because he promised that a soldier could rise as far as his talent would carry him. Many of his marshals had been sergeants or sons of innkeepers. That promise tied the army to him more than it tied it to any government.</p>
+<div class="optima-widget ow-reflect" data-wid="w27-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Napoleon promised that a soldier could rise as far as his talent would carry him. Which part of that promise would have pulled at you most? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="For his marshals the promise was real, since many had been sergeants or sons of innkeepers. It also tied the army to him more than to any government.">The chance to rise from humble birth</button><button data-response="Victory was a large part of his hold. His men followed him because he won.">Following a leader who kept winning</button><button data-response="He slept little, remembered the names of soldiers, and worked out the details of supply and marching himself. That kind of care can earn deep loyalty.">A commander who knew soldiers by name and handled supply himself</button><button data-response="A sharp question. The lesson says the promise tied the army to Napoleon more than to any government.">I would wonder where the army&#x27;s loyalty belonged</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Paris, meanwhile, had a problem. A general this popular was a danger to a government this weak. When Napoleon proposed an expedition to Egypt, the Directors agreed, partly because it would put him far away. The plan was to seize a rich province and threaten Britain's road to India, striking at an enemy France could not reach across the Channel. He sailed in 1798 with an army and, unusually, with more than a hundred scholars, engineers, and artists.</p>
+<p style="margin:0 0 14px;">He won on land at the Battle of the Pyramids, where he formed his infantry into hollow squares to meet the charge of the Egyptian cavalry. But the British admiral Horatio Nelson found the French fleet at anchor and destroyed it at the Nile, which stranded the army. Scholars who traveled with him studied Egypt's ruins, and soldiers found the Rosetta Stone, which later let scholars read hieroglyphs. Napoleon marched into Syria in 1799 but failed to take the fortress of Acre, and plague and disease thinned his ranks. News came from Europe that France was losing ground in Italy. In 1799 Napoleon left his army behind and slipped back to France, past British ships, and he landed in October to cheering crowds.</p>
+<div class="ow-embed" data-ra-skip style="margin:18px 0;"><iframe src="widgets/w27-1-act-1.html" title="Reading practice: a Corsican becomes a general" loading="lazy" style="display:block;width:100%;height:1700px;border:0;"></iframe></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE COUP OF BRUMAIRE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">He found the Directory in trouble. It was unpopular, corrupt, and short of money, and it had lost battles in his absence. One of its members was Sieyès, the writer of the pamphlet about the Third Estate. He wanted to change the constitution and needed a general with an army. On November 9, 1799, they carried out a <span class="gloss" tabindex="0"><em>coup d'état</em><button class="gloss-audio" onclick="speakGloss(event,'KOO day-TAH')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOO day-TAH</span>A French phrase meaning "a blow against the state." It is a sudden seizure of power by a small group, usually with the help of soldiers. <a class="om-maplink" href="#gloss-coup-d-etat">See the glossary box.</a></span></span>. The plan was to persuade the two legislative councils to move out of Paris to the palace of Saint-Cloud, away from the city's crowds, on the claim that a plot threatened them. Two of the five Directors, Sieyès and Roger Ducos, were in on it and resigned. The others were pushed aside, and Napoleon was given command of the troops in Paris.</p>
+<p style="margin:0 0 14px;">The next day Napoleon went to the councils at Saint-Cloud to ask for their support, and nearly lost everything. He spoke first to the older council, and his speech rambled. Then he went into the hall of the Five Hundred, where armed men were not welcome. Deputies shouted "Outlaw!" at him, crowded around him, and shoved him, and he is said to have lost his composure. His brother Lucien, who was the president of the Five Hundred, ran out and told the soldiers that deputies had tried to stab the general. The troops, led by Murat, marched in with drums beating and cleared the hall. Some deputies fled through the windows. That evening a handful of those who remained, gathered by Lucien, voted to name three temporary consuls.</p>
+<p style="margin:0 0 14px;">Think about how narrow this was. A few steadier nerves in the hall, or a few less loyal soldiers outside, and Napoleon might have been an exile or a prisoner. Instead he became First Consul. Sieyès had expected to write the constitution, but Napoleon cared little for his careful designs and cut out whatever limited the First Consul. The new constitution named him to rule for ten years, with two other consuls who could only advise him, and it gave him the power to appoint ministers, generals, and judges and to propose every law. A <span class="gloss" tabindex="0"><strong>plebiscite</strong><button class="gloss-audio" onclick="speakGloss(event,'PLEB-ih-syt')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PLEB-ih-syt</span>A vote in which all citizens say yes or no to a single proposal. <a class="om-maplink" href="#gloss-plebiscite">See the glossary box.</a></span></span> approved it by a huge, though doubtful, margin. The count announced about three million yes votes and fewer than two thousand no, and the new government was already running before the voting ended.</p>
+<div class="optima-widget ow-select" data-wid="w27-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; BRUMAIRE</div><div class="widget-question">Check your reading of the seizure of power in 1799.</div><div class="widget-row" data-correct="2" data-fb="Sieyès wanted to change the constitution, and a general with an army could make that possible." data-hint="Think about what Sieyès wanted done, and who could make it stick."><div class="widget-row-prompt">1. Why did Sieyès turn to Napoleon in 1799?</div><div class="widget-options"><button data-choice="0">He wanted a general to lead the Directory&#x27;s armies against Austria.</button><button data-choice="1">He wanted a general whose speeches would win over the councils.</button><button data-choice="2">He wanted to change the constitution and needed a general with an army.</button><button data-choice="3">He wanted a general to put down the royalists rising in Paris.</button></div></div><div class="widget-row" data-correct="0" data-fb="Napoleon fired cannon into the crowd and ended the rising in an afternoon. The grateful Directory then gave him command of the army in Italy." data-hint="Think about how a young artillery officer would answer a crowd."><div class="widget-row-prompt">2. What did Napoleon do in October 1795, when a royalist uprising threatened the Convention in Paris?</div><div class="widget-options"><button data-choice="0">He fired cannon into the crowd and ended the rising in an afternoon</button><button data-choice="1">He talked the crowd into going home</button><button data-choice="2">He marched the army of Italy back to defend the city</button><button data-choice="3">He fled to Corsica until the fighting was over</button></div></div><div class="widget-row" data-correct="1" data-fb="He won on land at the Battle of the Pyramids, but Nelson destroyed his fleet at the Nile, which stranded the army. In 1799 Napoleon left his army behind and slipped back to France." data-hint="Think about what the British admiral did to the ships."><div class="widget-row-prompt">3. What happened to Napoleon's army in Egypt after the Battle of the Pyramids?</div><div class="widget-options"><button data-choice="0">The British landed an army and forced it to surrender</button><button data-choice="1">Nelson destroyed his fleet at the Nile, which stranded the army</button><button data-choice="2">The soldiers rebelled and marched home without him</button><button data-choice="3">The Egyptians paid tribute so that the army would leave</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">One foreign-language term appears in this lesson. Here is how to say it and what it means.</p><div id="gloss-coup-d-etat" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>coup d'état</strong><button class="gloss-audio" onclick="speakGloss(event,'KOO day-TAH')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KOO day-TAH</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French phrase meaning "a blow against the state." It is a sudden seizure of power by a small group, usually with the help of soldiers.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">ORDER AT HOME</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Many French people welcomed him. They were tired of ten years of upheaval and wanted order, and Napoleon gave it to them. Austria had retaken much of Italy while he was away, so in the spring of 1800 he crossed the Alps with a new army. At Marengo, in June, the day nearly went wrong. The Austrians struck first, and by afternoon the French were falling back and Napoleon is said to have thought the battle lost. Then General Desaix, whom he had summoned, marched back toward the sound of the guns and arrived with fresh troops. Desaix was killed leading them forward, but the counterattack broke the Austrians. It was a great victory, and in 1802 he made peace with Britain at Amiens.</p>
+<p style="margin:0 0 14px;">Now he could build. He founded the Bank of France to steady the currency, so that the government could borrow and pay its bills. He appointed a prefect to govern each department, a system that echoed the intendants of Louis XIV. These officials took orders from Paris, which is how a government in the capital could collect taxes and call up soldiers in every corner of France. He started public high schools called lycées, run by the state to train the officials and officers the country needed. And he made peace with the Church through a <span class="gloss" tabindex="0"><strong>Concordat</strong><button class="gloss-audio" onclick="speakGloss(event,'kon-KOR-dat')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kon-KOR-dat</span>A formal agreement between a government and the pope about the Church's place in that country. <a class="om-maplink" href="#gloss-concordat">See the glossary box.</a></span></span> with Pope Pius VII in 1801. The Revolution had seized Church lands and forced priests to swear an oath to the state, and French Catholics had been divided. The Concordat recognized Catholicism as the faith of most French people, let the government nominate bishops, and paid the clergy from the treasury. But it kept the Church lands in the hands of those who had bought them.</p>
+<p style="margin:0 0 14px;">His most lasting work was the Napoleonic Code of 1804, a single set of laws for the nation. In the old France the law had differed from province to province, and a family dispute could turn on where you happened to live. A commission of lawyers drew on Roman law and the older customs, and Napoleon sat in on many of its sessions himself. The Code kept the great gains of 1789: equality before the law, an end to feudal privilege, protection of property, and religious freedom. But it also gave husbands wide power over wives and children, and a married woman could not sign a contract without her husband's consent.</p>
+<p style="margin:0 0 14px;">Careers were open to talent, and the new Legion of Honor, founded in 1802, rewarded merit rather than birth. Yet this was also a police state. Newspapers were censored, and soon only a handful of the Paris papers were left. A secret police under the minister Joseph Fouché watched for plots, and elections became formalities.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">EMPEROR OF THE FRENCH</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Royalist plots against his life gave his supporters an argument. In December 1800 a bomb exploded in a Paris street just after his carriage passed, on the way to the opera. If one bullet could end the regime, they said, France needed a government that would outlast one man. In 1802 another plebiscite made him consul for life. In March 1804, after another royalist plot was uncovered, French soldiers crossed the Rhine into the German state of Baden, seized a young Bourbon prince, the Duke of Enghien, and shot him after a hasty trial. The prince had taken no part in the plot. Within weeks the Senate asked Napoleon to take the title of emperor, so that the succession would be settled and no royalist could gain by killing him. In 1804 a third plebiscite approved a new title for him, Emperor of the French.</p>
+<p style="margin:0 0 14px;">At his coronation in Notre-Dame, on December 2, 1804, Pope Pius VII was present, but Napoleon placed the crown on his own head. He wore a wreath of golden laurel leaves, like a Roman emperor, and then crowned Josephine himself. The republic of virtue was gone. It had been replaced by a regime that depended on the will and talent of one man, which is what Polybius would have expected to see. The Romans had seen their own republic end in the same way, with Caesar.</p>
+<div class="ow-group" data-wid="w27-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did the new Legion of Honor reward?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">It rewarded merit rather than birth, in a France where careers were now open to talent.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">How did Napoleon&#x27;s government treat the press and elections?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Newspapers were censored, a secret police watched for plots, and elections became formalities.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Who placed the crown on Napoleon&#x27;s head in 1804?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Napoleon placed it on his own head, with Pope Pius VII present.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">TRAFALGAR AND AUSTERLITZ</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">War with Britain returned in 1803. Napoleon gathered an army at Boulogne and planned to invade England but first needed control of the Channel. On October 21, 1805, Nelson attacked the combined French and Spanish fleet off Cape Trafalgar in two columns, cutting through the enemy line instead of sailing parallel to it. He destroyed the enemy fleet and died in the moment of victory, shot by a sharpshooter on a French ship. Britain was safe at sea for the rest of the war.</p>
+<p style="margin:0 0 14px;">On land, however, Napoleon was unstoppable. Austria and Russia had joined Britain against him that year, and he swung his army from the Channel coast to the Danube in a matter of weeks. Raising armies by <span class="gloss" tabindex="0"><strong>conscription</strong><button class="gloss-audio" onclick="speakGloss(event,'kun-SKRIP-shun')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kun-SKRIP-shun</span>A required call-up of citizens for military service, also called the draft. <a class="om-maplink" href="#gloss-conscription">See the glossary box.</a></span></span> and living off the lands he conquered, he beat the Austrians and Russians at Austerlitz on December 2, 1805, perhaps his greatest victory. Austerlitz was won by a trap. He let the enemy believe he was weak, gave up the high ground at the center, and waited. The Allies came down to crush what looked like his exposed right flank. Then his troops stormed the thinned center and split their army in two. Austria made peace within weeks.</p>
+<p style="margin:0 0 14px;">In 1806 he crushed Prussia at Jena, and within weeks he rode into Berlin. In 1807, at Tilsit, the Russian tsar Alexander I met him on a raft moored in the Niemen River, made peace, and agreed to cooperate with him.</p>
+<p style="margin:0 0 14px;">By 1807 Napoleon was master of most of Europe. He made his brothers kings: Joseph in Naples, Louis in Holland, and Jérôme in Westphalia. The old Holy Roman Empire was dissolved in 1806. Was he the heir of the Revolution, spreading its laws and its equality? Or had he become its gravedigger? Next lesson you will see how that question was answered.</p>
+<div class="ow-embed" data-ra-skip style="margin:18px 0;"><iframe src="widgets/w27-1-act-2.html" title="Reading practice: building an empire" loading="lazy" style="display:block;width:100%;height:1700px;border:0;"></iframe></div>
+
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Napoleon and the Napoleonic Wars</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

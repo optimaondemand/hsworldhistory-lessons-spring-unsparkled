@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Empires Let Go: India, Africa, Asia</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">Decolonization and Israel</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Empires Let Go: India, Africa, Asia</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Empires Let Go: India, Africa, Asia</div>
+        <div style="font-size: 16px; color: #666;">Decolonization and Israel</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;Decolonization and Israel.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain why European empires in Asia and Africa could not be held after World War II.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how India won independence and why it was partitioned.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Compare the paths to independence taken in India, Vietnam, Algeria, and Ghana.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-decolonization" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>decolonization</strong><button class="gloss-audio" onclick="speakGloss(event,'dee-kol-uh-nih-ZAY-shun')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">dee-kol-uh-nih-ZAY-shun</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The process by which colonies gained independence from the empires that ruled them.</div>
+    </div><div id="gloss-nationalism" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>nationalism</strong><button class="gloss-audio" onclick="speakGloss(event,'NASH-uh-nul-iz-um')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">NASH-uh-nul-iz-um</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Strong loyalty to one's own nation and the wish for it to govern itself.</div>
+    </div><div id="gloss-partition" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>partition</strong><button class="gloss-audio" onclick="speakGloss(event,'par-TISH-un')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">par-TISH-un</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The division of a country or territory into two or more separate parts.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1945 European empires ruled about a third of humanity. By 1975 almost all of it was independent. Today you will see why the empires gave way, how India won freedom and was divided in the process, and how different the roads to independence could be.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WHY THE EMPIRES WEAKENED</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Several forces worked together. The war had drained Britain, France, and the Netherlands of money and men, and Japan's early victories in 1941 and 1942 had shown Asians that European armies could be beaten. Colonial subjects had served in the war and had been told it was fought for freedom. The Atlantic Charter of 1941, signed by Churchill and Roosevelt, spoke of the right of all peoples to choose their government. Churchill said it applied to Europe. Many others saw no reason it should stop there.</p>
+<p style="margin:0 0 14px;">Rising <span class="gloss" tabindex="0"><strong>nationalism</strong><button class="gloss-audio" onclick="speakGloss(event,'NASH-uh-nul-iz-um')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NASH-uh-nul-iz-um</span>Strong loyalty to one's own nation and the wish for it to govern itself. <a class="om-maplink" href="#gloss-nationalism">See the glossary box.</a></span></span> mattered most. Educated leaders, many trained in London or Paris, had learned the language of liberty and used it against their rulers. The two new superpowers, the United States and the Soviet Union, both opposed old-style empires, though for different reasons. Imperial rule also now cost more than it earned. The result was <span class="gloss" tabindex="0"><strong>decolonization</strong><button class="gloss-audio" onclick="speakGloss(event,'dee-kol-uh-nih-ZAY-shun')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dee-kol-uh-nih-ZAY-shun</span>The process by which colonies gained independence from the empires that ruled them. <a class="om-maplink" href="#gloss-decolonization">See the glossary box.</a></span></span>. It came peacefully in some places and by long war in others.</p>
+<p style="margin:0 0 14px;">Consider how thin the old structure was. The largest colony, India, was governed by roughly a thousand British officers of the Indian Civil Service, backed by an army whose soldiers were mostly Indian. In 1939 the British viceroy declared India at war without asking a single Indian leader, and by 1945 more than two million Indians had volunteered to fight. Rule on that scale rested on habit and cooperation far more than on force. Millions of people paid the taxes, filled the clerks' jobs, and obeyed the orders. The day enough of them stopped, a tired and indebted Britain had no way to replace them.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Two foreign-language terms appear in the next section. Here is how to say them and what they mean.</p><div id="gloss-satyagraha" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>satyagraha</strong><button class="gloss-audio" onclick="speakGloss(event,'suh-TYAH-gruh-huh')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">suh-TYAH-gruh-huh</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Sanskrit word meaning roughly "holding firmly to truth." Gandhi used it as the name for his method of nonviolent resistance.</div>
+    </div><div id="gloss-swaraj" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>swaraj</strong><button class="gloss-audio" onclick="speakGloss(event,'swuh-RAHJ')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">swuh-RAHJ</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Hindi word meaning "self-rule." It was the goal of the Indian independence movement.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">GANDHI AND THE ROAD TO INDEPENDENCE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Britain's most valued possession was India, home to some 300 million people by the 1930s. The Indian National Congress, founded in 1885, had long asked for a larger share in government. After 1920 its guiding figure was Mohandas Gandhi, a lawyer who had spent years in South Africa. Gandhi taught <span class="gloss" tabindex="0"><em>satyagraha</em><button class="gloss-audio" onclick="speakGloss(event,'suh-TYAH-gruh-huh')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">suh-TYAH-gruh-huh</span>A Sanskrit word meaning roughly "holding firmly to truth." Gandhi used it as the name for his method of nonviolent resistance. <a class="om-maplink" href="#gloss-satyagraha">See the glossary box.</a></span></span>, the refusal to obey unjust laws without using violence, and he called the goal <span class="gloss" tabindex="0"><em>swaraj</em><button class="gloss-audio" onclick="speakGloss(event,'swuh-RAHJ')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">swuh-RAHJ</span>A Hindi word meaning "self-rule." It was the goal of the Indian independence movement. <a class="om-maplink" href="#gloss-swaraj">See the glossary box.</a></span></span>. He dressed in homespun cloth, lived simply, and drew millions of villagers into the cause. In 1930 he led a march of some 240 miles to the sea to make salt in defiance of the British tax on it. Tens of thousands were jailed.</p>
+<p style="margin:0 0 14px;">The march began on March 12 from Gandhi's settlement near Ahmedabad, with seventy-eight followers. Gandhi, then sixty, had written to the viceroy beforehand to say what he meant to do. The salt tax fell on everyone and hardest on the poor, and the government kept a monopoly on making salt, so that even gathering it from the seashore was a crime. Villagers came out to watch the walkers pass, and the column grew along the way. On April 6 Gandhi reached the shore at Dandi, stooped, and picked up a lump of natural salt left by the tide. With that small act he broke the law before the eyes of the world. Across India others followed him by boiling seawater or raiding government salt works. At one such works, at Dharasana, police with steel-tipped clubs struck down column after column of marchers who did not raise a hand to defend themselves. An American reporter, Webb Miller, described the scene, and his account was printed in newspapers abroad.</p>
+<p style="margin:0 0 14px;">Gandhi was not alone. Nehru, a barrister from a wealthy family and a gifted writer, spoke for the modern, secular side of the movement, while Gandhi spoke the language of the villages. Their partnership brought together very different groups and kept Congress broad enough to claim that it spoke for all of India. The British answered with a mix of reform and force, and in 1919 troops opened fire on an unarmed crowd at Amritsar, killing hundreds, which turned many Indians against British rule for good.</p>
+<div class="optima-widget ow-reflect" data-wid="w35-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Gandhi asked millions of people to refuse unjust laws without striking back. Which part of that would be hardest for you? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="That takes a firm sense of what is just and the nerve to be seen breaking a rule. The lesson says tens of thousands were jailed after the march to the sea, so many were willing.">Breaking a law that everyone around me was told to obey</button><button data-response="Jail was the real price. The lesson says tens of thousands were jailed after the march to the sea.">Going to jail for it</button><button data-response="That is what set the method apart from a riot. The lesson describes it as refusing unjust laws without using violence.">Staying calm and not hitting back</button><button data-response="Gandhi dressed in homespun cloth and lived simply, and the lesson says this helped draw millions of villagers into the cause.">Living simply, as Gandhi did</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Gandhi's method depended on an opponent who could be shamed by the sight of suffering. The British, having a free press and a conscience of their own, could be moved in this way. Historians note that the same tactics would have met a different fate against a regime like Stalin's or Hitler's. In 1942 Congress demanded that Britain quit India, and Gandhi and other leaders were jailed for most of the war.</p>
+<p style="margin:0 0 14px;">Britain had tried to keep India's help by promising more. In 1942 Sir Stafford Cripps, a member of the war cabinet, flew to Delhi with an offer of self-government after the war, but Congress would not accept a promise to be kept later, in the middle of a war, and the offer failed. In August Gandhi told a crowd in Bombay to "do or die." The next morning he was arrested. Across India crowds attacked police stations and railway lines, and the government put down the uprising with thousands of arrests.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">PARTITION</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">About one in four Indians was Muslim. Many Muslims feared being a permanent minority in a state ruled by a Hindu majority. The leader of the Muslim League, Muhammad Ali Jinnah, a lawyer who had once worked with Congress, came to demand a separate Muslim homeland, Pakistan. Gandhi and Jawaharlal Nehru, his chief ally, opposed dividing the country. Talks failed, and in August 1946 riots in Calcutta killed thousands.</p>
+<p style="margin:0 0 14px;">The demand had been taking shape for years. In March 1940, at Lahore, the Muslim League declared that regions where Muslims were the majority should form independent states. In 1944 Gandhi and Jinnah met for nearly three weeks of talks and parted without agreement. In 1946 a mission of British cabinet ministers proposed a loose union of India with strong provinces. Congress and the League each accepted and then rejected parts of the plan, and by summer it had collapsed. Every failure made the next compromise harder to reach. Millions of Hindus, Muslims, and Sikhs lived in mixed villages and towns, so any border would have to pass between neighbors.</p>
+<p style="margin:0 0 14px;">A new British government under Clement Attlee decided to leave. The last viceroy, Lord Mountbatten, was sent in early 1947 and set a date for independence that was earlier than expected. A British lawyer who had never seen India, Cyril Radcliffe, was given a few weeks to draw the new borders through Punjab and Bengal. On August 15, 1947, India became independent, and Pakistan was born a day earlier in two parts, far apart on the map. The <span class="gloss" tabindex="0"><strong>partition</strong><button class="gloss-audio" onclick="speakGloss(event,'par-TISH-un')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">par-TISH-un</span>The division of a country or territory into two or more separate parts. <a class="om-maplink" href="#gloss-partition">See the glossary box.</a></span></span> set off one of the largest migrations in history. Perhaps ten to fifteen million people crossed the new lines, Hindus and Sikhs one way and Muslims the other. Mobs on all sides murdered their neighbors, and the dead are counted in the hundreds of thousands, with some estimates going to a million or more. Gandhi, who walked through riot-torn villages pleading for peace, was shot dead in January 1948 by a Hindu extremist who thought he had been too kind to Muslims. Nehru became India's first prime minister and led it as a democracy that has lasted ever since. Pakistan and India have fought several wars since.</p>
+<p style="margin:0 0 14px;">The map itself was kept secret. Radcliffe's lines were not published until August 17, two days after independence, so for a time millions of people did not know which country their villages lay in. Nor did British India's provinces make up the whole subcontinent. About 565 princely states, ruled by hereditary princes under British protection, were told to join either India or Pakistan, and most did so quickly. Kashmir, with a Muslim majority and a Hindu maharaja, hesitated. In October 1947 raiders from Pakistan entered it, the maharaja asked India for help and signed the paper joining India, and Indian troops were flown in. The first war between the two new countries followed, and a cease-fire line drawn in 1949 still divides Kashmir today.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">SOUTHEAST ASIA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The Philippines, promised independence by the United States, received it in 1946. Elsewhere the road was harder. When Japan surrendered, Indonesian nationalists led by Sukarno declared independence, and the Dutch fought to regain control. After four years, with American pressure against them, the Dutch gave way in 1949.</p>
+<p style="margin:0 0 14px;">Sukarno and his colleague Mohammad Hatta had read their proclamation on August 17, 1945, two days after Japan's surrender and before Dutch troops could return. The Dutch twice launched what they called police actions, in 1947 and 1948, and each time they took towns and cities but could not rule the countryside. In Washington the second action looked like a colonial war against a government that had just crushed a communist uprising of its own, and members of Congress spoke of cutting off the Marshall Plan, the American money that was rebuilding Europe, to the Netherlands. The Dutch needed that money to repair their ruined country. In December 1949 they handed over sovereignty.</p>
+<div class="optima-widget ow-select" data-wid="w35-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; BEFORE THE EMPIRES FELL</div><div class="widget-question">Answer each question about why the empires weakened.</div><div class="widget-row" data-correct="2" data-fb="Churchill said it applied to Europe. Many others saw no reason it should stop there." data-hint="Reread the lines about the Charter. Churchill and many others read it differently."><div class="widget-row-prompt">1. Churchill and Roosevelt signed the Atlantic Charter in 1941. Where did Churchill say its promise applied?</div><div class="widget-options"><button data-choice="0">Only to the colonies of Asia</button><button data-choice="1">To every colony and country in the world</button><button data-choice="2">To Europe</button><button data-choice="3">To Africa but not to Asia</button></div></div><div class="widget-row" data-correct="0" data-fb="The lesson says these victories showed Asians that European armies could be beaten." data-hint="Look at the first paragraph for what Japan&#x27;s victories proved about European armies."><div class="widget-row-prompt">2. What did Japan's early victories in 1941 and 1942 show people in Asia?</div><div class="widget-options"><button data-choice="0">European armies could be beaten</button><button data-choice="1">Colonial rule was getting cheaper to keep</button><button data-choice="2">Japan would soon grant its new lands their freedom</button><button data-choice="3">The superpowers would defend the old empires</button></div></div><div class="widget-row" data-correct="3" data-fb="The Dutch fought for four years to regain control, and with American pressure against them they gave way in 1949." data-hint="The lesson says the Dutch fought to regain control. What changed after four years?"><div class="widget-row-prompt">3. Indonesian nationalists declared independence when Japan surrendered. What led the Dutch to give way in 1949?</div><div class="widget-options"><button data-choice="0">Their army won, and Sukarno gave up the claim</button><button data-choice="1">Japan returned to help the Dutch keep control</button><button data-choice="2">The Dutch left on the day that Japan surrendered</button><button data-choice="3">Four years of war, with American pressure against them</button></div></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">In Vietnam, Ho Chi Minh, a communist who had spent years abroad, declared independence in September 1945, opening his speech in Hanoi with words from the American Declaration of Independence. France refused to accept it, and war followed. In 1954 the French suffered a crushing defeat at Dien Bien Phu, and a peace conference at Geneva divided the country at the 17th parallel, with a communist north and a non-communist south. The Cold War turned this division into a long struggle involving America, whose own war there lies beyond this lesson.</p>
+<p style="margin:0 0 14px;">The French commander chose to make his stand at Dien Bien Phu, a valley in the northwest near the border with Laos, hoping to draw the Viet Minh into an open battle where French guns and aircraft could destroy them. The Viet Minh general, Vo Nguyen Giap, accepted. Thousands of soldiers and villagers hauled heavy guns piece by piece through jungle and over mountain slopes until they stood on the hills above the valley, where the French had thought no artillery could be brought. The siege began in March 1954. The airstrip, the French lifeline, soon came under fire, and supplies had to be dropped by parachute. On May 7 the French surrendered, with more than ten thousand men taken prisoner. The peace conference at Geneva opened the next day.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE MIDDLE EAST AND AFRICA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1956 Egypt's president, Gamal Abdel Nasser, seized the Suez Canal, which Britain and France owned. They joined Israel in an attack, but the United States and the Soviet Union both demanded they stop, and they withdrew. The affair showed that Britain and France were no longer great powers able to act alone.</p>
+<p style="margin:0 0 14px;">Nasser's act had a cause. In 1956 the United States and Britain withdrew an offer to help pay for a great dam on the Nile at Aswan, and on July 26 Nasser answered by announcing that Egypt would take over the Suez Canal Company, whose shares were held largely by British and French owners. Britain, France, and Israel then met in secret near Paris. Israel was to invade Sinai, and Britain and France would order both armies away from the canal and send in their own troops to separate them. Israel attacked on October 29, and British and French landings followed in early November. President Eisenhower, who had not been told, opposed the attack. Money was draining out of Britain in a run on the pound, and the United States refused to help unless the attack stopped. Britain's prime minister, Anthony Eden, resigned in January 1957.</p>
+<p style="margin:0 0 14px;">In Africa, the Gold Coast, led by Kwame Nkrumah, became the first sub-Saharan colony to win independence, as Ghana, in 1957. Many leaders followed, and in 1960 alone seventeen African nations became independent. Britain left most of its colonies by negotiation. In Kenya a rebellion by the Mau Mau movement was put down, but the British still moved toward independence in 1963. France gave up most of its African lands in 1960, but Algeria, home to over a million French settlers, was different. A savage war lasted from 1954 to 1962, and the war brought down France's Fourth Republic and brought Charles de Gaulle back to power. He finally granted independence, and most of the settlers fled. In the Belgian Congo, Belgium left in 1960 with almost no preparation. The country plunged into civil war within days, and its first prime minister, Patrice Lumumba, was murdered in 1961.</p>
+<p style="margin:0 0 14px;">Ghana's road was shorter than most, and its leader had learned his politics abroad. Kwame Nkrumah studied in the United States and Britain, came home in 1947, and soon formed his own party, which demanded self-government at once. In 1950 the British jailed him for organizing strikes. When the colony held its first general election in early 1951, his party won, and Nkrumah went from his prison cell to lead the government, with a British governor still above him. The governor chose to work with the winner rather than against him. On March 6, 1957, Ghana was free. In February 1960 the British prime minister, Harold Macmillan, told the parliament of South Africa in Cape Town that a "wind of change" was blowing through the continent and that, whether anyone liked it or not, the growth of national consciousness was a fact.</p>
+<p style="margin:0 0 14px;">Algeria was different in law as well as in numbers. France counted it as part of France itself, divided into departments like those on the mainland, yet about nine million Muslim Algerians lived beside roughly a million settlers and had far less say in how they were governed. On November 1, 1954, the National Liberation Front began its attacks. The French army answered with great force, both sides used terror against civilians, and the army's use of torture became a scandal at home. In 1958 French officers and settlers in Algiers rose against a government that seemed ready to bargain, and the republic's leaders called back Charles de Gaulle, who had led the Free French in World War II, hoping he would save Algeria for France. He concluded that it could not be saved. In 1962 his government agreed at Evian to Algerian independence, and Algerian voters approved it overwhelmingly. Within months most of the settlers had left for France.</p>
+<div class="ow-group" data-wid="w35-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Dien Bien Phu, 1954<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A crushing defeat for the French in Vietnam. A conference at Geneva then divided the country at the 17th parallel, with a communist north and a non-communist south.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">The Gold Coast, 1957<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Led by Kwame Nkrumah, it became the first sub-Saharan colony to win independence, as Ghana. In 1960 alone seventeen African nations became independent.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Algeria, 1954 to 1962<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A savage war in a land with over a million French settlers. It brought down France&#x27;s Fourth Republic and brought Charles de Gaulle back to power. He granted independence, and most of the settlers fled.</div></div><button class="widget-reset">Reset</button></div></div>
+
+<p style="margin:0 0 14px;">Belgium had trained few Congolese for senior posts in the army or the government. Within days of independence on June 30, 1960, the army rebelled against its Belgian officers, Belgian troops returned, and the mineral-rich province of Katanga declared itself separate. Lumumba asked the United Nations for help and, when it was slow in coming, turned to the Soviet Union, which made the Congo a battleground of the Cold War. He was dismissed, arrested, and killed in January 1961. Nigeria, independent in 1960, suffered a breakup of its own. In 1967 its southeast declared itself the separate state of Biafra, and a civil war that lasted until 1970 killed perhaps a million people, many of them from hunger.</p>
+<p style="margin:0 0 14px;">The new states often inherited borders drawn by Europeans that cut across peoples and joined enemies, and many soon fell under one-party or military rule. Independence was a real achievement, and the way each country got there shaped what came after. In the next lesson you will see how one more mandate, Palestine, ended in the birth of a state.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Decolonization and Israel</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

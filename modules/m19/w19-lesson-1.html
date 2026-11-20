@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: Cortés and the Fall of the Aztec Empire</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">Spain's Silver Empire</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">Cortés and the Fall of the Aztec Empire</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">Cortés and the Fall of the Aztec Empire</div>
+        <div style="font-size: 16px; color: #666;">Spain's Silver Empire</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;Spain's Silver Empire.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe the Mexica empire of 1519 and how it held its subjects.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how Cortés, his translators, and his native allies brought down Tenochtitlan.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Weigh the roles of disease, allies, weapons, and chance in the Spanish victory.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-causeway" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>causeway</strong><button class="gloss-audio" onclick="speakGloss(event,'KAWZ-way')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KAWZ-way</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A raised road built across water or wet ground.</div>
+    </div><div id="gloss-conquistador" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>conquistador</strong><button class="gloss-audio" onclick="speakGloss(event,'kon-KEES-tuh-dor')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">kon-KEES-tuh-dor</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Spanish soldier-adventurer who led armed expeditions to conquer lands in the Americas. The word means "conqueror."</div>
+    </div><div id="gloss-tribute" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>tribute</strong><button class="gloss-audio" onclick="speakGloss(event,'TRIB-yoot')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">TRIB-yoot</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Goods, labor, or money that a conquered people must regularly pay to their conqueror.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0;">In 1519 about five hundred Spaniards landed on the coast of Mexico. Two years later the largest empire in the Americas lay in ruins. Today you will see how that happened, and why the phrase "a few hundred against millions" leaves out most of the story.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A CITY ON A LAKE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1519 the greatest city in the Americas stood on an island in the middle of a lake. Its name was Tenochtitlan, and it was the capital of the Mexica people, whom we usually call the Aztecs. Long <span class="gloss" tabindex="0"><strong>causeways</strong><button class="gloss-audio" onclick="speakGloss(event,'KAWZ-way')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAWZ-way</span>A raised road built across water or wet ground. <a class="om-maplink" href="#gloss-causeway">See the glossary box.</a></span></span> linked the island to the shore, and canals ran through its streets. Perhaps two hundred thousand people lived there, which made it larger than almost any city in Europe. Spaniards who saw it for the first time said it looked like the enchanted cities in their storybooks.</p>
+<p style="margin:0 0 14px;">One of those Spaniards, a foot soldier named Bernal D&iacute;az del Castillo, wrote a long memoir of the campaign many years later. He remembered the men pointing at the towers rising out of the water and comparing them to the magic cities in a popular tale of knights called <em>Amadis of Gaul</em>. Some of them, he said, wondered whether they were dreaming. The city was less a wonder of nature than a wonder of engineering. The lake water was not good to drink, so an aqueduct carried fresh water in from springs on the shore. The gaps in the causeways were crossed on wooden bridges that could be pulled up when danger came. And at the great market of Tlatelolco, D&iacute;az wrote, the crowds and the order of the stalls impressed even men who had seen the markets of Rome and Constantinople.</p>
+<p style="margin:0 0 14px;">The Mexica ruler was called the <span class="gloss" tabindex="0"><em>tlatoani</em><button class="gloss-audio" onclick="speakGloss(event,'tlah-twah-NEE')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">tlah-twah-NEE</span>A word from Nahuatl, the language of the Mexica. It means "speaker," and it was the title of a Mexica ruler. <a class="om-maplink" href="#gloss-tlatoani">See the glossary box.</a></span></span>, and in 1519 the office belonged to Moctezuma II. His empire was really an alliance of three cities that had conquered their neighbors. Its main business was collecting <span class="gloss" tabindex="0"><strong>tribute</strong><button class="gloss-audio" onclick="speakGloss(event,'TRIB-yoot')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRIB-yoot</span>Goods, labor, or money that a conquered people must regularly pay to their conqueror. <a class="om-maplink" href="#gloss-tribute">See the glossary box.</a></span></span>. Conquered towns sent cloth, food, feathers, and gold to the capital. They also sent captives, who were sacrificed in public ceremonies to the Mexica gods. The empire kept order through fear, and its subjects knew it. Hold on to that fact, because it matters later.</p>
+<p style="margin:0 0 14px;">The Mexica did not govern their conquests the way Rome governed a province. Most conquered towns kept their own rulers, their own gods, and their own customs, so long as the <span class="gloss" tabindex="0"><strong>tribute</strong><button class="gloss-audio" onclick="speakGloss(event,'TRIB-yoot')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRIB-yoot</span>Goods, labor, or money that a conquered people must regularly pay to their conqueror. <a class="om-maplink" href="#gloss-tribute">See the glossary box.</a></span></span> arrived on schedule. Officials traveled out to collect it and kept careful records of what each town owed. A town that fell behind could expect an army. The arrangement was cheap to run, because it usually needed no large garrison in each subject town. It also meant that thousands of people paid every year for a government they had no reason to love, and many of them still remembered being independent. Such an empire is safe only as long as nobody offers its subjects a different arrangement.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A foreign-language term appeared just above. Here is how to say it and what it means.</p><div id="gloss-tlatoani" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>tlatoani</strong><button class="gloss-audio" onclick="speakGloss(event,'tlah-twah-NEE')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">tlah-twah-NEE</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A word from Nahuatl, the language of the Mexica. It means "speaker," and it was the title of a Mexica ruler.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A CAPTAIN WHO BROKE THE RULES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Hernán Cortés was a <span class="gloss" tabindex="0"><strong>conquistador</strong><button class="gloss-audio" onclick="speakGloss(event,'kon-KEES-tuh-dor')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kon-KEES-tuh-dor</span>A Spanish soldier-adventurer who led armed expeditions to conquer lands in the Americas. The word means "conqueror." <a class="om-maplink" href="#gloss-conquistador">See the glossary box.</a></span></span> from a poor corner of Spain. As a young man he crossed the Atlantic and made a name for himself on the island of Cuba. In 1518 the governor of Cuba, Diego Velázquez, gave him command of an expedition to the mainland. Then Velázquez began to fear how ambitious Cortés was and tried to cancel the voyage. Cortés sailed anyway, in February 1519, with about five hundred men, sixteen horses, and a few cannon.</p>
+<p style="margin:0 0 14px;">On the coast he founded a town called Veracruz and had its council elect him captain. This was a clever legal move. It made him the servant of the town, and of the king, rather than of the governor he had defied. Then he ran his ships aground. Now there was nowhere to go but forward. Cortés was brave, quick, and persuasive, and he was ruthless when he judged it useful. Keep both qualities in view as the story unfolds.</p>
+<div class="optima-widget ow-reflect" data-wid="w19-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Cortés disobeyed the governor, sailed anyway, and then ran his ships aground so that no one could turn back. How does a choice like that sit with you? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="The lesson calls Cortés brave, quick, and persuasive. Hold that next to another word it uses for him, ruthless, as the story goes on.">It looks bold</button><button data-response="That is a fair reading. With about five hundred men and no ships, he had nowhere to go but forward. Watch whether recklessness or planning explains what comes next.">It looks reckless</button><button data-response="The town council did make him the servant of the town, and of the king, rather than of the governor he had defied. Look for the point where cleverness stops and luck begins.">It looks clever</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">The news of the strangers had already reached Moctezuma. While Cortés was still on the coast, the ruler's envoys arrived with gifts of fine cloth and gold and a polite request that the Spaniards go home. Moctezuma may have hoped to buy them off. To men who had crossed an ocean looking for gold, the gifts were a reason to stay. Not everyone in the little army was eager to march inland. Some wanted to return to Cuba, and a few plotted to seize a ship and sail there. Cortés had the leaders of the plot punished, and two of them were hanged. The rest of the army had just seen what happened to men who talked about turning back.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">VOICES AND ALLIES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Cortés could not speak Nahuatl. His luck changed when local leaders gave him a group of women, among them a young woman the Spaniards called Doña Marina and her own people called Malintzin. She spoke Nahuatl and Maya. A Spaniard named Jerónimo de Aguilar, who had been shipwrecked years before, spoke Maya and Spanish. Between them, the Spaniards could now talk to the Mexica. Malintzin soon became far more than a translator. She explained customs, warned of dangers, and helped Cortés read the politics of the land.</p>
+<p style="margin:0 0 14px;">Picture how clumsy the arrangement was at first. Cortés spoke in Spanish to Aguilar. Aguilar turned the words into Maya for Malintzin. Malintzin turned them into Nahuatl for the Mexica envoy, and the answer came back through the same three mouths in reverse. Every sentence had three chances to go wrong. Malintzin learned Spanish quickly, and before long she could speak to Cortés directly. From then on she stood at his side in the room where the decisions were made, and neither side could say more than she chose to pass along.</p>
+<p style="margin:0 0 14px;">Those politics were the key. As Cortés marched inland, he met towns that hated paying <span class="gloss" tabindex="0"><strong>tribute</strong><button class="gloss-audio" onclick="speakGloss(event,'TRIB-yoot')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRIB-yoot</span>Goods, labor, or money that a conquered people must regularly pay to their conqueror. <a class="om-maplink" href="#gloss-tribute">See the glossary box.</a></span></span> to Tenochtitlan. The people of Cempoala joined him. The Tlaxcalans, who had never been conquered by the Mexica, fought the Spaniards hard and lost. Then they changed course and offered an alliance against their old enemy. Cortés saw that he did not have to beat the Mexica alone. He only had to find out who else wanted them beaten. At the city of Cholula, which was friendly to the Mexica, he ordered a massacre that killed thousands. He claimed he was stopping a plot. Many historians think he wanted to terrify everyone who might resist him.</p>
+<p style="margin:0 0 14px;">Tlaxcala was a league of towns ringed on every side by Mexica territory. By most accounts its people had to do without goods such as salt and fine cotton cloth, because the trade routes ran through enemy hands. When the Spaniards arrived in September 1519, the Tlaxcalan leaders had to decide whether these strangers were a danger or a tool. They tested them in about two weeks of hard fighting. The horses and steel held, but both sides were worn down. The Tlaxcalan leaders then judged that men who could survive that fight would be useful against Tenochtitlan, and the offer cost them little at the start. The Spaniards would be aimed at their old enemy. The cost came later, because Tlaxcalan warriors would do much of the fighting.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">MOCTEZUMA'S CHOICE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In November 1519 Cortés entered Tenochtitlan with his Spaniards and thousands of native allies. Moctezuma met him on the causeway and welcomed him into the city. You may have heard that Moctezuma thought Cortés was a god returning. That story comes mostly from sources written after the conquest, and many historians doubt it. A simpler explanation is more likely. Moctezuma was curious, cautious, and unsure what these strangers wanted. He may have thought he could study them, and trap them, inside his own city.</p>
+<p style="margin:0 0 14px;">Picture the meeting on the <span class="gloss" tabindex="0"><strong>causeway</strong><button class="gloss-audio" onclick="speakGloss(event,'KAWZ-way')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAWZ-way</span>A raised road built across water or wet ground. <a class="om-maplink" href="#gloss-causeway">See the glossary box.</a></span></span> on November 8. Moctezuma came toward the Spaniards carried on a litter, a kind of chair borne on the shoulders of his nobles, under a canopy of feathers. Cortés dismounted and stepped forward to embrace him. The great lords at Moctezuma's side stopped him, because no one was allowed to touch the ruler. The two men exchanged gifts and greetings through Malintzin and Aguilar, and Moctezuma gave the Spaniards rooms in the palace that had belonged to his own father, Axayacatl, a short walk from the great temple.</p>
+<p style="margin:0 0 14px;">It was a mistake. Within days Cortés seized Moctezuma and held him as a hostage. For months the Spaniards ruled through him. It is worth pausing here to see how fragile this was. The Mexica could have destroyed the Spanish column on the causeway, where there was no room to fight and no way to escape. They did not. At a turning point, one man's hesitation changed the course of a continent.</p>
+<p style="margin:0 0 14px;">Holding the ruler was not the same as ruling the city. Moctezuma still gave orders, and for a time they were obeyed, so gold kept flowing into the Spanish quarters. The Spaniards melted much of it into bars. A fifth went to the king, as Spanish law required, and the soldiers quarreled over how to divide the rest. Meanwhile the Mexica nobles watched their ruler take orders from strangers who lived in his father's palace and gave him no leave to walk out. Each week of that arrangement used up some of the respect a ruler needs in order to command.</p>
+<div class="optima-widget ow-select" data-wid="w19-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHO DID WHAT?</div><div class="widget-question">Choose what the lesson says each of these people or groups did.</div><div class="widget-row" data-correct="0" data-fb="Right. Malintzin explained customs, warned of dangers, and became far more than a translator." data-hint="Aguilar spoke Maya and Spanish. Who could add Nahuatl?"><div class="widget-row-prompt">1. Spoke Nahuatl and Maya and helped Cortés read the politics of the land</div><div class="widget-options"><button data-choice="0">Malintzin (Doña Marina)</button><button data-choice="1">Jerónimo de Aguilar</button><button data-choice="2">A priest sent by Velázquez</button></div></div><div class="widget-row" data-correct="2" data-fb="Right. The Tlaxcalans had never been conquered by the Mexica, so they offered an alliance against their old enemy." data-hint="Cempoala joined him at once, and Cholula was friendly to the Mexica. Which group fought first?"><div class="widget-row-prompt">2. Fought the Spaniards hard, lost, and then offered an alliance against an old enemy</div><div class="widget-options"><button data-choice="0">The people of Cempoala</button><button data-choice="1">The people of Cholula</button><button data-choice="2">The Tlaxcalans</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. Within days Cortés seized Moctezuma and held him as a hostage, and for months the Spaniards ruled through him." data-hint="The Tlaxcalans were allies, and the governor of Cuba was far away. Who was inside the city?"><div class="widget-row-prompt">3. Seized Moctezuma and held him as a hostage within days of entering the city</div><div class="widget-options"><button data-choice="0">The Tlaxcalans</button><button data-choice="1">Cortés</button><button data-choice="2">The governor of Cuba</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE CITY FALLS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In spring 1520 Cortés left the city to face a Spanish force that Velázquez had sent to arrest him. He defeated it and added its soldiers to his own. While he was gone, his deputy Pedro de Alvarado attacked Mexica nobles at a religious festival and killed many of them. The city rose in fury. Moctezuma died during the fighting, and nobody is certain who was responsible. On the night of June 30, the Spaniards tried to flee along a causeway and were cut to pieces. They remember it as the Sad Night. Hundreds of Spaniards and many more of their allies died.</p>
+<p style="margin:0 0 14px;">The two sides tell different stories about the festival and about Moctezuma's death. Spanish accounts say that Alvarado feared a plot, and that Moctezuma was hit by stones thrown by his own people when he tried to calm them. Mexica accounts say that the attack came without warning on dancers in the temple courtyard, and that the Spaniards killed their ruler. Neither version can be checked against the other. What is not in doubt is the flight. The Spaniards left at night in heavy rain, carrying a portable wooden bridge to cross the gaps in the road, and many were weighed down with gold. A woman drawing water saw them and raised the alarm, and canoes filled the lake. Once the bridge jammed, men and horses fell into the water. D&iacute;az later wrote that the men who had loaded themselves with the most treasure were the ones who did not get out.</p>
+<p style="margin:0 0 14px;">Then something happened that no general had planned. Smallpox, a disease that Europeans had lived with for centuries, reached Tenochtitlan late in 1520. The Mexica had no resistance to it. It killed a large share of the city, including the new <span class="gloss" tabindex="0"><em>tlatoani</em><button class="gloss-audio" onclick="speakGloss(event,'tlah-twah-NEE')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">tlah-twah-NEE</span>A word from Nahuatl, the language of the Mexica. It means "speaker," and it was the title of a Mexica ruler. <a class="om-maplink" href="#gloss-tlatoani">See the glossary box.</a></span></span>, Cuitl&aacute;huac, who was Moctezuma's brother. Cortés rebuilt his army with fresh Tlaxcalan warriors and had thirteen small warships built in pieces and carried to the lake. In 1521 he sealed off the city, cut its water supply, and starved it. After about seventy-five days of fighting, the last <span class="gloss" tabindex="0"><em>tlatoani</em><button class="gloss-audio" onclick="speakGloss(event,'tlah-twah-NEE')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">tlah-twah-NEE</span>A word from Nahuatl, the language of the Mexica. It means "speaker," and it was the title of a Mexica ruler. <a class="om-maplink" href="#gloss-tlatoani">See the glossary box.</a></span></span>, Cuauhtémoc, was captured on August 13.</p>
+<p style="margin:0 0 14px;">The siege was slow and brutal. Each time the Spaniards pushed along a <span class="gloss" tabindex="0"><strong>causeway</strong><button class="gloss-audio" onclick="speakGloss(event,'KAWZ-way')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAWZ-way</span>A raised road built across water or wet ground. <a class="om-maplink" href="#gloss-causeway">See the glossary box.</a></span></span>, the defenders broke the bridges and struck from canoes. The warships changed that, because they let the attackers control the water beside the roads. Cortés then had the houses he captured torn down and used the rubble to fill the canals behind him. Warriors from Tlaxcala and from the lake city of Texcoco, which had once been a partner of Tenochtitlan in the three-city alliance, did most of the fighting and most of the destroying. The Mexica were pushed back into the northern quarter of the city and fought on while hunger and sickness spread among them. When the end came, Cuauhtémoc was caught trying to escape by canoe.</p>
+<div class="ow-group" data-wid="w19-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; REMEMBER THIS?</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What was the Sad Night?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">On the night of June 30, 1520, the Spaniards tried to flee along a road over the lake and were cut to pieces. Hundreds of Spaniards and many more of their allies died.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; REMEMBER THIS?</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did Cortés build to take the city from the lake?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Thirteen small warships, built in pieces and carried to the lake. In 1521 he sealed off the city, cut its water supply, and starved it.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; REMEMBER THIS?</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What reached Tenochtitlan late in 1520, and why did it matter?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Smallpox. The Mexica had no resistance to it, and it killed a large share of the city, including the new ruler. No general had planned it.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WHY DID IT HAPPEN?</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Steel swords, horses, and cannon helped the Spaniards, but they cannot explain the result. Look at the numbers. At the final siege the Spaniards were a small part of an army that included tens of thousands of native warriors. Disease thinned the defenders. And the empire itself had a weakness. A regime is strong when it binds its people into one community that will defend it. The Mexica bound their subjects only by fear and tribute. When a challenger arrived, many of those subjects chose him.</p>
+<p style="margin:0 0 14px;">The Spaniards did not end the <span class="gloss" tabindex="0"><strong>tribute</strong><button class="gloss-audio" onclick="speakGloss(event,'TRIB-yoot')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRIB-yoot</span>Goods, labor, or money that a conquered people must regularly pay to their conqueror. <a class="om-maplink" href="#gloss-tribute">See the glossary box.</a></span></span> system after 1521. Spanish officials took it over and collected the same goods from the same towns. Tlaxcala was rewarded with privileges by the Crown, but the towns that had joined Cortés hoping to be free of Tenochtitlan found that the collectors now spoke Spanish. Cortés wrote long letters to King Charles V to justify what he had done, and he had much to justify, since he had defied a governor and started a war without permission. The king named him governor and captain general of the new land in 1522. Success had settled the question.</p>
+<p style="margin:0 0 14px;">Nothing about the outcome was certain. If Moctezuma had struck on the causeway, if Alvarado had kept his temper, if Cortés had been arrested by his rivals, or if the smallpox had come years later, the story could have ended very differently. Spain rewarded its captain richly, and a Spanish city later rose on the ruins of the Mexica capital. Next lesson you will follow the same pattern south, where a second great empire was about to meet a man named Pizarro.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Spain's Silver Empire</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

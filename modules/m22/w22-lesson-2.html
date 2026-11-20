@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Glorious Revolution: William of Orange and the Bill of Rights</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">England: Crown and Parliament</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Glorious Revolution: William of Orange and the Bill of Rights</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Glorious Revolution: William of Orange and the Bill of Rights</div>
+        <div style="font-size: 16px; color: #666;">England: Crown and Parliament</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain why leading Englishmen invited William of Orange to take the throne in 1688.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe the main limits the Bill of Rights placed on the crown.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Weigh whether the revolution deserves the name Glorious.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-constitutional-monarchy" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>constitutional monarchy</strong><button class="gloss-audio" onclick="speakGloss(event,'kon-stih-TOO-shun-ul MON-ar-kee')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">kon-stih-TOO-shun-ul MON-ar-kee</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A government in which a king or queen reigns but must obey the laws and the limits of a constitution.</div>
+    </div><div id="gloss-divine-right" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>divine right of kings</strong><button class="gloss-audio" onclick="speakGloss(event,'dih-VINE RITE uv KINGZ')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">dih-VINE RITE uv KINGZ</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The belief that a king's authority comes directly from God, so that he answers to God alone.</div>
+    </div><div id="gloss-standing-army" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>standing army</strong><button class="gloss-audio" onclick="speakGloss(event,'STAN-ding AR-mee')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">STAN-ding AR-mee</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A permanent professional army that is kept in being during peacetime as well as war.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">England had cut off one king's head. Forty years later it removed another king without a battle. Today you will see how the invitation to a Dutch prince, a lucky wind, and a list of rights created a government that the rest of Europe would study.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KING RETURNS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">After Cromwell's death, England was tired of experiments. In 1660 Charles II came home to cheers. He was witty, clever, and wiser than his father. He had learned that a king who wanted to keep his head should not push Parliament too far. Parliament kept its control of taxes. In 1679 it passed a law protecting <span class="gloss" tabindex="0"><em>habeas corpus</em><button class="gloss-audio" onclick="speakGloss(event,'HAY-bee-us KOR-pus')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HAY-bee-us KOR-pus</span>A Latin phrase meaning "you shall have the body." It is a legal order that a prisoner must be brought before a judge so that the government has to explain why he or she is being held. <a class="om-maplink" href="#gloss-habeas-corpus">See the glossary box.</a></span></span>, which meant that no one could be held in prison without being brought before a judge.</p>
+<p style="margin:0 0 14px;">Charles's court was famous for its pleasures, but the age had a serious side. In 1662 he chartered the Royal Society, a group of learned men who met to test ideas by experiment, and its early members included the chemist Robert Boyle. Charles also kept a secret from his people. In 1670 he signed a treaty with Louis XIV at Dover in which he promised, when the time was right, to declare himself a Catholic. In return Louis paid him large sums. French money meant that Charles could do without Parliament's money, which was the point. In 1678 a liar named Titus Oates invented a Catholic plot to murder the king, and thousands believed him. A country that feared Catholic plots was not going to be calm about a Catholic heir.</p>
+<p style="margin:0 0 14px;">The trouble was the succession. Charles had no legitimate children, so his brother James, an open Catholic, was next in line. Parliament split over whether to bar him. Those who wanted to bar him were later called Whigs. Those who defended his right to inherit were called Tories. Both names began as insults. Charles protected his brother, and he ruled his last years without calling Parliament. When he died in 1685, he had secretly become a Catholic.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A foreign-language term appeared just above. Here is how to say it and what it means.</p><div id="gloss-habeas-corpus" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>habeas corpus</strong><button class="gloss-audio" onclick="speakGloss(event,'HAY-bee-us KOR-pus')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">HAY-bee-us KOR-pus</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Latin phrase meaning "you shall have the body." It is a legal order that a prisoner must be brought before a judge so that the government has to explain why he or she is being held.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A CATHOLIC KING</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Many Protestants put up with James II because his two daughters, Mary and Anne, were Protestants. The crown would pass to them one day. They did not have to wait long to see his plans. When a rebellion led by Charles II's illegitimate son was crushed in 1685, the king's judge hanged hundreds. James then built a <span class="gloss" tabindex="0"><strong>standing army</strong><button class="gloss-audio" onclick="speakGloss(event,'STAN-ding AR-mee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STAN-ding AR-mee</span>A permanent professional army that is kept in being during peacetime as well as war. <a class="om-maplink" href="#gloss-standing-army">See the glossary box.</a></span></span> in peacetime and appointed Catholic officers, though the law forbade it. He claimed the right to suspend laws he disliked.</p>
+<p style="margin:0 0 14px;">The rebel was the Duke of Monmouth, who landed in the west of England in June 1685 and was defeated within weeks. The trials that followed were so harsh that they became known as the Bloody Assizes. James kept his new army camped each summer at Hounslow Heath, near London, where it could be seen. In 1687 he issued a Declaration of Indulgence suspending the laws against Catholics and Protestant dissenters alike. Some dissenters welcomed it, but many did not trust the offer, because it rested on a power no king had been granted. Meanwhile ships kept arriving from France with Huguenots, Protestants whom Louis XIV had driven out of his kingdom in 1685. Tens of thousands settled in England. Their stories gave English Protestants a picture of what a Catholic king with a strong army could do.</p>
+<p style="margin:0 0 14px;">In 1688 he ordered the clergy to read a declaration in their churches. Seven bishops petitioned him to excuse them. James put them on trial, and a jury found them not guilty. London rang with celebration. Many Englishmen saw a king who believed in the <span class="gloss" tabindex="0"><strong>divine right of kings</strong><button class="gloss-audio" onclick="speakGloss(event,'dih-VINE RITE uv KINGZ')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dih-VINE RITE uv KINGZ</span>The belief that a king's authority comes directly from God, so that he answers to God alone. <a class="om-maplink" href="#gloss-divine-right">See the glossary box.</a></span></span>, the same belief Charles I had held, and who might rule without Parliament as Louis XIV did across the Channel.</p>
+<p style="margin:0 0 14px;">The bishops had refused because Parliament had never approved the king's power to suspend laws, and the Archbishop of Canterbury, William Sancroft, led them. On the day the jury cleared them, James was visiting the army camp at Hounslow. He heard a great roar go up from his soldiers and asked what it meant. He was told that the men were cheering the verdict. His own soldiers were glad to see him lose.</p>
+<div class="optima-widget" data-wid="w22-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">James II built a <span class="gloss" tabindex="0"><strong>standing army</strong><button class="gloss-audio" onclick="speakGloss(event,'STAN-ding AR-mee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STAN-ding AR-mee</span>A permanent professional army that is kept in being during peacetime as well as war. <a class="om-maplink" href="#gloss-standing-army">See the glossary box.</a></span></span> in peacetime, appointed Catholic officers, and claimed the right to suspend laws he disliked.</div><details class="ow-reveal"><summary>Decide first, and jot your answer in your notebook: why would these actions worry members of Parliament? Then open to compare.</summary><div class="ow-reveal-body">A king who can suspend laws does not need Parliament to make or keep them. A <span class="gloss" tabindex="0"><strong>standing army</strong><button class="gloss-audio" onclick="speakGloss(event,'STAN-ding AR-mee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STAN-ding AR-mee</span>A permanent professional army that is kept in being during peacetime as well as war. <a class="om-maplink" href="#gloss-standing-army">See the glossary box.</a></span></span> in peacetime gives him force to back his will, and the law forbade the Catholic appointments he made. The lesson says many English people came to see a king who believed in the <span class="gloss" tabindex="0"><strong>divine right of kings</strong><button class="gloss-audio" onclick="speakGloss(event,'dih-VINE RITE uv KINGZ')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dih-VINE RITE uv KINGZ</span>The belief that a king's authority comes directly from God, so that he answers to God alone. <a class="om-maplink" href="#gloss-divine-right">See the glossary box.</a></span></span>, as Charles I had, and who might rule without Parliament as Louis XIV did across the Channel.</div></details><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE BABY AND THE INVITATION</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In June 1688 James's wife gave birth to a son. Now a Catholic boy stood ahead of his Protestant sisters. A rumor spread that the baby had been smuggled into the room in a warming pan. It was untrue, but it shows how frightened people were.</p>
+<p style="margin:0 0 14px;">Not everyone saw the baby as a Protestant threat. Some saw in him the rightful heir, and later his followers would be called Jacobites, from Jacobus, the Latin form of James. They would rise in rebellion in Scotland in 1715 and again in 1745.</p>
+<p style="margin:0 0 14px;">Within weeks, seven leading Englishmen sent a secret letter to William of Orange. William was the Dutch stadtholder and the great-grandson of William the Silent. He was married to Mary, James's Protestant daughter. He had his own reasons to say yes. Louis XIV threatened the Dutch Republic, and William wanted England as an ally rather than as a friend of France.</p>
+<p style="margin:0 0 14px;">The seven who signed the letter included nobles and a bishop. They told William that nineteen of every twenty Englishmen wanted a change and would welcome him if he came with an army. The figure was a guess, and a hopeful one. William needed little urging. The Dutch government gave him ships and money, because the Dutch feared an English king allied with Louis. William's printed declaration said that he came only to see that a free Parliament was called, and his banners carried a motto promising to maintain the liberties of England and the Protestant religion.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE PROTESTANT WIND</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In November 1688 William sailed with about 450 ships and 20,000 men, a fleet larger than the Spanish Armada. For days an east wind kept James's navy bottled up in port, and it carried William's fleet down the Channel. When the wind turned west, William landed at Torbay on November 5. People called it the Protestant wind.</p>
+<p style="margin:0 0 14px;">William had already tried to sail in October, and a storm drove his ships back to port. When he sailed again, the wind was in his favor. The English fleet lay at anchor at the mouth of the Thames, and the east wind that held it there carried the Dutch down the Channel, so close to the English coast that people on shore watched the ships pass. William landed on November 5, a date English Protestants already celebrated for the failure of the Gunpowder Plot.</p>
+<p style="margin:0 0 14px;">William marched slowly toward London. James had the larger army, but his officers began to desert him. One was John Churchill, the future Duke of Marlborough. Another was James's own daughter Anne. James lost heart and fled to France in December. Had the wind blown the other way, or had James stood and fought, England might have had another civil war. As it was, there was almost no fighting in England.</p>
+<p style="margin:0 0 14px;">William moved slowly and let events work for him. At Exeter he waited for English nobles to come over, and few did at first, until Churchill left James's camp on November 24 and Princess Anne left London two days later. James had repeated nosebleeds and was sick with worry, and he turned back from Salisbury without a battle. In December he tried to flee. Reports say he dropped the Great Seal, the instrument that made his orders law, into the Thames. Fishermen caught him and brought him back. A second time William's guards let him go, and this time he reached France.</p>
+<div class="optima-widget ow-scale" data-wid="w22-2-2" data-ra-skip><div class="widget-kicker">&#9889; HOW MUCH WAS CHANCE?</div><div class="widget-question">William landed in 1688 after an east wind kept James's navy in port, and James's officers began to desert him. How much did William's success depend on things outside his control?</div><div class="widget-row" data-correct="2,3" data-fb="Reasonable. The wind and the desertions mattered, alongside William&#x27;s own fleet." data-hint="Think about the wind, the officers who deserted, and James losing heart."><div class="widget-options"><button data-choice="0" data-fb="Look again. The lesson says that had the wind blown the other way, or had James stood and fought, England might have had another civil war.">Not at all</button><button data-choice="1" data-fb="Try higher. Look again at the wind, the officers who deserted, and James losing heart.">A little</button><button data-choice="2" data-fb="Reasonable. William had a large fleet and an invitation, but the wind and the desertions mattered too.">Somewhat</button><button data-choice="3" data-fb="Reasonable. An east wind held James&#x27;s navy in port, officers deserted, and James lost heart.">A great deal</button><button data-choice="4" data-fb="Close, but not completely. William sailed with about 450 ships and 20,000 men, and seven leading Englishmen had invited him.">Completely</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A NEW SETTLEMENT</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In early 1689 Parliament declared that James had abandoned the throne. It offered the crown to William and Mary together, on one condition. They had to accept a list of limits on royal power, which became the Bill of Rights. The king could not suspend laws or make them without Parliament. He could not tax without its consent, and he could not keep a standing army in peacetime unless Parliament agreed. Elections had to be free, and members of Parliament could speak freely in debate. Subjects had the right to petition the king, and cruel punishments were forbidden. Protestants could keep arms for their defense, and no Catholic could wear the crown.</p>
+<p style="margin:0 0 14px;">William made it plain that he would not be his wife's gentleman usher, and Mary would not rule without him, so they agreed to reign jointly, with the power in his hands. The Bill of Rights said what a king could not do, but a promise on paper was weak, as Charles I had shown with the Petition of Right. Parliament added a stronger tool. The Mutiny Act of 1689 allowed officers to punish soldiers for desertion and disobedience, and it expired after a year. Without a new act each year, the law could not hold an army together. A king who wanted an army had to call Parliament every year to ask for it.</p>
+<p style="margin:0 0 14px;">England had become a <span class="gloss" tabindex="0"><strong>constitutional monarchy</strong><button class="gloss-audio" onclick="speakGloss(event,'kon-stih-TOO-shun-ul MON-ar-kee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kon-stih-TOO-shun-ul MON-ar-kee</span>A government in which a king or queen reigns but must obey the laws and the limits of a constitution. <a class="om-maplink" href="#gloss-constitutional-monarchy">See the glossary box.</a></span></span>. The king was still powerful, but he now ruled under rules he did not control. In the same year the Toleration Act allowed Protestants who disagreed with the Church of England to hold their own services. Catholics were not included.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KING AND QUEEN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">William and Mary were an unusual pair. Mary was warm and popular and had been reluctant to take her father's throne. William was cold in public, asthmatic, and more interested in his war against Louis than in English politics. When Mary died of smallpox in 1694, he ruled alone. He died in 1702 after his horse stumbled in a molehill. Jacobites drank a toast to "the little gentleman in black velvet," the mole.</p>
+<p style="margin:0 0 14px;">William spent most summers across the Channel, commanding armies in the long war against Louis XIV. He lost more battles than he won, but he held his alliance together. English taxes paid for the campaigns, and not everyone was glad to see English money spent on a Dutch king's war. His closest friends were Dutchmen, such as Hans Willem Bentinck, whom he made Earl of Portland, and the English grumbled about foreigners at court.</p>
+<p style="margin:0 0 14px;">The throne passed to Mary's sister Anne. Anne had been pregnant at least seventeen times, and the one boy who survived infancy died in 1700 at the age of eleven. When none of her children lived, Parliament passed the Act of Settlement in 1701, which gave the crown to a Protestant German cousin, George of Hanover. In 1714 he became King George I. George spoke little English, and more than fifty relatives with a better claim by blood were passed over because they were Catholic. Parliament had chosen the king, which no one could have imagined in 1600.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">DUTCH GIFTS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">William brought more than a fleet. He brought Dutch ways of finance. In 1694 England chartered the Bank of England, and Parliament promised to repay the king's loans from taxes. Lenders trusted a Parliament more than a king, so England could borrow enormous sums. That power would help it fight Louis XIV for the next twenty years. The merchants of Amsterdam had taught Europe how credit worked, and England learned the lesson.</p>
+<p style="margin:0 0 14px;">Think about what a lender needed to know. A king might simply refuse to pay, as the kings of Spain had done more than once. A Parliament could pledge particular taxes to pay the interest, and it was the same Parliament that voted and collected them. The loans became a national debt, and the Bank of England, whose first loan to the government was 1.2 million pounds, managed the payments. Dutch investors soon bought English government debt, trusting it for the same reason they had trusted their own cities. In the wars that followed, England could borrow at lower interest than France, whose absolute king found it harder to persuade lenders.</p>
+<div class="optima-widget ow-seq" data-wid="w22-2-3" data-ra-skip data-n="5" data-fb="That is the order the lesson gives: 1660, 1685, 1688, 1689, and 1701." data-hint="Charles II comes first, and the Act of Settlement came only after William and Mary had held the throne."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Tap these events in the order they happened, earliest first.</div><div class="widget-options ow-seq-pool"><button data-pos="1">Charles II comes home to cheers</button><button data-pos="2">James II becomes king</button><button data-pos="3">William lands at Torbay</button><button data-pos="4">Parliament offers the crown to William and Mary, on condition that they accept the Bill of Rights</button><button data-pos="5">Parliament passes the Act of Settlement</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WAS IT GLORIOUS?</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Its defenders called it glorious because it protected Protestantism, limited the crown, and was nearly bloodless. But it was not welcomed everywhere. James fought on in Ireland until William beat him at the Boyne in 1690. In Scotland, the Jacobite cause kept its support in the Highlands, and a massacre at Glencoe in 1692 deepened the bitterness. In England, the vote remained limited to a small share of men.</p>
+<p style="margin:0 0 14px;">In Ireland, William came in person, and his army won at the river Boyne in July 1690. Protestants in Northern Ireland still celebrate the victory. For most Irish Catholics it meant that laws passed in the years that followed took away their land, their vote, and their right to hold office. In Scotland, the clans that had backed James were ordered to swear loyalty to William by the start of 1692. The chief of the MacDonalds of Glencoe was a few days late. Soldiers who had been staying with the clan as guests for nearly two weeks turned on their hosts one February morning and killed about forty people. An inquiry later blamed the king's Scottish ministers, but the killing shocked people across Britain. And in England itself, only a minority of men, and no women, could vote.</p>
+<p style="margin:0 0 14px;">Even so, the settlement worked. King, Lords, and Commons now balanced one another, much as Polybius had praised in Rome's mixed constitution. Visitors from other lands noticed, and so did Englishmen who had lived abroad. One was the philosopher John Locke, who came home from exile in the fleet that carried Princess Mary to England. Next week you will meet the thinkers who wrote about it.</p>
+</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; You have reached the end of this module's lessons. Open the short wrap-up survey that closes &ldquo;England: Crown and Parliament.&rdquo; Look for it in your Canvas course navigation.</div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">England: Crown and Parliament</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

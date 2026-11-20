@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Scramble for Africa and the Raj</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">Imperialism</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Scramble for Africa and the Raj</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Scramble for Africa and the Raj</div>
+        <div style="font-size: 16px; color: #666;">Imperialism</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;Imperialism.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how European powers divided Africa between 1880 and 1900.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how Britain came to rule India and how the Raj was governed.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate how technology, rivalry, and African and Indian choices shaped the outcome.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-imperialism" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>imperialism</strong><button class="gloss-audio" onclick="speakGloss(event,'im-PEER-ee-ul-iz-um')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">im-PEER-ee-ul-iz-um</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A policy of extending a nation's rule over other lands and peoples, by conquest or by pressure.</div>
+    </div><div id="gloss-protectorate" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>protectorate</strong><button class="gloss-audio" onclick="speakGloss(event,'pruh-TEK-ter-it')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">pruh-TEK-ter-it</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A land that keeps its own rulers on paper but is controlled in foreign affairs by a stronger nation.</div>
+    </div><div id="gloss-quinine" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>quinine</strong><button class="gloss-audio" onclick="speakGloss(event,'KWY-nyne')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KWY-nyne</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A medicine made from the bark of the cinchona tree, used to prevent and treat malaria.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1870 Europeans held only the edges of Africa. By 1914 they ruled almost all of it, and Britain governed an Indian empire of some three hundred million people. Today you will see how this happened so fast, and what each side did to shape it.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE NEW IMPERIALISM</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Europe had built empires before, in the Americas and in Asia. What happened after 1870 is often called the new <span class="gloss" tabindex="0"><strong>imperialism</strong><button class="gloss-audio" onclick="speakGloss(event,'im-PEER-ee-ul-iz-um')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">im-PEER-ee-ul-iz-um</span>A policy of extending a nation's rule over other lands and peoples, by conquest or by pressure. <a class="om-maplink" href="#gloss-imperialism">See the glossary box.</a></span></span>, because it was faster and reached farther. Three things made it possible. Steamships and the Suez Canal, opened in 1869, shortened voyages by thousands of miles. The telegraph let a government in London give orders overseas within hours, and a cable laid in 1870 tied London to India. And medicine and weapons changed the odds. Europeans who went inland had once died by the thousands of malaria, but <span class="gloss" tabindex="0"><strong>quinine</strong><button class="gloss-audio" onclick="speakGloss(event,'KWY-nyne')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KWY-nyne</span>A medicine made from the bark of the cinchona tree, used to prevent and treat malaria. <a class="om-maplink" href="#gloss-quinine">See the glossary box.</a></span></span> now protected them. In 1854 a steamer carried a party of Britons up the Niger River with a daily dose of quinine, and the party came back without a single death from fever. Breech-loading rifles and, from the 1880s, the Maxim machine gun gave small European forces great firepower. The poet Hilaire Belloc summed up the new balance in a verse of 1898: "Whatever happens, we have got / The Maxim gun, and they have not."</p>
+<p style="margin:0 0 14px;">Before the canal, a ship from London to Bombay had to sail around the Cape of Good Hope, a voyage of more than ten thousand miles. Through the canal the trip was about forty percent shorter. Steamers also needed coaling stations along the way, because a ship cannot burn what it does not carry, and so ports such as Malta, Aden, and Port Said became valuable for their own sake. A great power that wanted to move quickly needed friendly harbors every few days of steaming, and that fact pulled governments into places they had never cared about before.</p>
+<p style="margin:0 0 14px;">Motive mattered as well. Merchants wanted markets and raw materials. Governments wanted naval bases and prestige, especially after Germany and Italy appeared as new powers. Missionaries and humanitarians wanted to spread the Gospel and end the slave trade that still operated in East Africa. David Livingstone is often quoted as saying that Africa needed Christianity, commerce, and civilization together. In this week's discussion you will weigh which of these motives counted most. As you read, keep a list of the evidence for each.</p>
+<div class="optima-widget ow-reflect" data-wid="w30-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Europeans now had the means to go. But why go at all? Which motive would you have found hardest to wave away in 1880? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Trade was one reason. Keep it on your list of evidence for the discussion.">Merchants wanting markets and raw materials</button><button data-response="This grew stronger after Germany and Italy appeared as new powers.">Governments wanting naval bases and prestige</button><button data-response="Some of them wanted to spread the Gospel and to end the slave trade that still operated in East Africa.">Missionaries and humanitarians wanting to end the slave trade</button><button data-response="A fair answer. That is what the discussion is for, and the lesson asks you to keep a list of evidence for each motive.">I would need more evidence</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE SCRAMBLE FOR AFRICA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1870 most European posts in Africa were on the coast. The French held Algeria. Dutch-descended farmers, called Boers, and the British lived in the south. Then explorers such as David Livingstone and Henry Morton Stanley opened the interior to Europe's imagination. Stanley, a journalist, had found Livingstone in 1871 after the world had lost track of him, and he later followed the Congo River all the way to the sea. King Leopold II of Belgium, who had formed a private association that spoke of science and humanity, sent Stanley back to the Congo basin, and in 1884 Leopold claimed it through that association. The land was more than seventy times the size of Belgium, and it belonged to Leopold personally, not to the Belgian state.</p>
+<p style="margin:0 0 14px;">Stanley's agents made hundreds of treaties with local chiefs in the Congo basin, often in exchange for cloth and trinkets, and the chiefs who made their marks seldom understood that they were giving up their land. Powers used treaties like these to back their claims against one another, since a signed paper could be laid on a table in Europe where an African voice could not be heard.</p>
+<p style="margin:0 0 14px;">Fearing a quarrel, the great powers met in Berlin in 1884 and 1885 at the invitation of Bismarck. No Africans took part. The conference decided that a power could claim land if it truly occupied it, and it recognized Leopold's Congo Free State. After that, the rush was on. Within twenty years the powers, following lines drawn on maps in Europe, had divided the continent. Germany claimed Togo, Cameroon, South-West Africa, and East Africa, Portugal held Angola and Mozambique, and Italy took parts of the Horn of Africa. These lines often cut across peoples and joined enemies in a single colony.</p>
+<p style="margin:0 0 14px;">Leopold's rule in the Congo was especially harsh. Agents forced villagers to collect rubber under threat of violence. Soldiers took women and children hostage until the quota was met, and sometimes cut off hands to prove that bullets had not been wasted. Millions of Congolese died in these years, from violence, hunger, and disease, and no one knows the exact number. Reports by missionaries and a British shipping clerk, Edmund Morel, produced a public outcry. Morel noticed that ships from the Congo reached Antwerp loaded with rubber, while the ships going out carried soldiers and guns instead of trade goods, and he saw what that meant. A British consul, Roger Casement, confirmed the abuses in a report in 1904. In 1908 the Belgian government took the Congo from the king.</p>
+<p style="margin:0 0 14px;">Photographs mattered as much as words. A missionary, Alice Seeley Harris, took pictures of Congolese children whose hands had been cut off, and the reformers used them in lantern-slide lectures in Britain and the United States. Mark Twain wrote a bitter pamphlet in 1905 in the voice of Leopold himself. Opinion at home, stirred by a few witnesses, did what no European government had done on its own.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">AFRICAN RESISTANCE AND BRITISH AMBITION</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Africans did not simply give way. At Isandlwana in 1879 a Zulu army wiped out a British column, though the British won the war that year. That same night about a hundred and fifty British soldiers held a mission station at Rorke's Drift against thousands of Zulus. In Sudan, a religious leader called the Mahdi overthrew Egyptian rule and killed General Charles Gordon at Khartoum in 1885. A relief force reached Khartoum only two days too late. Britain avenged him in 1898, when Lord Kitchener's army, using Maxim guns, destroyed the Mahdist army at Omdurman while losing few men. About eleven thousand Sudanese were killed, and fewer than fifty of Kitchener's soldiers. Soon afterward, a French expedition that had crossed Africa from the Atlantic reached the Nile at Fashoda, and Britain and France came close to war before France backed down.</p>
+<p style="margin:0 0 14px;">Britain had occupied Egypt in 1882 to protect the Suez Canal, making Egypt a <span class="gloss" tabindex="0"><strong>protectorate</strong><button class="gloss-audio" onclick="speakGloss(event,'pruh-TEK-ter-it')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">pruh-TEK-ter-it</span>A land that keeps its own rulers on paper but is controlled in foreign affairs by a stronger nation. <a class="om-maplink" href="#gloss-protectorate">See the glossary box.</a></span></span> in everything but name, and it stayed for decades. In the south, Cecil Rhodes, who had made a fortune in diamonds, dreamed of a railway from the Cape to Cairo. His agents pushed north, and a quarrel over the gold of the Transvaal led to the Boer War of 1899 to 1902, which Britain won only at great cost. Britain sent some 450,000 soldiers against Boer farmers who struck and rode away, and to break them it burned farms and herded families into camps, where thousands of women and children died of disease. The most striking African success was Ethiopia. Its emperor, Menelik II, bought modern rifles and trained his army, and in 1896 he crushed an Italian invasion at Adwa. Ethiopia and Liberia were the only African lands to keep their independence.</p>
+<p style="margin:0 0 14px;">Menelik won because he planned. He had help from his wife, Empress Taytu, who rallied the troops, and he gathered an army many times the size of the Italian force and let hunger and the mountain roads wear the Italians down before the fighting started. At Adwa on March 1, 1896, the Italian columns lost touch with one another in rough country, and Menelik's men overwhelmed them. Italy made peace and recognized Ethiopia's independence.</p>
+<p style="margin:0 0 14px;">Not every African ruler chose to fight. Some signed treaties, hoping to use European help against their rivals, and some, such as the kings of Buganda, played one European power against another. Others, like Samori Touré in West Africa, fought the French for about sixteen years before he was captured in 1898. Many Africans served the new governments as soldiers, clerks, interpreters, and guides, and Africans did most of the actual work of building the roads and railways. Colonial governments also taxed families in cash, which pushed men to take wage work on plantations, in mines, and on the railways.</p>
+<div class="ow-group" data-wid="w30-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What happened at Isandlwana in 1879?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A Zulu army wiped out a British column, though the British won the war that year.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Fashoda, 1898<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A French expedition reached the Nile there soon after Omdurman. Britain and France came close to war before France backed down.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did some African rulers sign treaties with Europeans?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">They hoped to use European help against their rivals. Some, such as the kings of Buganda, played one European power against another.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Two foreign-language terms appear in the next section. Here is how to say them and what they mean.</p><div id="gloss-raj" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Raj</strong><button class="gloss-audio" onclick="speakGloss(event,'RAHJ')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">RAHJ</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Hindi word meaning "rule." It names the period of direct British government in India, from 1858 to 1947.</div>
+    </div><div id="gloss-sepoy" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>sepoy</strong><button class="gloss-audio" onclick="speakGloss(event,'SEE-poy')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">SEE-poy</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A word from the Persian and Urdu languages for an Indian soldier serving in a European-led army.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">FROM COMPANY TO CROWN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">India's story is older. The British East India Company, a trading firm with its own army, came to dominate Bengal after Robert Clive's victory at Plassey in 1757. Clive had about three thousand men against a far larger army, but the Nawab's own commander, Mir Jafar, had secretly agreed to hold back his troops. In 1765 the Mughal emperor granted the Company the right to collect taxes in Bengal, and a trading firm became a government. Over the next century it took more territory, partly by war and partly by treaty with Indian princes who were often at odds with one another. It fought wars against Mysore, the Marathas, and the Sikhs. Under a policy called the doctrine of lapse, a state whose ruler left no natural son could be annexed. Most of its soldiers were Indians, called <span class="gloss" tabindex="0"><em>sepoys</em><button class="gloss-audio" onclick="speakGloss(event,'SEE-poy')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEE-poy</span>A word from the Persian and Urdu languages for an Indian soldier serving in a European-led army. <a class="om-maplink" href="#gloss-sepoy">See the glossary box.</a></span></span>, commanded by British officers.</p>
+<p style="margin:0 0 14px;">The Company paid for much of its rule with taxes, but it also made money from trade. It grew opium in Bengal and sold it through private merchants to China, where the drug was illegal, and it used the silver that came back to buy tea for the British market. China's attempt to stop the trade led to the Opium War of 1839, which you will meet in the next lesson.</p>
+<p style="margin:0 0 14px;">In 1857 many sepoys in northern India rose in revolt. A rumor spread that new rifle cartridges were greased with cow and pig fat, an insult to Hindus and Muslims alike. At Meerut in May, sepoys who refused the cartridges were jailed in irons, and their comrades freed them the next day and marched to Delhi, where they proclaimed the aged Mughal emperor their leader. But the real causes ran deeper: resentment at the annexation of Indian states, fear for religion and custom, and anger at British officers. The rebels seized Delhi and Lucknow. Among their leaders was Lakshmibai, the queen of Jhansi, whose state had been taken under the doctrine of lapse. After more than a year of bitter fighting, the British won, helped by Indian troops from the Punjab who stayed loyal. Parliament abolished the Company in 1858 and put India under the Crown. The Queen's proclamation promised not to interfere with Indians' religion and to treat all her subjects equally under the law. This was the <span class="gloss" tabindex="0"><em>Raj</em><button class="gloss-audio" onclick="speakGloss(event,'RAHJ')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAHJ</span>A Hindi word meaning "rule." It names the period of direct British government in India, from 1858 to 1947. <a class="om-maplink" href="#gloss-raj">See the glossary box.</a></span></span>, and in 1877 Queen Victoria was proclaimed Empress of India.</p>
+<p style="margin:0 0 14px;">Atrocities were committed on both sides. At Cawnpore rebels killed hundreds of British women and children who had been promised safe passage, and the British took a terrible revenge on rebels and on many who had taken no part. Even the name of the war is argued over. The British called it the Mutiny. Many Indians call it the First War of Independence, and the truth lay between the names, since it was a revolt of soldiers and also of peasants, princes, and townspeople who wanted different things.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">RULING INDIA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">A viceroy in Calcutta, answering to London, led the government. A small Indian Civil Service of a few thousand Britons ran the districts, aided by a large Indian staff and by an army of Indians. Its entrance examination was held in London, which made it hard for Indians to enter, and the first Indian passed it in 1864. About a third of India was ruled indirectly through hundreds of princes. The British built railways, irrigation canals, telegraph lines, schools, and courts. Thousands of Indians studied English and the law, and some of them began to ask why Britons spoke so well of liberty yet kept it from India. In 1885 educated Indians, helped by a retired British official, Allan Octavian Hume, founded the Indian National Congress, which at first asked only for a greater share in the government.</p>
+<div class="optima-widget ow-select" data-wid="w30-1-3" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; INDIA</div><div class="widget-question">Check how Britain came to rule India.</div><div class="widget-row" data-correct="0" data-fb="The Company came to dominate Bengal after Plassey in 1757 and took more territory partly by war and partly by treaty with Indian princes. Most of its soldiers were Indians under British officers." data-hint="The Company was a trading firm with an army of its own."><div class="widget-row-prompt">1. How did the British East India Company come to control much of India?</div><div class="widget-options"><button data-choice="0">By war and treaties, with an army of Indian soldiers under British officers</button><button data-choice="1">By orders sent from Parliament and the Crown from the start</button><button data-choice="2">By gifts to the princes, which bought their loyalty without any fighting</button><button data-choice="3">By the telegraph, which let London rule Bengal within hours</button></div></div><div class="widget-row" data-correct="2" data-fb="The rumor was that new rifle cartridges were greased with cow and pig fat, an insult to Hindus and Muslims alike. The lesson says the real causes ran deeper." data-hint="Think about what would offend Hindus and Muslims at once."><div class="widget-row-prompt">2. What rumor helped set off the revolt of 1857?</div><div class="widget-options"><button data-choice="0">That the British planned to tax every village</button><button data-choice="1">That railways would carry soldiers into every temple</button><button data-choice="2">That new rifle cartridges were greased with cow and pig fat</button><button data-choice="3">That the Company would end the rule of every prince</button></div></div><div class="widget-row" data-correct="3" data-fb="Educated Indians founded the Congress in 1885, and at first it asked only for a greater share in the government." data-hint="It began as a request, not a demand to rule."><div class="widget-row-prompt">3. What did the Indian National Congress ask for when it was founded in 1885?</div><div class="widget-options"><button data-choice="0">Immediate independence from Britain</button><button data-choice="1">An end to the new railways and telegraphs</button><button data-choice="2">The return of the old Company&#x27;s rule</button><button data-choice="3">A greater share in the government</button></div></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Yet the Raj also faced hard limits. Famines in the 1870s and 1890s killed millions, and the government's relief was slow and arguable. Famine struck southern India in the very years Queen Victoria was proclaimed empress. A commission in 1880 drew up rules for relief, but the famines of the 1890s still killed millions. Indian cotton makers suffered from cheap factory cloth shipped from Lancashire. The railways were built with British money on which the government guaranteed a profit, paid out of Indian taxes. The Indian economist and Congress leader Dadabhai Naoroji argued that Britain was draining India of wealth through such payments and through the salaries and pensions of its officials. Britons answered that the railways, courts, and order were worth the price. Still, the Raj kept order in a land that had often known disorder, and it ruled with remarkably few British officials. By 1900 India had more than twenty-five thousand miles of railway, and Indian soldiers and Indian money also served Britain's wars in Asia and Africa. Whether that was a help or a harm to India, its people debated for generations. In the next lesson you will see how two ancient Asian civilizations met the same forces, and why they met them so differently.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Imperialism</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: Coal, Iron, and Cotton: Britain Industrializes</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Industrial Revolution</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">Coal, Iron, and Cotton: Britain Industrializes</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">Coal, Iron, and Cotton: Britain Industrializes</div>
+        <div style="font-size: 16px; color: #666;">The Industrial Revolution</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;The Industrial Revolution.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe the machines and materials that drove Britain's industrial growth.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain why industrialization began in Britain rather than elsewhere.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate how prices, laws, and the choices of individual inventors each shaped the outcome.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-capital" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>capital</strong><button class="gloss-audio" onclick="speakGloss(event,'KAP-ih-tul')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KAP-ih-tul</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Money, tools, and buildings that are used to produce more wealth rather than spent right away.</div>
+    </div><div id="gloss-enclosure" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>enclosure</strong><button class="gloss-audio" onclick="speakGloss(event,'en-KLOH-zher')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">en-KLOH-zher</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The fencing off of shared farmland and pasture so that it became the private property of one owner.</div>
+    </div><div id="gloss-factory-system" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>factory system</strong><button class="gloss-audio" onclick="speakGloss(event,'FAK-tuh-ree SIS-tum')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">FAK-tuh-ree SIS-tum</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A way of making goods in which many workers come to one building and work with power-driven machines under a manager.</div>
+    </div><div id="gloss-textile" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>textile</strong><button class="gloss-audio" onclick="speakGloss(event,'TEK-styl')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">TEK-styl</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Cloth, or the fibers such as wool and cotton from which cloth is made.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1750 Britain was a farming country with a few busy ports. A century later it was the workshop of the world. Today you will see how coal, iron, and cotton changed the way people made things, and why that change began on one rainy island and not somewhere else.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">AN ISLAND WITH COAL</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">For most of history, people made goods by hand, in homes and small shops, with muscle, wood, wind, and running water. In the English countryside much of the cloth was made under what was called the putting-out system. A merchant delivered wool to a cottage, the family spun and wove it by their own fireside, and the merchant came back to collect the cloth and pay by the piece. Because every family worked at its own pace and the merchant could not watch them, the cloth was uneven in quality and often arrived late. By the 1700s Britain was running short of wood, but it had plenty of coal. Coal lay close to the surface and close to the sea, and ships carried it from Newcastle to London in great numbers, where it warmed the fireplaces of the city. It was cheap. Wages, meanwhile, were fairly high for a European country.</p>
+<p style="margin:0 0 14px;">Coal was already at work long before any engine. It heated homes, breweries, glassworks, and brickworks, so Britain had miners, shipowners, and merchants who knew how to dig it and move it. There was a catch. The shallow seams near the surface were the first to be worked out, and the miners had to follow the coal deeper, where water seeped into the shafts faster than buckets and horse-driven pumps could carry it out. A country that digs deeper for fuel has a reason to want a better pump.</p>
+<p style="margin:0 0 14px;">Think about what that combination meant for a business owner. When workers are costly and fuel is cheap, a machine that saves labor and burns coal is a good bargain. Picture a mill owner deciding whether to buy a new machine. If the machine cost a great deal but did the work of ten workers who each earned a good wage, it paid for itself quickly. In a country where labor was cheap and fuel was dear, the same machine might never have been worth building. Nobody planned an industrial revolution. Thousands of people simply answered the prices and chances in front of them, and the answers added up to something new.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WHY BRITAIN?</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Coal alone was not enough, since other countries had coal too. Britain also had a settled government. After 1688 Parliament and the courts protected property, so an investor could expect to keep what he earned. The law protected ideas as well. An inventor could patent a new machine and hold the sole right to sell it for fourteen years, which made the long labor of invention worth the risk. There were no tolls or tariffs between English towns, and rivers, the coast, and new canals made it cheap to move heavy goods. In France, by contrast, goods paid duties each time they crossed from one province to another until the Revolution swept the barriers away. The Bridgewater Canal, opened in 1761, ran from the Duke of Bridgewater's coal mines at Worsley to Manchester, and it cut the price of coal in Manchester almost in half. A single horse on a towpath could draw a barge carrying many times the load it could pull in a wagon.</p>
+<p style="margin:0 0 14px;">Merchants and landowners had savings, and banks put that <span class="gloss" tabindex="0"><strong>capital</strong><button class="gloss-audio" onclick="speakGloss(event,'KAP-ih-tul')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAP-ih-tul</span>Money, tools, and buildings that are used to produce more wealth rather than spent right away. <a class="om-maplink" href="#gloss-capital">See the glossary box.</a></span></span> to work. Landlords had carried out <span class="gloss" tabindex="0"><strong>enclosure</strong><button class="gloss-audio" onclick="speakGloss(event,'en-KLOH-zher')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">en-KLOH-zher</span>The fencing off of shared farmland and pasture so that it became the private property of one owner. <a class="om-maplink" href="#gloss-enclosure">See the glossary box.</a></span></span>, fencing common fields into larger farms that produced more food with fewer hands. Some of the families who no longer had farm work moved to towns. Britain also had a large navy and an overseas empire, which gave its merchants markets and supplies of raw material. And it had a great many skilled craftsmen: clockmakers, mill builders, instrument makers, and blacksmiths who liked to tinker and improve. Many of the inventors in this lesson were not scholars. Thomas Newcomen was an ironmonger. James Hargreaves was a weaver, and Richard Arkwright began as a barber and wig-maker. They were practical men who knew a problem because they worked beside it. Many of them also swapped ideas in clubs. In Birmingham, Matthew Boulton and James Watt belonged to the Lunar Society, which met on the night of the full moon so that members could find their way home. Its members included the chemist Joseph Priestley and the potter Josiah Wedgwood.</p>
+<div class="optima-widget ow-reflect" data-wid="w28-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Britain had cheap coal, high wages, steady laws, canals, savings, and skilled craftsmen. If you were an investor in 1750, which would you have trusted most? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Both were real advantages for Britain. The lesson asks you to think about what they meant together for a business owner, and it says nobody planned the result.">Cheap coal and high wages</button><button data-response="After 1688 Parliament and the courts protected property, so an investor could expect to keep what he earned.">Laws that protected property</button><button data-response="The Bridgewater Canal, opened in 1761, cut the price of coal in Manchester almost in half.">Canals and cheap carrying</button><button data-response="Clockmakers, mill builders, and blacksmiths who liked to improve things mattered too. And none of these advantages made the outcome certain.">Skilled craftsmen who liked to tinker</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Religion played a part too. Many of the early ironmasters, bankers, and manufacturers were Dissenters, Protestants outside the Church of England, such as the Quaker family of Abraham Darby. The law kept Dissenters out of the universities and out of public office. Shut out of those careers, they put their energy into trade, schooling, and invention, and they trusted one another with money because they knew each other from the meeting house.</p>
+<p style="margin:0 0 14px;">None of this made the outcome certain. A different civil war, a ruined government, or a few inventors who gave up might have sent the island in another direction. Industrialization began in Britain because many separate things happened to be true there at once, and because particular people seized the chance.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE STEAM ENGINE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Coal mines had a constant problem: water seeped in and flooded the shafts. In 1712 Thomas Newcomen built an engine that used steam to pump water out. It swallowed huge amounts of coal, but that hardly mattered at a coal mine, where fuel was nearly free. Anywhere else, coal had to be hauled in by cart, and the engine cost too much to run. So it stayed at the mines, and for half a century nobody did much better.</p>
+<p style="margin:0 0 14px;">Newcomen's engine worked by a simple trick. Steam was let into a cylinder under a piston, and then a spray of cold water turned the steam back into water. The steam took up far more room than the water, so its disappearance left a partial vacuum, and the weight of the air outside pushed the piston down. A great wooden beam, rocking like a seesaw, carried that push to the pump rods in the shaft. The engine did not push with steam at all. It pulled with the air, and then it had to be heated all over again for the next stroke.</p>
+<p style="margin:0 0 14px;">James Watt, a Scottish instrument maker, was asked to repair a small model of a Newcomen engine. He saw how much heat was wasted by heating and cooling the same cylinder over and over. By his own later account, the idea of a separate chamber for the steam to cool in came to him on a walk in 1765. In 1769 he patented a separate condenser that fixed the problem and used far less coal. Watt was no businessman, and he nearly gave up. Matthew Boulton, a Birmingham manufacturer, provided the money and the workshop, and in 1775 the two became partners. Parliament extended Watt's patent that year, which gave the partners time to earn back what they had spent. They did not simply sell an engine. They charged the owner about a third of the value of the coal it saved over a Newcomen engine, a price that made sense to a mine owner who counted his coal. The engines also needed cylinders bored round and true, and the ironmaster John Wilkinson had a machine that could do it. Within a few years their engines could turn a wheel, not just pump a shaft. For the first time, a factory did not have to sit beside a fast river. It could stand anywhere a cart of coal could reach.</p>
+<div class="ow-group" data-wid="w28-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What problem did James Watt see in the Newcomen engine?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Heating and cooling the same cylinder over and over wasted heat. His separate condenser fixed that and used far less coal.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did Watt need Matthew Boulton?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Watt was no businessman and nearly gave up. Boulton, a Birmingham manufacturer, provided the money and the workshop, and they became partners in 1775.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did the Newcomen engine suit a coal mine?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">It used steam to pump water out of flooded shafts. It swallowed huge amounts of coal, but that hardly mattered at a coal mine, where fuel was nearly free.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE COTTON REVOLUTION</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The first great change came in <span class="gloss" tabindex="0"><strong>textiles</strong><button class="gloss-audio" onclick="speakGloss(event,'TEK-styl')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TEK-styl</span>Cloth, or the fibers such as wool and cotton from which cloth is made. <a class="om-maplink" href="#gloss-textile">See the glossary box.</a></span></span>. Wool was Britain's old trade. Cotton was a newcomer, first imported from India and later grown in the West Indies and the American South by enslaved workers. A spinner at a wheel made one thread at a time, and weavers often stood idle waiting for yarn. John Kay's flying shuttle of 1733 had made weaving faster, and so made the shortage of yarn worse. Inventors attacked that bottleneck. James Hargreaves built the spinning jenny around 1764, which let one worker spin many threads at once. Spinners who feared for their living broke into his house and smashed his machines. Richard Arkwright's water frame of 1769 made strong thread by water power, and in 1771 he opened a large mill at Cromford that ran day and night with shifts of workers. A water frame needed a fast stream, so the early mills stood in river valleys, and Arkwright built houses for his workers beside his mill. The courts later canceled his patents, and rivals copied his methods freely, so mills of his kind spread quickly.</p>
+<p style="margin:0 0 14px;">The jenny was simple enough that a family could build one at home. It had a row of spindles turned by one wheel, and the first machines spun eight threads at once, where a spinner at a wheel made one. Later models ran many times that number. The thread from the jenny was weak, though, and it was good only for the crosswise threads of the cloth. Arkwright's frame made the strong threads, and a damp climate helped, because the cotton fibers snapped less often in the moist air of Lancashire than in dry air.</p>
+<p style="margin:0 0 14px;">Samuel Crompton's mule, in 1779, made thread that was both fine and strong, though he was too poor to patent it and others made the money. Edmund Cartwright's power loom, patented in 1785, mechanized the weaving as well. It spread slowly, and for decades handloom weavers outnumbered the machines.</p>
+<p style="margin:0 0 14px;">The price of cotton cloth fell, and British cloth began to sell everywhere, even in India, which had once sold fine cotton to Britain. Raw cotton poured in, and after Eli Whitney's gin of 1793 made American short-staple cotton cheap to clean, the American South became Britain's main supplier. The gin made enslaved labor on cotton land more profitable than before, and slavery in the American South grew along with the British mills. Lancashire became the center of the trade, and the town of Manchester grew from about 70,000 people in 1800 to more than 300,000 by 1850.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">IRON AND RAILS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Machines needed iron, and iron needed fuel. Smelters had burned charcoal, which meant cutting forests. In 1709 Abraham Darby at Coalbrookdale learned to smelt iron with coke, a fuel baked from coal. In the 1780s Henry Cort's puddling process made tough wrought iron in large amounts. Workers stirred the molten iron with long rods in a furnace until the carbon burned out, leaving metal that could be hammered and rolled instead of cracking. Iron went into engines, tools, ships, and the world's first iron bridge, built over the Severn in 1779 by Darby's grandson. Britain's output of pig iron rose from under 20,000 tons a year in 1740 to more than two million tons by 1850.</p>
+<p style="margin:0 0 14px;">Then came the railway. Watt had distrusted steam at high pressure, which seemed likely to burst a boiler. When his patent ran out in 1800, younger engineers tried it anyway, and in 1804 Richard Trevithick ran a steam locomotive on rails in Wales. George Stephenson made the idea work as a business. Several builders entered a trial at Rainhill in 1829, and his locomotive, the Rocket, was the only one to finish the course, reaching about thirty miles an hour. Its boiler carried hot gases through many small tubes running through the water, which raised steam quickly. In 1830 the Liverpool and Manchester Railway opened, and carried passengers and cotton at speeds no horse could match. On opening day a member of Parliament, William Huskisson, stepped onto the track to greet the Duke of Wellington, was struck by the Rocket, and died that night. A trip that once took a day by coach took a couple of hours. Railways even changed how towns told time. Each town had kept its own local clock, but a timetable needed one time for the whole line, and by the 1840s railway time was spreading across Britain. Within twenty years, more than six thousand miles of track crossed Britain.</p>
+<div class="optima-widget ow-select" data-wid="w28-1-3" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; FROM COTTON TO RAILS</div><div class="widget-question">Check what drove each change.</div><div class="widget-row" data-correct="3" data-fb="After the gin made American short-staple cotton cheap to clean, the American South became Britain&#x27;s main supplier of raw cotton." data-hint="Think about where Lancashire&#x27;s raw cotton came from."><div class="widget-row-prompt">1. What did Eli Whitney's cotton gin of 1793 change?</div><div class="widget-options"><button data-choice="0">It let Indian weavers sell more cloth to Britain</button><button data-choice="1">It let Lancashire&#x27;s mills run on steam instead of water</button><button data-choice="2">It let one spinner make many threads at once</button><button data-choice="3">It made American cotton cheap to clean, so the South became Britain&#x27;s main supplier</button></div></div><div class="widget-row" data-correct="1" data-fb="Smelters had burned charcoal, which meant cutting forests. Coke, baked from coal, gave them another fuel." data-hint="Machines needed iron, and iron needed fuel. Which fuel was the problem?"><div class="widget-row-prompt">2. Why did Abraham Darby's use of coke matter for iron?</div><div class="widget-options"><button data-choice="0">It made iron cheap enough to sell in India.</button><button data-choice="1">It let smelters stop burning charcoal, and so stop cutting forests.</button><button data-choice="2">It let the Rocket pull heavier loads.</button><button data-choice="3">It removed the need for coal mines.</button></div></div><div class="widget-row" data-correct="2" data-fb="The line carried passengers and cotton at speeds no horse could match." data-hint="Think about what the line carried and how fast."><div class="widget-row-prompt">3. What did the Liverpool and Manchester Railway show in 1830?</div><div class="widget-options"><button data-choice="0">Coaches were still faster over short trips.</button><button data-choice="1">Only passengers, not goods, could use the new line.</button><button data-choice="2">It could carry passengers and cotton faster than any horse.</button><button data-choice="3">It was built mainly to carry coal to the mines.</button></div></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Railways also drew crowds of investors. In the 1840s so many companies were formed to build lines that the years around 1845 were called the Railway Mania. Shares rose, and ordinary families put their savings into them. Many of the lines were never built, and many investors lost money when prices fell. But the lines that were built left Britain with a network that carried coal, cotton, and mail across the island, and the failures had paid for much of it.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE FACTORY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">These changes produced the <span class="gloss" tabindex="0"><strong>factory system</strong><button class="gloss-audio" onclick="speakGloss(event,'FAK-tuh-ree SIS-tum')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FAK-tuh-ree SIS-tum</span>A way of making goods in which many workers come to one building and work with power-driven machines under a manager. <a class="om-maplink" href="#gloss-factory-system">See the glossary box.</a></span></span>. In the old way, work went to the worker's cottage. Now the worker went to the machine. The machine set the pace, a bell marked the hours, and an overseer watched the floor. Workdays of twelve hours or more were common. Another idea shaped the new mills: breaking a job into small steps, so that each worker did one task over and over and became fast at it. A mill was a workshop run on that idea on a grand scale. In the next lesson you will meet the writer who made the idea famous. Owners who raised the money to build the mills and buy the engines were called capitalists, and they took the profit and the risk.</p>
+<p style="margin:0 0 14px;">By 1850 Britain made about half the world's iron and a large share of its cloth. Its population had also grown fast, and the towns around the mills and mines drew people from every corner of the island and from Ireland. By 1851 more than half of all Britons lived in towns, the first large country where that was true. Ordinary people could buy cheap shirts and cheap pots that their grandparents could not have afforded. But a new kind of life had begun, in which hundreds of families lived in crowded towns and depended on a wage. How did that new life feel to those who lived it? In the next lesson you will hear from some who lived it and from some who tried to change it.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The Industrial Revolution</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

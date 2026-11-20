@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Sun King: Versailles and the Taming of the Nobles</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">Louis XIV and Absolute Monarchy</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Sun King: Versailles and the Taming of the Nobles</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Sun King: Versailles and the Taming of the Nobles</div>
+        <div style="font-size: 16px; color: #666;">Louis XIV and Absolute Monarchy</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;Louis XIV and Absolute Monarchy.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how Louis XIV centralized power after the Fronde.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how life at Versailles bound the nobles to the king.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate how absolute Louis's monarchy really was.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-absolute-monarchy" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>absolute monarchy</strong><button class="gloss-audio" onclick="speakGloss(event,'AB-suh-loot MON-ar-kee')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">AB-suh-loot MON-ar-kee</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A government in which a king holds final authority and no council, court, or parliament can override him.</div>
+    </div><div id="gloss-courtier" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>courtier</strong><button class="gloss-audio" onclick="speakGloss(event,'KOR-tee-er')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KOR-tee-er</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A person who attends a king's court, often seeking favors or position.</div>
+    </div><div id="gloss-mercantilism" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>mercantilism</strong><button class="gloss-audio" onclick="speakGloss(event,'MER-kun-til-iz-um')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">MER-kun-til-iz-um</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The belief that a nation grows rich by selling more to other countries than it buys, and that the government should guide trade to achieve this.</div>
+    </div><div id="gloss-standing-army" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>standing army</strong><button class="gloss-audio" onclick="speakGloss(event,'STAN-ding AR-mee')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">STAN-ding AR-mee</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A permanent professional army that is kept in being during peacetime as well as war.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis XIV ruled France for seventy-two years and built a palace that was also a political machine. Today you will see how he turned proud, rebellious nobles into courtiers, and what that cost.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A BOY WHO WATCHED PARIS RISE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis XIV was born in 1638 and became king at the age of four. His mother, Queen Anne, ruled for him, and the man who did the daily work of government was a churchman, Cardinal Mazarin. Mazarin was clever and unpopular. He had been born in Italy, so he was a foreigner to the French lords who had to take his orders. France was also at war with Spain, and the war grew more expensive every year. Mazarin's answer was higher taxes.</p>
+<p style="margin:0 0 14px;">In 1648 judges, nobles, and city mobs rose against his taxes in a series of revolts called the <span class="gloss" tabindex="0"><em>Fronde</em><button class="gloss-audio" onclick="speakGloss(event,'FROHND')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FROHND</span>A French word for a child's slingshot. It names the revolts against the crown from 1648 to 1653. <a class="om-maplink" href="#gloss-fronde">See the glossary box.</a></span></span>. A fronde was a child's slingshot, and the name mocked the rebels. The trouble began in a law court. The high court of Paris, a body of judges and not a lawmaking assembly like Congress, refused to approve some of the new taxes. When Mazarin had a popular judge arrested that August, the city answered by throwing barricades across its streets.</p>
+<p style="margin:0 0 14px;">Then came a night in January 1649. Louis was ten. His mother woke him in the dark, and the royal family slipped away from Paris, the boy king shivering in the cold. They fled to a palace at Saint-Germain, west of the city. It was so poorly furnished that, by some accounts, the king slept on straw.</p>
+<p style="margin:0 0 14px;">The revolts dragged on until 1653. Early in 1651, with Paris restless again, a rumor spread that the queen meant to carry the king off once more. A crowd came to the palace and demanded to see the boy with their own eyes. The guards let them in. A lady of the queen's household wrote later that Louis lay in bed pretending to sleep while the people filed silently past. He was twelve.</p>
+<p style="margin:0 0 14px;">Louis never forgot it. He learned that rebellious nobles and an angry capital could be deadly. Mazarin died in March 1661, and every ambitious man at court began doing sums, because someone would surely take the cardinal's place. The king was only twenty-two. Most people thought of him as a young man who liked dancing and hunting. Within a day he called his ministers together and shocked them. He announced that he would rule himself and name no chief minister. He kept that promise for fifty-four years.</p>
+<p style="margin:0 0 14px;">He filled his council with men from lawyer and merchant families, who owed everything to him. The great princes he kept out of the small inner council where the real decisions were made.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Two foreign-language terms appear in this lesson. Here is how to say them and what they mean.</p><div id="gloss-fronde" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Fronde</strong><button class="gloss-audio" onclick="speakGloss(event,'FROHND')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">FROHND</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French word for a child's slingshot. It names the revolts against the crown from 1648 to 1653.</div>
+    </div><div id="gloss-intendant" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>intendant</strong><button class="gloss-audio" onclick="speakGloss(event,'an-tahn-DAHN')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">an-tahn-DAHN</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French word for a royal official sent to govern a region in the king's name.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE SUPERINTENDENT'S PARTY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">That same summer, the king's finance chief, Nicolas Fouquet, invited him to dinner. Fouquet had grown rich managing money under Mazarin, and he had spent a good deal of it on a country house, Vaux-le-Vicomte, with gardens that were the talk of France. On the evening of August 17 he fed the king and the court on dishes of gold, or so the story has been told ever since. He staged a new play by Molière, and he ended the night with fireworks.</p>
+<p style="margin:0 0 14px;">Louis watched all of it. Less than three weeks later the captain of his musketeers, d'Artagnan, arrested Fouquet. Behind the arrest stood Jean-Baptiste Colbert, an official who had served Mazarin and had been quietly gathering evidence of Fouquet's money dealings. A court tried Fouquet for years. When it sentenced him to exile, the king made the punishment harsher: life in prison. Fouquet died in a fortress in 1680.</p>
+<p style="margin:0 0 14px;">Louis then took the three artists who had built Fouquet's glory, the architect Le Vau, the painter Le Brun, and the gardener Le Nôtre, and set them to work on his own father's hunting lodge.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE SUN KING</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis chose the sun as his emblem, since everything in the kingdom revolved around him. He believed in <span class="gloss" tabindex="0"><strong>absolute monarchy</strong><button class="gloss-audio" onclick="speakGloss(event,'AB-suh-loot MON-ar-kee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AB-suh-loot MON-ar-kee</span>A government in which a king holds final authority and no council, court, or parliament can override him. <a class="om-maplink" href="#gloss-absolute-monarchy">See the glossary box.</a></span></span>, in which the king held the final word and answered to God alone. Louis worked for hours each day, reading reports and signing orders.</p>
+<p style="margin:0 0 14px;">His finance minister, Colbert, put <span class="gloss" tabindex="0"><strong>mercantilism</strong><button class="gloss-audio" onclick="speakGloss(event,'MER-kun-til-iz-um')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MER-kun-til-iz-um</span>The belief that a nation grows rich by selling more to other countries than it buys, and that the government should guide trade to achieve this. <a class="om-maplink" href="#gloss-mercantilism">See the glossary box.</a></span></span> into practice. The idea was simple. A country had only so much gold and silver. Each time French buyers bought Dutch cloth or Venetian glass, coins flowed out of France. Colbert wanted France to make such goods itself and to sell abroad more than it bought. So he taxed foreign goods heavily, built state workshops for tapestries and glass, expanded the navy, and dug the great Canal du Midi. The canal, designed by the engineer Pierre-Paul Riquet, ran about 150 miles across southern France and joined the Atlantic side of the country to the Mediterranean, so goods could cross France without a ship sailing around Spain.</p>
+<p style="margin:0 0 14px;">Louis also spent lavishly on the arts, and the playwrights Molière and Racine and the composer Lully made his court the envy of Europe. Colbert helped draw up lists of writers and scholars who deserved royal pensions. A writer's income could depend on the king's goodwill.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE PALACE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis could have built his palace in Paris. The Louvre, the old royal residence by the river, was waiting to be rebuilt, and in 1665 he invited the famous Italian sculptor Bernini to design it. The plans came to nothing. Louis had good reason to distrust the city that had frightened him as a boy, and his attention drifted to a quiet spot in the countryside.</p>
+<div class="optima-widget ow-reflect" data-wid="w23-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">The whole court moved into Versailles in 1682, twelve miles from Paris. Why might a king want his great nobles living under his own roof? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="A fair guess. Louis had fled Paris at night as a boy, when nobles and city mobs rose against the crown. People under your roof are easier to watch than people on distant estates.">To keep an eye on them</button><button data-response="Display mattered a great deal to Louis. Keep reading to see how much of his rule rested on how he looked.">To dazzle them with his wealth</button><button data-response="Good instinct. As you read on, notice what a noble could gain or lose depending on whether the king noticed him.">To make them need his favor</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Louis's greatest project was the palace of Versailles, twelve miles from Paris. It began as his father's hunting lodge. Over forty years, architects, painters, and gardeners turned it into a palace the size of a town. The Hall of Mirrors was nearly 240 feet long and lined with hundreds of mirrors, 357 in all, which were a marvelous luxury at the time. Venice had long held the secret of fine mirror glass, and Colbert had lured Venetian glassmakers to France to teach the craft.</p>
+<p style="margin:0 0 14px;">The site had no river of its own, so the fountains needed machines. Fountains played in the gardens, with water pumped up by machines from the Seine. In 1682 the whole court moved in. Thousands of nobles and servants lived there. The king's own officers decided who got which room, so even a bed was a favor.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE ART OF POWER</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis understood that a king must look like a king. In 1653, as a fourteen-year-old, he danced in a court ballet that ran through the night. As dawn came he appeared on stage dressed as Apollo, the sun god. Painters, sculptors, and medal makers filled France with his image. Statues of him went up in the squares of Paris, the city that had once driven him out.</p>
+<p style="margin:0 0 14px;">Royal academies set rules for painting, music, and writing, and the best artists worked for the court. Printed histories told the story of his victories. In an age without television or newspapers, Louis made himself the most recognizable man in Europe.</p>
+<p style="margin:0 0 14px;">This was image-making, and it was also a tool of government. A king who seems larger than life makes obedience feel natural.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE DAILY SHOW</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Life at Versailles ran on ceremony. The king's day was a kind of play, with the same scenes in the same order, and the nobles were both its cast and its audience. Every morning a few nobles earned the honor of watching the king get out of bed. The highest-ranking man present had the right to hand him his shirt. After the morning rising came Mass in the chapel and meetings with his ministers, then a hunt or a walk in the gardens. In the evening there were cards, billiards, and music in the state rooms. Supper was served in public: Louis ate at a table with his family while courtiers without the right to sit stood and watched. At night, a few nobles held his candle as he went to bed.</p>
+<p style="margin:0 0 14px;">Rank decided who sat on a chair and who on a stool. A few great ladies had the right to a stool in the queen's presence, and quarrels over such rights could last for years. A duke who was missing from court would hear the king say, "I do not know him." The memoirist Saint-Simon, whom you will read this week, described how closely Louis noticed who was absent. Saint-Simon wrote his memoirs decades later, and he held a grudge against a king who gave high posts to men of lower birth. He is a vivid witness, though not a neutral one.</p>
+<p style="margin:0 0 14px;">The ceremony had a purpose. Only the king could grant pensions, offices, and army commands, so nobles had to compete for his favor. Picture a count whose family has held a castle in the countryside for centuries. If he stays home, he is lord of a district, but he has no pension, no post for his sons, and no chance of an army command. If he goes to Versailles, he gets a tiny room, a pile of bills for clothes and cards, and a chance.</p>
+<p style="margin:0 0 14px;">A noble who spent his days at Versailles was spending his money on clothes and parties, not on a private army. The proud lords of the Fronde had become <span class="gloss" tabindex="0"><strong>courtiers</strong><button class="gloss-audio" onclick="speakGloss(event,'KOR-tee-er')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOR-tee-er</span>A person who attends a king's court, often seeking favors or position. <a class="om-maplink" href="#gloss-courtier">See the glossary box.</a></span></span>. The Prince of Condé, the great general of the Fronde, had once led a rebel army and then fought for Spain against France. The king pardoned him in 1659, and Condé later commanded French armies for Louis.</p>
+<p style="margin:0 0 14px;">Louis's private life was less orderly than his court. He had several mistresses in his younger years. After his queen died in 1683, he secretly married a devout widow, Madame de Maintenon. She had first come to the palace as governess to the king's children. She encouraged his piety, and her influence grew as he aged. The palace itself was crowded and drafty, and its nobles often lived in tiny rooms. Yet they did not complain, since a room at Versailles was a sign of favor.</p>
+<div class="optima-widget ow-select" data-wid="w23-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHO HELD THE LEVERS</div><div class="widget-question">Check what you have read about how Louis ran his court and his kingdom.</div><div class="widget-row" data-correct="1" data-fb="Right. He kept that promise for fifty-four years." data-hint="Think about what shocked the court in 1661."><div class="widget-row-prompt">1. After Mazarin died in 1661, what did the young Louis announce about his ministers?</div><div class="widget-options"><button data-choice="0">He would keep a chief minister as Mazarin had</button><button data-choice="1">He would name no chief minister and rule himself</button><button data-choice="2">He would hand the kingdom to Colbert</button></div></div><div class="widget-row" data-correct="2" data-fb="Right. Louis never forgot those revolts, and he learned that rebellious nobles and an angry capital could be deadly." data-hint="Think about why the royal family had to slip away from Paris at night."><div class="widget-row-prompt">2. What did the revolts called the <span class="gloss" tabindex="0"><em>Fronde</em><button class="gloss-audio" onclick="speakGloss(event,'FROHND')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FROHND</span>A French word for a child's slingshot. It names the revolts against the crown from 1648 to 1653. <a class="om-maplink" href="#gloss-fronde">See the glossary box.</a></span></span> teach the young Louis?</div><div class="widget-options"><button data-choice="0">That Paris was safer than the countryside</button><button data-choice="1">That a king should share power with a chief minister</button><button data-choice="2">That rebellious nobles and an angry capital could be deadly</button><button data-choice="3">That the Church could protect the throne</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. Colbert guided trade and built up industry and the navy." data-hint="Think of tapestries, glass, ships, and a great canal."><div class="widget-row-prompt">3. What did Louis's finance minister, Colbert, do?</div><div class="widget-options"><button data-choice="0">Taxed foreign goods heavily and built state workshops</button><button data-choice="1">Led the nobles against the king</button><button data-choice="2">Raised an army of several hundred thousand men</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE COST OF VERSAILLES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">All this glory was expensive. Building Versailles took tens of thousands of workers over decades, and at times soldiers were put to digging and hauling as well. Its upkeep cost a large part of the king's income. Meanwhile most French people were poor farmers. They paid a land tax called the taille and a heavy tax on salt, and they were often forced to work on the roads. The taille was collected parish by parish, and the neighbors chosen to collect it answered for any shortfall.</p>
+<p style="margin:0 0 14px;">Nobles and clergy were largely exempt. The nobles held that they paid in blood, since they served as officers and fought the king's wars. The clergy sent the crown a voluntary gift every few years instead of taxes. Most of the burden fell on the farming population, and bad harvests brought real hardship.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE KING'S MEN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis did not rule only through his court. In the provinces he relied on <span class="gloss" tabindex="0"><em>intendants</em><button class="gloss-audio" onclick="speakGloss(event,'an-tahn-DAHN')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">an-tahn-DAHN</span>A French word for a royal official sent to govern a region in the king's name. <a class="om-maplink" href="#gloss-intendant">See the glossary box.</a></span></span>, royal officials chosen from lawyers and townsmen rather than great families. They had no local power of their own, so they depended on the king. They collected taxes, kept order, and recruited soldiers. The old rulers of the provinces, the governors, were great nobles. Louis let them keep their titles and their parades. Within a province a governor outranked an intendant, but the intendant held the pen.</p>
+<p style="margin:0 0 14px;">Louis also built a <span class="gloss" tabindex="0"><strong>standing army</strong><button class="gloss-audio" onclick="speakGloss(event,'STAN-ding AR-mee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STAN-ding AR-mee</span>A permanent professional army that is kept in being during peacetime as well as war. <a class="om-maplink" href="#gloss-standing-army">See the glossary box.</a></span></span> that grew to several hundred thousand men, the largest in Europe. Armies had once been raised for a war and sent home when it ended. Louis kept his soldiers in service all year, paid by the crown. It had uniforms, regular pay, and supply depots stocked in advance, which let his armies take the field in early spring instead of waiting for grass and grain to grow. Many officers were nobles. For men who might once have joined a rebellion, the army offered honor and wages from the king. A king with such a force could defend his borders and also threaten his neighbors.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">HOW ABSOLUTE WAS IT?</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis's rule was less absolute than it looked. Many government jobs were bought and could be inherited, so the king could not easily remove the people who held them. Provinces, towns, courts, and the Church all had old privileges that he had to respect. Nobles and clergy paid few taxes, and the burden fell on peasants. A famous line says Louis declared, "I am the state." No reliable record shows that he said it, and the real king worked inside limits that the line leaves out.</p>
+<p style="margin:0 0 14px;">The crown was often short of cash, so it sold government offices to raise money. A man who bought a judge's post could pass it on to his son. Here is how it worked. A buyer paid a large sum for a post as judge or tax official. The post gave him a salary and respect, and sometimes noble rank. Since 1604 the crown had let officeholders pay a small yearly fee so that their sons could inherit the post. The king got steady money, but the officeholder now owned his job like a farm. To remove him, the king had to pay back the price, and a king who sold offices to pay his bills could rarely afford to. This brought in quick money, but it created a class of office-holders who defended their own interests and resisted reform. The king could only do what these groups would let him do. Even so, France had internal peace for the rest of his reign, and that was a real achievement after the Fronde.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">BRILLIANT AND BRITTLE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">A Classical Republican would ask what this system did to the character of the nobility. The old nobles had won honor in war and by giving independent advice. At Versailles honor came increasingly from royal favor and display. A man whose income came from the king's pension thought twice before giving the king advice he would not like. Later the French thinker Montesquieu would argue that honor was the spirit of monarchies, but he also saw how easily it could turn into display.</p>
+<div class="ow-group" data-wid="w23-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What was special about Louis&#x27;s army?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">It grew to several hundred thousand men, the largest in Europe, with uniforms, regular pay, and supply depots. A king with such a force could defend his borders and also threaten his neighbors.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did Louis achieve even so?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">France had internal peace for the rest of his reign, which mattered after the revolts of his boyhood.</div></div><button class="widget-reset">Reset</button></div></div>
+
+<p style="margin:0 0 14px;">The system also depended on one man. It worked while Louis had talent and energy, and it strained when he grew old. Whether he would use his army to make France strong or to strain her is the story of the next lesson.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Louis XIV and Absolute Monarchy</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

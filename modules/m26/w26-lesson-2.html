@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: Terror and Thermidor: Robespierre and the Republic of Virtue</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The French Revolution</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">Terror and Thermidor: Robespierre and the Republic of Virtue</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">Terror and Thermidor: Robespierre and the Republic of Virtue</div>
+        <div style="font-size: 16px; color: #666;">The French Revolution</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how war and fear pushed the Revolution toward the Reign of Terror.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe what Robespierre meant by a Republic of Virtue and why his colleagues turned against him.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate how ideas, fear, and chance each contributed to the Terror.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-committee-of-public-safety" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Committee of Public Safety</strong><button class="gloss-audio" onclick="speakGloss(event,'kuh-MIT-ee uv PUB-lik SAYF-tee')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">kuh-MIT-ee uv PUB-lik SAYF-tee</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The small committee of the Convention that ran France's government and war effort from 1793 to 1794.</div>
+    </div><div id="gloss-jacobin" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Jacobin</strong><button class="gloss-audio" onclick="speakGloss(event,'JAK-uh-bin')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">JAK-uh-bin</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A member of a political club that began in Paris in 1789 and later became the leading voice of the most radical revolutionaries.</div>
+    </div><div id="gloss-reign-of-terror" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Reign of Terror</strong><button class="gloss-audio" onclick="speakGloss(event,'RAYN uv TAIR-er')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">RAYN uv TAIR-er</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The period from 1793 to 1794 when the revolutionary government used mass arrests and executions to crush its enemies.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">By 1793 the Revolution that began with a declaration of rights was beheading its enemies by the hundreds. Today you will see how war, fear, and a belief in civic virtue led a republic to the Terror, and how it ended with the fall of the man who had embodied it.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WAR AND THE END OF THE MONARCHY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In April 1792 France declared war on Austria. Many revolutionaries hoped to spread liberty, and the king and queen quietly hoped that France would lose. France did lose at first, and when Prussia joined Austria, a Prussian commander, the Duke of Brunswick, threatened to destroy Paris if the royal family were harmed. Parisians were furious. On August 10, 1792, National Guards and a crowd of working people that people were beginning to call <span class="gloss" tabindex="0"><em>sans-culottes</em><button class="gloss-audio" onclick="speakGloss(event,'sahn koo-LOT')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sahn koo-LOT</span>A French word meaning "without knee breeches." It was the name for the working people of Paris, who wore long trousers instead of the fine knee breeches of the rich. <a class="om-maplink" href="#gloss-sans-culottes">See the glossary box.</a></span></span> stormed the Tuileries palace, where the king was living. Volunteers from Marseille marched in singing a song that Paris named for them, the Marseillaise. The king's Swiss Guards, about six hundred men, defended the palace, and most of them died. Louis took refuge with the Assembly, which suspended him. In September, word came that the border fortress of Verdun had fallen, and Paris feared that enemies in its jails would rise as volunteers left for the front. A frightened Paris massacred more than a thousand prisoners.</p>
+<p style="margin:0 0 14px;">The song had been written in April 1792, in Strasbourg, by an army captain named Claude Joseph Rouget de Lisle, as a marching song for the Army of the Rhine. Volunteers from Marseille sang it all the way to Paris, which is how it got its name. Its words call citizens to arms against tyrants and invaders, and it later became the national anthem of France.</p>
+<p style="margin:0 0 14px;">On September 20 the French army held firm against the Prussians at Valmy. It was mostly an artillery duel, and the French shouted "Long live the nation" as the Prussians drew back. The German poet Goethe, who was with the Prussian army, later wrote that a new age in the history of the world began that day. The next day a new body, the National Convention, met and abolished the monarchy, and France became a republic.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Three foreign-language terms appear in this lesson. Here is how to say them and what they mean.</p><div id="gloss-levee-en-masse" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>levée en masse</strong><button class="gloss-audio" onclick="speakGloss(event,'luh-VAY ahn MASS')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">luh-VAY ahn MASS</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French phrase meaning a mass call-up. It was the order of 1793 that required all French people to serve the war effort and called up unmarried men for the army.</div>
+    </div><div id="gloss-sans-culottes" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>sans-culottes</strong><button class="gloss-audio" onclick="speakGloss(event,'sahn koo-LOT')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">sahn koo-LOT</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French word meaning "without knee breeches." It was the name for the working people of Paris, who wore long trousers instead of the fine knee breeches of the rich.</div>
+    </div><div id="gloss-thermidor" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Thermidor</strong><button class="gloss-audio" onclick="speakGloss(event,'tur-mee-DOR')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">tur-mee-DOR</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The French name for the month of July and August in the new Revolutionary calendar. It is also the name of the coup that overthrew Robespierre on July 27, 1794.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE KING ON TRIAL</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The Convention put Louis on trial for treason. Papers found in a hidden safe in the Tuileries showed that he had been in secret contact with France's enemies. The safe had been made with the help of the locksmith who had taught the king his hobby, and the locksmith told the authorities where it was. Most deputies voted that he was guilty. The vote for death was close, and on January 21, 1793, Louis XVI went to the guillotine. His last words, a witness said, were a plea that his blood not be used against France. Drums drowned out the rest.</p>
+<p style="margin:0 0 14px;">Louis was allowed lawyers. One of them was Malesherbes, the former royal censor who had warned Diderot before a police search, by then an old man. The Convention found the king guilty almost without dissent. The sentence split the deputies, and the margin for death was only a few dozen votes. Many who voted for death were frightened more than bloodthirsty, since a living king would be a rallying point for every enemy of the Republic. Malesherbes was himself guillotined in 1794.</p>
+<p style="margin:0 0 14px;">The execution horrified the monarchs of Europe. Britain, Spain, and the Dutch Republic joined Austria and Prussia against France. At home, in the western region called the Vendée, peasants rose in revolt in March 1793. They resented the order to send young men into the army, a call for 300,000 men, and the attacks on their priests. The war that followed was savage on both sides. Historians put the dead at well over a hundred thousand.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">EMERGENCY GOVERNMENT</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Facing foreign invasion and civil war, the Convention gave great power to the <span class="gloss" tabindex="0"><strong>Committee of Public Safety</strong><button class="gloss-audio" onclick="speakGloss(event,'kuh-MIT-ee uv PUB-lik SAYF-tee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kuh-MIT-ee uv PUB-lik SAYF-tee</span>The small committee of the Convention that ran France's government and war effort from 1793 to 1794. <a class="om-maplink" href="#gloss-committee-of-public-safety">See the glossary box.</a></span></span>, a group of twelve men who met almost daily. In August 1793 it ordered the <span class="gloss" tabindex="0"><em>levée en masse</em><button class="gloss-audio" onclick="speakGloss(event,'luh-VAY ahn MASS')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">luh-VAY ahn MASS</span>A French phrase meaning a mass call-up. It was the order of 1793 that required all French people to serve the war effort and called up unmarried men for the army. <a class="om-maplink" href="#gloss-levee-en-masse">See the glossary box.</a></span></span>. The decree gave every group a duty: young men were to fight, married men were to forge weapons and carry supplies, women were to make tents and nurse in hospitals, and old men were to gather in the squares to rouse courage. To feed the army and the cities, the government also fixed prices on bread and other goods. Within a year France had about three-quarters of a million men under arms, led by the engineer Lazare Carnot, who organized the armies. A Revolutionary Tribunal tried suspects, and the Law of Suspects of September 1793 allowed the arrest of anyone thought to be an enemy of liberty. In the Convention the radical <span class="gloss" tabindex="0"><strong>Jacobins</strong><button class="gloss-audio" onclick="speakGloss(event,'JAK-uh-bin')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">JAK-uh-bin</span>A member of a political club that began in Paris in 1789 and later became the leading voice of the most radical revolutionaries. <a class="om-maplink" href="#gloss-jacobin">See the glossary box.</a></span></span>, who had pushed out their moderate rivals, were now in control.</p>
+<div class="optima-widget" data-wid="w26-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">It is early 1793. The king has been executed. Britain, Spain, and the Dutch Republic have joined Austria and Prussia against France, and peasants in the Vendée are in revolt.</div><details class="ow-reveal"><summary>Decide first, and jot your answer in your notebook: what powers would you give the government, and what could go wrong with them? Then open to compare.</summary><div class="ow-reveal-body">A government fighting invasion and civil war at once needs to act fast, and a small group can act faster than a large assembly. But power given for an emergency is easy to hand over and hard to take back, and a small body with great power faces few checks. The Convention gave great power to the <span class="gloss" tabindex="0"><strong>Committee of Public Safety</strong><button class="gloss-audio" onclick="speakGloss(event,'kuh-MIT-ee uv PUB-lik SAYF-tee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kuh-MIT-ee uv PUB-lik SAYF-tee</span>The small committee of the Convention that ran France's government and war effort from 1793 to 1794. <a class="om-maplink" href="#gloss-committee-of-public-safety">See the glossary box.</a></span></span>. That was a choice, and other choices were possible. A larger body might have been slower, but it might also have slowed the use of terror.</div></details><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">To make the center's orders count, the Convention sent its own members out to the provinces and the armies as representatives on mission. They carried broad powers and could remove officials, requisition grain, and order arrests. Some used those powers with restraint, and others with great harshness. Each town also had a surveillance committee of local citizens that drew up lists of suspects. A grocer who muttered against the Republic, or a neighbor who held a grudge, could find himself on a list.</p>
+<p style="margin:0 0 14px;">Back in July, the radical journalist Marat was stabbed in his bath by Charlotte Corday, a young woman who sympathized with the Girondins, and she was guillotined four days later. Fear grew. This was the <span class="gloss" tabindex="0"><strong>Reign of Terror</strong><button class="gloss-audio" onclick="speakGloss(event,'RAYN uv TAIR-er')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAYN uv TAIR-er</span>The period from 1793 to 1794 when the revolutionary government used mass arrests and executions to crush its enemies. <a class="om-maplink" href="#gloss-reign-of-terror">See the glossary box.</a></span></span>. Marie Antoinette was executed in October 1793, and so were many leaders of the moderate Girondins. The guillotine, which Dr. Guillotin had proposed in 1789 as a swift and equal way to carry out the death penalty, had first been used in 1792. A young member of the Committee, Saint-Just, aged twenty-six, also served with the armies. Courts in the provinces convicted thousands. In the Vendée and in rebel cities, thousands more were killed, many of them without a trial. In Nantes, a representative of the Convention drowned prisoners in the Loire.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">ROBESPIERRE AND THE REPUBLIC OF VIRTUE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The most famous member of the Committee was Maximilien Robespierre, a lawyer from Arras. He lived simply in a rented room in a carpenter's house, refused bribes, and was called "the Incorruptible." He had read Rousseau and admired the citizens of early Rome. His dream was a Republic of Virtue, a nation of citizens who loved the public good more than themselves. He had been an opponent of the death penalty earlier in his career, and in 1791 he had stood in the Assembly to argue for abolishing it. Now he argued that the Republic could not survive unless its enemies were destroyed. Virtue, he said in a speech in February 1794, was the spirit of a republic, and terror was the tool to defend it. He called terror nothing but swift and severe justice.</p>
+<div class="optima-widget ow-scale" data-wid="w26-2-2" data-ra-skip><div class="widget-kicker">&#9889; WHY THE CHANGE?</div><div class="widget-question">Earlier in his career Robespierre was an opponent of the death penalty. By 1794 he defended terror. What best explains the change?</div><div class="widget-row" data-correct="2" data-fb="Fits the lesson. War and fear mattered, and so did his belief that the Republic could not survive unless its enemies were destroyed." data-hint="Reread the paragraph that describes his dream and what he now argued."><div class="widget-options"><button data-choice="0" data-fb="Too narrow. The lesson says Robespierre also held a firm belief in a Republic of Virtue, and that shaped how he met the danger.">The pressure of war and danger alone</button><button data-choice="1" data-fb="Close, but the lesson gives his dream of a Republic of Virtue as much weight as the danger.">Mostly the pressure of war and danger</button><button data-choice="2" data-fb="Fits the lesson. War and fear mattered, and so did his belief that the Republic could not survive unless its enemies were destroyed.">Danger and his own beliefs about virtue together</button><button data-choice="3" data-fb="Too narrow. The lesson says France was invaded and in revolt, and those pressures mattered too.">His own beliefs alone</button></div></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Here the old Classical Republican question comes alive. Polybius and Machiavelli had taught that republics survive on the habits of their citizens. But habits grow slowly, through families, churches, and schools, and they cannot be made by force. A government that tries to compel virtue with the guillotine may crush both virtue and liberty. Remember Rousseau's line that a citizen who refused the general will could be forced to be free. The revolutionaries also tried to remake life itself. They created a new calendar with ten-day weeks, which gave workers one day of rest in ten instead of one in seven, closed churches, turned Notre-Dame into a Temple of Reason, and held festivals to a Supreme Being. On June 8, 1794, Robespierre led one of them as president of the Convention, and some deputies resented the show. Many French people found this alarming.</p>
+<p style="margin:0 0 14px;">Robespierre was not a cruel man by temper, and that is what makes his case so troubling. He believed he was defending a pure cause against corrupt enemies. Once a leader decides that disagreement is treason, every critic becomes a traitor, and there is no limit to the list. A free republic needs ways to settle quarrels peacefully, and the Terror had destroyed them.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE GREAT TERROR</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In the spring of 1794 the Terror turned on the revolutionaries themselves. Danton, a gifted speaker who had himself helped set up the Revolutionary Tribunal and who wanted the killing to slow down, was executed in April. Beside him went Camille Desmoulins, the journalist who had called Paris to arms in 1789. In June a new law allowed the Tribunal to convict without witnesses or a defense lawyer. It left only two possible verdicts, acquittal or death. In just six weeks the Paris courts sent about thirteen hundred people to the guillotine. In all, about seventeen thousand people were formally condemned, and many more died in prison or without any trial. Historians still argue about the exact number. Most of those executed were ordinary peasants, craftsmen, and workers, not nobles, and most died in the regions that had risen in revolt, not in Paris.</p>
+<p style="margin:0 0 14px;">In Paris the carts carrying the condemned crossed the city every afternoon, and in June 1794 the guillotine was moved to the eastern edge of the city, partly because the neighbors of the old site complained of the smell of blood. Under the new law there were days when fifty people or more were condemned at a single sitting. By one common estimate, about three hundred thousand people were arrested as suspects during the Terror. For many Parisians the Terror was no longer a matter of politics. It was the sound of the carts.</p>
+<p style="margin:0 0 14px;">Then the military crisis eased. In June French armies won a major victory at Fleurus in Belgium. The emergency that had justified the Terror seemed to be over, but the killing went on. Deputies began to ask whether they might be next.</p>
+<p style="margin:0 0 14px;">Fleurus showed what the new army could do. The Committee had merged the old royal regiments with the volunteers, promoted officers for ability rather than birth, and fed its soldiers by requisition from the countryside. The commander at Fleurus, Jean-Baptiste Jourdan, had been a common soldier before the Revolution. The same government that kept the guillotine busy had also built an army that would soon carry the Revolution far beyond the borders of France.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THERMIDOR</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In the weeks before, Robespierre had quarreled with some of his colleagues on the Committee and had stopped coming to its meetings. He was ill and worn out. His colleagues could suspect that he was preparing an attack on them, and he had given them no way to know whom he meant. Fear, in other words, now ran in both directions.</p>
+<p style="margin:0 0 14px;">On July 27, 1794, the ninth of <span class="gloss" tabindex="0"><em>Thermidor</em><button class="gloss-audio" onclick="speakGloss(event,'tur-mee-DOR')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">tur-mee-DOR</span>The French name for the month of July and August in the new Revolutionary calendar. It is also the name of the coup that overthrew Robespierre on July 27, 1794. <a class="om-maplink" href="#gloss-thermidor">See the glossary box.</a></span></span> in the Revolutionary calendar, Robespierre rose in the Convention to hint that more traitors had to be found. The day before, he had spoken of enemies inside the government and refused to name them, so every deputy wondered whether he was on the list. Some of those who feared that they were met that night. Fearful deputies shouted him down. One is said to have cried out that the blood of Danton choked him. He was arrested along with his closest supporters. The Paris city government tried to free him, but the Convention declared them outlaws. Thousands of the city's National Guards gathered outside the city hall to defend him, but they were given no clear orders. By one account, a summer rainstorm fell, and many drifted home. Soldiers retook them in the night. Robespierre's jaw was shattered by a pistol shot, and historians disagree about whether he shot himself or was shot. On July 28 Robespierre, who was thirty-six, and about twenty others went to the guillotine, to cheers.</p>
+<p style="margin:0 0 14px;">The Terror ended, though not at once. Prisoners were freed, the Jacobin club was closed, and in 1795 France adopted a new constitution. It gave power to a five-man Directory. The Directory was weak and corrupt, and it came to rely on the army to hold on to power. The paper money issued in 1790 lost nearly all its value, and prices soared.</p>
+<p style="margin:0 0 14px;">The end of the Terror brought its own violence. Bands of young men, known as the gilded youth, roamed Paris with clubs and hunted down former Jacobins. In the south, in 1795, gangs took revenge on supporters of the Revolution in what became known as the White Terror. A people who had been taught that every quarrel was a matter of life and death did not stop believing it when one man fell.</p>
+<div class="optima-widget ow-seq" data-wid="w26-2-3" data-ra-skip data-n="5" data-fb="That is the order the lesson gives: September 1792, January 1793, September 1793, April 1794, and 1795." data-hint="The king died before the new arrest law, and the Directory came after the Terror ended."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Tap these events in the order they happened, earliest first.</div><div class="widget-options ow-seq-pool"><button data-pos="1">The Convention abolishes the monarchy</button><button data-pos="2">Louis XVI goes to the guillotine</button><button data-pos="3">A new law allows the arrest of anyone thought an enemy of liberty</button><button data-pos="4">Danton is executed</button><button data-pos="5">A five-man Directory takes power</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WEIGHING THE CAUSES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">What caused the Terror? Ideas mattered. Revolutionaries believed that the people's will was sacred and that virtue could be taught. War and fear mattered, because France was invaded and in revolt. Personalities mattered as well. But none of it was fixed in advance. In 1790 the British statesman Edmund Burke warned that a revolution built on abstract principles would end in the rule of some popular general. Within a few years it began to look as if he was right. Next week you will meet the man who proved him right.</p>
+</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; You have reached the end of this module's lessons. Open the short wrap-up survey that closes &ldquo;The French Revolution.&rdquo; Look for it in your Canvas course navigation.</div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The French Revolution</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

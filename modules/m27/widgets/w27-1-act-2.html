@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Practice: Building an Empire</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:12px;background:transparent;font-family:Georgia,'Times New Roman',serif;color:#0E1C42}
+.act-widget{background:linear-gradient(135deg,#F3F0FA 0%,#F9F8FC 100%);border:1px solid #D3CCE6;border-left:5px solid #6B4FA8;border-radius:8px;padding:18px 22px;font-size:16px;line-height:1.5}
+.kicker{font-size:11px;color:#4B3580;margin-bottom:10px;letter-spacing:.4px;font-family:Arial,Helvetica,sans-serif}
+.passage{background:#fff;border:1px solid #D0D9E8;border-radius:6px;padding:12px 16px 4px;margin:0 0 16px;font-size:15px;line-height:1.65;color:#1a2340}
+.passage p{margin:0 0 12px;padding-left:30px;position:relative}
+.passage .pn{position:absolute;left:0;top:2px;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#6b7a99;min-width:20px}
+.passage u{text-decoration:underline;text-underline-offset:3px}
+.testlabel{display:inline-block;background:#4B3580;color:#fff;font-weight:bold;font-size:12px;letter-spacing:.3px;padding:2px 8px;border-radius:4px;margin-right:6px}.sr{position:absolute;left:-9999px}
+.q{border-top:1px solid #D3CCE6;padding-top:14px;margin-top:14px}
+.qnum{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:13px;color:#4B3580;margin-bottom:4px}
+.stem{font-size:17px;margin:0 0 12px;line-height:1.55}
+.prompt{background:#FFF8E8;border:1px dashed #C7922C;border-radius:6px;padding:8px 12px;margin-bottom:12px;font-size:14px;color:#6b4a0a;font-family:Arial,Helvetica,sans-serif}
+button{font-family:Arial,Helvetica,sans-serif;cursor:pointer}
+button:focus-visible{outline:3px solid #6B4FA8;outline-offset:2px}
+.btn{background:#0E1C42;color:#fff;border:1px solid #0E1C42;border-radius:8px;padding:8px 16px;font-size:14px}
+.btn:hover:not(:disabled){background:#1d3270}
+.btn.ghost{background:#fff;color:#0E1C42;border:1.5px solid #D0D9E8}
+.btn.ghost:hover:not(:disabled){border-color:#8A6FC4;background:#F4F6FA}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.choices{margin:14px 0 4px}
+.choice{margin-bottom:10px}
+.choice button.opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:#fff;border:1.5px solid #D0D9E8;border-radius:8px;padding:10px 14px;font-size:15px;color:#0E1C42;line-height:1.45;transition:background .2s,border-color .2s}
+.choice button.opt:hover:not(:disabled){background:#F4F6FA;border-color:#8A6FC4}
+.choice button.opt .ltr{font-weight:bold;min-width:18px}
+.choice button.opt.selected{background:#0E1C42;color:#fff;border-color:#0E1C42}
+.choice button.opt.correct{background:#D8F0DD;border-color:#2A9D5C;color:#1A6B3D}
+.choice button.opt.incorrect{background:#FDECEC;border-color:#C0392B;color:#8A1F16}
+.choice button.opt:disabled{cursor:default}
+.cfb{display:none;margin:6px 0 0 4px;padding:8px 12px;font-size:14px;line-height:1.5;border-radius:4px;font-family:Arial,Helvetica,sans-serif}
+.cfb.show{display:block}
+.cfb.right{background:#D8F0DD;border-left:3px solid #2A9D5C;color:#1A6B3D}
+.cfb.wrong{background:#FDECEC;border-left:3px solid #C0392B;color:#8A1F16}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.hints{margin-top:10px}
+.hint{background:#fff;border-left:3px solid #8A6FC4;padding:8px 12px;margin-bottom:6px;font-size:14px;line-height:1.5;border-radius:4px;font-family:Arial,Helvetica,sans-serif;color:#1a2340}
+.note{display:none;margin-top:10px;background:#fff;border-left:3px solid #6B4FA8;padding:8px 12px;font-size:14px;line-height:1.5;border-radius:4px;font-family:Arial,Helvetica,sans-serif}
+.note.show{display:block}
+.reset,.resetall{background:transparent;border:1px solid #C7922C;color:#8A6112;border-radius:6px;padding:6px 12px;font-size:12px;margin-top:12px}
+.reset:hover,.resetall:hover{background:#FDF3E3}
+.resetall{margin-top:18px}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){.choice button.opt{transition:none}}
+</style></head><body>
+<div class="act-widget">
+<div class="kicker"><span class="testlabel">ACT practice</span> READ THE PASSAGE, THEN ANSWER</div>
+<div class="passage" id="passage"><p><span class="pn" aria-hidden="true">1</span><span class="sr">Paragraph 1. </span>Now he could build. He founded the Bank of France to steady the currency, so that the government could borrow and pay its bills. He appointed a prefect to govern each department, a system that echoed the intendants of Louis XIV. These officials took orders from Paris, which is how a government in the capital could collect taxes and call up soldiers in every corner of France. He started public high schools called lycées, run by the state to train the officials and officers the country needed. And he made peace with the Church through a Concordat with Pope Pius VII in 1801. The Revolution had seized Church lands and forced priests to swear an oath to the state, and French Catholics had been divided. The Concordat recognized Catholicism as the faith of most French people, let the government nominate bishops, and paid the clergy from the treasury. But it kept the Church lands in the hands of those who had bought them.</p><p><span class="pn" aria-hidden="true">2</span><span class="sr">Paragraph 2. </span>His most lasting work was the Napoleonic Code of 1804, a single set of laws for the nation. In the old France the law had differed from province to province, and a family dispute could turn on where you happened to live. A commission of lawyers drew on Roman law and the older customs, and Napoleon sat in on many of its sessions himself. The Code kept the great gains of 1789: equality before the law, an end to feudal privilege, protection of property, and religious freedom. But it also gave husbands wide power over wives and children, and a married woman could not sign a contract without her husband's consent.</p><p><span class="pn" aria-hidden="true">3</span><span class="sr">Paragraph 3. </span>Careers were open to talent, and the new Legion of Honor, founded in 1802, rewarded merit rather than birth. Yet this was also a police state. Newspapers were censored, and soon only a handful of the Paris papers were left. A secret police under the minister Joseph Fouché watched for plots, and elections became formalities.</p><p><span class="pn" aria-hidden="true">4</span><span class="sr">Paragraph 4. </span>Royalist plots against his life gave his supporters an argument. In December 1800 a bomb exploded in a Paris street just after his carriage passed, on the way to the opera. If one bullet could end the regime, they said, France needed a government that would outlast one man. In 1802 another plebiscite made him consul for life. In March 1804, after another royalist plot was uncovered, French soldiers crossed the Rhine into the German state of Baden, seized a young Bourbon prince, the Duke of Enghien, and shot him after a hasty trial. The prince had taken no part in the plot. Within weeks the Senate asked Napoleon to take the title of emperor, so that the succession would be settled and no royalist could gain by killing him. In 1804 a third plebiscite approved a new title for him, Emperor of the French.</p><p><span class="pn" aria-hidden="true">5</span><span class="sr">Paragraph 5. </span>At his coronation in Notre-Dame, on December 2, 1804, Pope Pius VII was present, but Napoleon placed the crown on his own head. He wore a wreath of golden laurel leaves, like a Roman emperor, and then crowned Josephine himself. The republic of virtue was gone. It had been replaced by a regime that depended on the will and talent of one man, which is what Polybius would have expected to see. The Romans had seen their own republic end in the same way, with Caesar.</p><p><span class="pn" aria-hidden="true">6</span><span class="sr">Paragraph 6. </span>War with Britain returned in 1803. Napoleon gathered an army at Boulogne and planned to invade England but first needed control of the Channel. On October 21, 1805, Nelson attacked the combined French and Spanish fleet off Cape Trafalgar in two columns, cutting through the enemy line instead of sailing parallel to it. He destroyed the enemy fleet and died in the moment of victory, shot by a sharpshooter on a French ship. Britain was safe at sea for the rest of the war.</p><p><span class="pn" aria-hidden="true">7</span><span class="sr">Paragraph 7. </span>On land, however, Napoleon was unstoppable. Austria and Russia had joined Britain against him that year, and he swung his army from the Channel coast to the Danube in a matter of weeks. Raising armies by conscription and living off the lands he conquered, he beat the Austrians and Russians at Austerlitz on December 2, 1805, perhaps his greatest victory. Austerlitz was won by a trap. He let the enemy believe he was weak, gave up the high ground at the center, and waited. The Allies came down to crush what looked like his exposed right flank. Then his troops stormed the thinned center and split their army in two. Austria made peace within weeks.</p><p><span class="pn" aria-hidden="true">8</span><span class="sr">Paragraph 8. </span>In 1806 he crushed Prussia at Jena, and within weeks he rode into Berlin. In 1807, at Tilsit, the Russian tsar Alexander I met him on a raft moored in the Niemen River, made peace, and agreed to cooperate with him.</p><p><span class="pn" aria-hidden="true">9</span><span class="sr">Paragraph 9. </span>By 1807 Napoleon was master of most of Europe. He made his brothers kings: Joseph in Naples, Louis in Holland, and Jérôme in Westphalia. The old Holy Roman Empire was dissolved in 1806. Was he the heir of the Revolution, spreading its laws and its equality? Or had he become its gravedigger? Next lesson you will see how that question was answered.</p></div>
+<section class="q" data-i="0"><div class="qnum">Question 1</div><div class="stem">Based on paragraph 7 of the passage, which of the following can most reasonably be inferred about the Allied attack at Austerlitz?</div><div class="prompt">Come up with your own answer before looking at the choices.</div><button type="button" class="btn reveal">Reveal answer choices</button><div class="choices" hidden><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">A.</span><span>The Allies attacked the French center because Napoleon had left that part of his line weakly held and badly guarded by his own troops.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">B.</span><span>Napoleon won mainly because his army was much larger than the combined Austrian and Russian armies, and the trap he set added very little to the result.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">C.</span><span>The Allies had planned to attack the French right flank from the start, so Napoleon's trap only made the battle shorter.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">D.</span><span>By moving against what looked like an exposed French flank, the Allies weakened their own center, which Napoleon then attacked.</span></button><div class="cfb" role="status"></div></div></div><div class="bar" hidden><button type="button" class="btn submit" disabled>Submit answer</button><button type="button" class="btn ghost hintbtn" disabled>Show hint</button></div><div class="hints" aria-live="polite"></div><div class="note"><strong>Question type:</strong> This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.</div><div class="qstatus" role="status" style="position:absolute;left:-9999px"></div><button type="button" class="reset">Reset question</button></section>
+<button type="button" class="resetall" id="resetall">Reset all</button>
+</div>
+<script type="application/json" id="act-data">{"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","qs":[{"correct":3,"fb":["This reverses the passage. The Allies came down against what looked like the French right flank, and it was the Allied center that was thinned and then stormed.","This adds a claim the passage never makes. It says Austerlitz was won by a trap and never compares the sizes of the armies.","This adds an assumption the passage does not support. The enemy was led to believe Napoleon was weak, which suggests the flank attack answered the trap.","The passage says the Allies went after the exposed-looking flank and that the center was then thinned and stormed. This choice follows from those facts with no added assumptions."],"h2":"This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","h3":"Four steps: 1) Notice cue words in the question such as suggests, implies, or can be inferred, and identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, add a small detail the passage does not support, or go beyond the passage."}]}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('act-data').textContent);
+  var qs = [].slice.call(document.querySelectorAll('.q'));
+  var resets = [];
+  qs.forEach(function(sec, qi){
+    var d = D.qs[qi];
+    var $ = function(c){ return sec.querySelector(c); };
+    var reveal=$('.reveal'), choices=$('.choices'), bar=$('.bar'), submit=$('.submit'), hintBtn=$('.hintbtn'),
+        hints=$('.hints'), note=$('.note'), status=$('.qstatus');
+    var opts=[].slice.call(sec.querySelectorAll('button.opt')), cfbs=[].slice.call(sec.querySelectorAll('.cfb'));
+    var picked=-1, shown=0, submitted=false;
+    function renderHints(){
+      hints.innerHTML='';
+      var texts=[D.h1,d.h2,d.h3];
+      for(var i=0;i<shown;i++){var x=document.createElement('div');x.className='hint';x.textContent=texts[i];hints.appendChild(x);}
+      hintBtn.textContent = shown===0 ? 'Show hint' : (shown<3 ? 'Show another hint' : 'Hide hints');
+      note.classList.toggle('show', shown>=2 || submitted);
+    }
+    reveal.addEventListener('click',function(){
+      choices.hidden=false; reveal.hidden=true; bar.hidden=false; hintBtn.disabled=false;
+      status.textContent='Answer choices are now showing.';
+    });
+    opts.forEach(function(b,i){
+      b.addEventListener('click',function(){
+        if(submitted) return;
+        picked=i;
+        opts.forEach(function(o){o.classList.remove('selected');o.setAttribute('aria-pressed','false');});
+        b.classList.add('selected'); b.setAttribute('aria-pressed','true');
+        submit.disabled=false;
+      });
+    });
+    hintBtn.addEventListener('click',function(){
+      if(submitted) return;
+      if(shown>=3){shown=0;} else {shown++;}
+      renderHints();
+    });
+    submit.addEventListener('click',function(){
+      if(picked<0||submitted) return;
+      submitted=true;
+      opts.forEach(function(o,i){
+        o.disabled=true; o.classList.remove('selected');
+        if(i===d.correct) o.classList.add('correct');
+        else if(i===picked) o.classList.add('incorrect');
+        cfbs[i].textContent=d.fb[i];
+        cfbs[i].className='cfb show '+(i===d.correct?'right':'wrong');
+      });
+      submit.disabled=true; hintBtn.disabled=true;
+      status.textContent = picked===d.correct ? 'Correct.' : 'Not quite. The correct choice is marked, with an explanation under every choice.';
+      renderHints();
+    });
+    function doReset(){
+      picked=-1; shown=0; submitted=false;
+      choices.hidden=true; reveal.hidden=false; bar.hidden=true;
+      submit.disabled=true; hintBtn.disabled=true;
+      opts.forEach(function(o){o.disabled=false;o.className='opt';o.setAttribute('aria-pressed','false');});
+      cfbs.forEach(function(c){c.className='cfb';c.textContent='';});
+      hints.innerHTML=''; note.classList.remove('show'); status.textContent='';
+      hintBtn.textContent='Show hint';
+    }
+    $('.reset').addEventListener('click',doReset);
+    resets.push(doReset);
+  });
+  document.getElementById('resetall').addEventListener('click',function(){ resets.forEach(function(f){f();}); });
+})();
+</script>
+<script>(function(){try{var f=window.frameElement;if(!f)return;function fit(){f.style.height=(document.documentElement.scrollHeight+4)+'px';}fit();if(window.ResizeObserver)new ResizeObserver(fit).observe(document.body);window.addEventListener('load',fit);}catch(e){}})();</script>
+</body></html>

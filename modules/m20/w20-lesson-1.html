@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Dutch Revolt: Philip II, William the Silent, and the Water</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Dutch Republic</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Dutch Revolt: Philip II, William the Silent, and the Water</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Dutch Revolt: Philip II, William the Silent, and the Water</div>
+        <div style="font-size: 16px; color: #666;">The Dutch Republic</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;The Dutch Republic.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain why the provinces of the Low Countries rebelled against Philip II.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how William of Orange and the Sea Beggars kept the revolt alive.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Identify the decisions and accidents that allowed a small republic to survive against the strongest power in Europe.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-bullion" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>bullion</strong><button class="gloss-audio" onclick="speakGloss(event,'BUL-yun')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">BUL-yun</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Gold or silver in bars or lumps, valued by weight rather than as coins.</div>
+    </div><div id="gloss-dike" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>dike</strong><button class="gloss-audio" onclick="speakGloss(event,'DYKE')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">DYKE</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A wall of earth built to hold back water.</div>
+    </div><div id="gloss-heresy" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>heresy</strong><button class="gloss-audio" onclick="speakGloss(event,'HAIR-uh-see')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">HAIR-uh-see</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A religious belief that a church officially rejects as false.</div>
+    </div><div id="gloss-stadtholder" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>stadtholder</strong><button class="gloss-audio" onclick="speakGloss(event,'STAD-hole-der')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">STAD-hole-der</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">In the Low Countries, a governor who ruled a province in the name of a king or ruling council.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0;">The richest corner of Europe rebelled against the most powerful king in Europe, and won. Today you will meet the king, the rebel leader, and the strange weapon that saved a town: the sea itself.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE SEVENTEEN PROVINCES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The Low Countries lay along the North Sea, in what is now the Netherlands, Belgium, and Luxembourg. In the 1500s they were a patchwork of seventeen provinces. Their cities were crowded and wealthy. Antwerp was one of the busiest ports on earth. Each town held old charters that protected its rights, and its citizens guarded those rights jealously.</p>
+<p style="margin:0 0 14px;">In 1555 and 1556, the emperor Charles V gave these lands, along with Spain and its silver empire, to his son Philip II. Philip was Spanish, devout, and hardworking. He sat at a desk in Madrid reading reports, and he never learned to speak Dutch. He was determined to keep his lands Catholic and to rule them from the center. He sent Spanish officials, planned new bishops, and enforced harsh laws against <span class="gloss" tabindex="0"><strong>heresy</strong><button class="gloss-audio" onclick="speakGloss(event,'HAIR-uh-see')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HAIR-uh-see</span>A religious belief that a church officially rejects as false. <a class="om-maplink" href="#gloss-heresy">See the glossary box.</a></span></span>. At the time that meant Calvinism, a Protestant faith that was spreading quickly through the northern towns. He also raised taxes to pay for his wars. Each of these moves angered a people who believed they had rights.</p>
+<p style="margin:0 0 14px;">Charles V had been born in the Low Countries, in the city of Ghent, and he spoke the language of his subjects. Philip left in 1559 and never came back. He left his half-sister Margaret of Parma to govern in his name, but the real decisions were made in a small private committee led by a churchman loyal to the king, Cardinal Granvelle. The great local nobles, men such as William of Orange and the Count of Egmont, had always expected to help rule the provinces. They found that they sat in a council that no longer decided anything. The new bishoprics, fourteen of them, were a second grievance, because they put the church under tighter royal control. A noble who felt shut out of power and a merchant who felt his town's charter was under attack had different complaints, but they began to speak to each other.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">BEGGARS AND BROKEN STATUES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1566 a group of lesser noblemen, most of them Catholic, brought Philip's governor a petition asking him to soften the <span class="gloss" tabindex="0"><strong>heresy</strong><button class="gloss-audio" onclick="speakGloss(event,'HAIR-uh-see')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HAIR-uh-see</span>A religious belief that a church officially rejects as false. <a class="om-maplink" href="#gloss-heresy">See the glossary box.</a></span></span> laws. One of the governor's advisers sneered that they were nothing but beggars. The nobles seized on the insult. They wore it proudly as a badge and called themselves the <span class="gloss" tabindex="0"><em>Geuzen</em><button class="gloss-audio" onclick="speakGloss(event,'KHUH-zuhn')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KHUH-zuhn</span>A Dutch word meaning "Beggars." The rebels adopted it as a proud name. <a class="om-maplink" href="#gloss-Geuzen">See the glossary box.</a></span></span>, the Beggars.</p>
+<p style="margin:0 0 14px;">A few days later the petitioners held a banquet in Brussels. Their host filled a wooden bowl, the kind a beggar carried, and drank to the health of the Beggars. The guests took up the toast and the cry. They hung small beggars' bowls and bags from their clothes, and they wore medals that carried the king's likeness and the words, in French, loyal to the king, even to the beggar's bag. Note what they claimed. They did not call themselves rebels. They said they were the king's most faithful servants, asking him to hear his own subjects.</p>
+<p style="margin:0 0 14px;">That summer, angry Calvinist crowds broke into churches across the provinces and smashed statues and stained glass, which they thought were idols. The wave began in a small town in August, reached the great cathedral of Antwerp within ten days, and in about two weeks hundreds of churches had been stripped. The destruction horrified many Catholics, including many who had sympathized with the petition. Several great nobles, William of Orange among them, now helped the governor restore order.</p>
+<p style="margin:0 0 14px;">Philip now faced a choice. He could calm the provinces with concessions, or he could crush them. He chose force. It was a decision, not a fate. Had he chosen otherwise, the Low Countries might have stayed in his empire for generations.</p>
+<div class="optima-widget ow-reflect" data-wid="w20-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">In 1566 Philip faced a choice: calm the provinces with concessions, or crush them. If you had been his adviser, which way would you have leaned? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Concessions were possible. The lesson says that had Philip chosen otherwise, the Low Countries might have stayed in his empire for generations.">Make concessions</button><button data-response="Force is what Philip chose. The lesson calls it a decision, not a fate. Read on to see what it brought.">Use force</button><button data-response="Delay was Philip&#x27;s habit. The next section shows what it cost him.">Wait for more reports</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A foreign-language term appeared just above. Here is how to say it and what it means.</p><div id="gloss-Geuzen" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Geuzen</strong><button class="gloss-audio" onclick="speakGloss(event,'KHUH-zuhn')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KHUH-zuhn</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Dutch word meaning "Beggars." The rebels adopted it as a proud name.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KING FAR AWAY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Philip II ruled from Madrid, more than a thousand miles from Brussels. He was known as the paper king, because he tried to manage his enormous realm by reading and answering reports himself. Every important question traveled to him by courier, and the answer took weeks to come back. Meanwhile events in the Low Countries moved quickly. A governor in Brussels could watch a crisis grow, but he could not settle it without waiting for the king's word. By the time orders arrived, the situation had often changed.</p>
+<p style="margin:0 0 14px;">This is a useful lesson about power. A king can have the largest army and the most silver in the world and still govern badly if he is too far from the problem. Philip's delays made his officials look weak, and when he finally acted, he acted harshly.</p>
+<p style="margin:0 0 14px;">Even the army had to travel the long way. Philip first said that he would come north himself with troops, and he never did. Instead he chose a veteran commander and sent him by land, because the sea route past France and England was dangerous. The soldiers gathered in Italy and marched through the Alps and eastern France to Brussels, which took weeks. Spain kept its hold on the provinces by keeping that road open. A force that has to walk so far cannot easily be sent a second time.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE DUKE OF ALBA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1567 Philip sent the Duke of Alba north with about ten thousand soldiers. Alba set up a court that the people soon called the Council of Blood. It tried thousands of people and put more than a thousand to death. In 1568 Alba beheaded the Counts of Egmont and Hoorn in Brussels. Both were Catholic noblemen who had remained loyal to the king. Alba also imposed a heavy new sales tax. In a few years he had managed to unite Catholics and Protestants, nobles and merchants, against the same ruler.</p>
+<p style="margin:0 0 14px;">Egmont's case shows how much Alba misjudged the country. He had won famous battles for Philip and for Philip's father, and he was beloved in the provinces. Alba arrested him and Hoorn in 1567 and had them beheaded in the main square of Brussels the next year. The tax that followed was just as damaging. It took a tenth of the price of every sale of goods. Because a product is sold many times on its way from the producer to the customer, the tax fell again at each step, and a merchant in a trading country could be ruined by it. The Beggars had once asked for mercy. Alba taught the provinces to ask for something else.</p>
+<div class="ow-group" data-wid="w20-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did the nobles of 1566 do with the insult &quot;beggars&quot;?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">They wore it proudly as a badge and called themselves the Beggars.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did angry Calvinist crowds do in the summer of 1566?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">They broke into churches across the provinces and smashed statues and stained glass, which they thought were idols. Many Catholics who had sympathized with the petition were horrified.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Who was the Duke of Alba, and what did Philip send him with?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">The commander Philip sent north in 1567 with about ten thousand soldiers.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WILLIAM THE SILENT</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">One of the great nobles, William of Orange, escaped to Germany before Alba could arrest him. Born in 1533 into a German Lutheran family, William had inherited the small principality of Orange as a boy. Charles V then raised him at the imperial court as a Catholic. He grew up rich, charming, and trusted. Tradition says he earned his nickname "the Silent" after he once heard Philip's secret plan to wipe out Protestants and kept quiet about it. In truth he was a talker and a persuader, and the name really means discreet.</p>
+<p style="margin:0 0 14px;">Escaping cost him dearly. Alba seized William's property, and his eldest son, a student at the university of Leuven, was taken to Spain. The boy was kept in Spain for nearly thirty years. William's brother Louis won an early battle in 1568 and then lost a larger one, and William's own invasion that autumn went nowhere. Alba would not fight him in the open. He simply waited, and William's soldiers, who were mercenaries and had not been paid, drifted away.</p>
+<p style="margin:0 0 14px;">William led armies against Alba, and at first they failed. He lost battle after battle, ran out of money, and pawned his own jewels. What kept him going was perseverance, one of the virtues Plutarch would have admired. He was also unusually willing to work with people of different faiths. He joined the Calvinists later, but he never stopped urging Catholics and Protestants to live under one government. The revolt survived because it had someone who would not quit.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE SEA BEGGARS AND THE SIEGE OF LEIDEN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The turning point came from the water. Rebel sailors, called the Sea Beggars, attacked Spanish shipping from the coast. In April 1572 they captured the port of Brielle.</p>
+<p style="margin:0 0 14px;">The capture owed a great deal to accident. The Sea Beggars were privateers, sailors who attacked enemy ships with a prince's permission, and they had been using English ports as their base. In the spring of 1572 Queen Elizabeth closed those ports to them. Some six hundred men in a fleet of small ships were suddenly without a harbor, and they went looking for one on the Dutch coast. They found Brielle almost undefended and took it on the first of April. A Dutch rhyme of the time plays on the word for spectacles, which sounds like the name of the town: on the first of April, Alba lost his glasses. The men who had landed there to find shelter had given the revolt a foothold.</p>
+<p style="margin:0 0 14px;">Towns in Holland and Zeeland, two northern provinces, declared for William. In July the representatives of Holland met and recognized him as their <span class="gloss" tabindex="0"><strong>stadtholder</strong><button class="gloss-audio" onclick="speakGloss(event,'STAD-hole-der')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STAD-hole-der</span>In the Low Countries, a governor who ruled a province in the name of a king or ruling council. <a class="om-maplink" href="#gloss-stadtholder">See the glossary box.</a></span></span>. Spain's troops fought back by laying siege to town after town. In 1574 they surrounded Leiden and began to starve it. The people ate dogs, rats, and boiled leather while they waited for help.</p>
+<p style="margin:0 0 14px;">Thousands in the city died of hunger and plague that summer. The city's walls were strong, and the besiegers relied on hunger to do the work. William had no army strong enough to fight through the Spanish lines, and the only way to reach the city lay across flat land cut by waterways.</p>
+<p style="margin:0 0 14px;">The help came from an idea that only a people living below sea level would have. The Dutch had spent centuries building <span class="gloss" tabindex="0"><strong>dikes</strong><button class="gloss-audio" onclick="speakGloss(event,'DYKE')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DYKE</span>A wall of earth built to hold back water. <a class="om-maplink" href="#gloss-dike">See the glossary box.</a></span></span> to keep the sea out. Now William ordered them cut to let the sea in. The flood spread over the low fields, and rebel ships with shallow bottoms sailed over farmland toward the city. The Spanish soldiers pulled back as the water rose. Tradition says a strong wind shifted at just the right moment and pushed the sea farther inland. On October 3 the ships reached the walls. The grateful prince rewarded the city with a university, which still stands.</p>
+<p style="margin:0 0 14px;">The people of Leiden still celebrate the day with herring and white bread, the food the first boats carried to the starving. The university was founded the following year. A story says that William offered the city a choice between ending its taxes and founding a university, and that Leiden chose the university. Whether or not the choice was really offered, the university became one of the great centers of learning in Europe.</p>
+<div class="optima-widget ow-select" data-wid="w20-1-3" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHAT CAME NEXT?</div><div class="widget-question">Choose what the lesson says.</div><div class="widget-row" data-correct="2" data-fb="Right. Two northern provinces, Holland and Zeeland, declared for William." data-hint="Look at what the lesson says happened in the northern provinces after the capture."><div class="widget-row-prompt">1. The Sea Beggars captured the port of Brielle in April 1572. What followed?</div><div class="widget-options"><button data-choice="0">Philip agreed to withdraw his troops</button><button data-choice="1">Alba was arrested by his own officers</button><button data-choice="2">Towns in Holland and Zeeland declared for William</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. The university still stands." data-hint="It is something that, according to the lesson, still stands today."><div class="widget-row-prompt">2. What did the grateful prince give the city of Leiden after the siege?</div><div class="widget-options"><button data-choice="0">A cathedral</button><button data-choice="1">A university</button><button data-choice="2">A royal charter ending taxes</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. The people of Leiden ate dogs, rats, and boiled leather while they waited for help." data-hint="The lesson names three things, and none of them is a normal meal."><div class="widget-row-prompt">3. What did the people of Leiden eat while they waited for help?</div><div class="widget-options"><button data-choice="0">Dogs, rats, and boiled leather</button><button data-choice="1">Grain from Spanish ships</button><button data-choice="2">Fish brought by the Sea Beggars</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KING WHO RAN OUT OF MONEY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Here the story links back to last week. Philip was fighting the Turks in the Mediterranean and the rebels in the north, and even his <span class="gloss" tabindex="0"><strong>bullion</strong><button class="gloss-audio" onclick="speakGloss(event,'BUL-yun')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BUL-yun</span>Gold or silver in bars or lumps, valued by weight rather than as coins. <a class="om-maplink" href="#gloss-bullion">See the glossary box.</a></span></span> from Peru and Mexico could not cover the bills. In 1575 his government went bankrupt. His unpaid soldiers mutinied, and in 1576 they sacked Antwerp, killing thousands of its people. The outrage briefly united all seventeen provinces. It did not last. The southern provinces, mostly Catholic, made peace with Philip by 1579. The northern provinces formed their own alliance, the Union of Utrecht. In 1581 they formally declared that Philip had lost the right to rule them because he had broken his duties as a king.</p>
+<p style="margin:0 0 14px;">Follow the money to see why the soldiers turned on a city. Their pay was months and then years behind. A mutinous army is dangerous to everyone near it, and Antwerp was the richest place within reach. After the sack, even loyal Catholic provinces turned on the troops sent to protect them. Later a new Spanish commander, the Duke of Parma, won back the southern provinces one siege at a time, and in 1585 Antwerp itself fell. Many Protestant merchants and craftsmen left for the north, taking their skills and their capital with them. The line that divides the Netherlands from Belgium today follows roughly where Parma's armies stopped.</p>
+<p style="margin:0 0 14px;">Philip answered by offering a reward for William's life. In 1584 an assassin shot William at his home in Delft. It was a harsh blow, and had the rebellion depended on William alone, it might have ended there. But his son Maurice rebuilt the army, and local councils governed in the name of the provinces. Each province kept its own <span class="gloss" tabindex="0"><strong>stadtholder</strong><button class="gloss-audio" onclick="speakGloss(event,'STAD-hole-der')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STAD-hole-der</span>In the Low Countries, a governor who ruled a province in the name of a king or ruling council. <a class="om-maplink" href="#gloss-stadtholder">See the glossary box.</a></span></span> and its own councils, and in 1609 Spain agreed to a long truce. In 1648 Spain accepted Dutch independence. The Dutch Republic had no king. It was a union of towns and provinces, and its survival owed as much to luck and perseverance as to any plan.</p>
+<p style="margin:0 0 14px;">Maurice was only seventeen when his father died, and he grew into a careful soldier. He paid his troops regularly, drilled them until they could fire and reload in rotation, and taught them to dig as well as to fight. In 1590 a small party of his men hid in the hold of a peat barge and took the city of Breda by surprise. The cities of Holland, the richest of the provinces, paid for most of the army. A republic of merchants could afford a better army than a king who owed his soldiers years of pay. Next you will see what that republic did with its freedom.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The Dutch Republic</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

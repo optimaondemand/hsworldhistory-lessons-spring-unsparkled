@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: Communism at Home and Abroad, and Its Fall</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Cold War and Communism</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">Communism at Home and Abroad, and Its Fall</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">Communism at Home and Abroad, and Its Fall</div>
+        <div style="font-size: 16px; color: #666;">The Cold War and Communism</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how communist rule worked in the Soviet Union, Eastern Europe, and China.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain why command economies fell behind and how reform movements arose.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate how much the collapse of communism in Europe depended on structural weakness and how much on particular choices.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-command-economy" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>command economy</strong><button class="gloss-audio" onclick="speakGloss(event,'kuh-MAND ih-KON-uh-mee')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">kuh-MAND ih-KON-uh-mee</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">An economy in which the government, not buyers and sellers, decides what is produced, how much of it is made, and what it costs.</div>
+    </div><div id="gloss-satellite-state" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>satellite state</strong><button class="gloss-audio" onclick="speakGloss(event,'SAT-uh-lyt STAYT')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">SAT-uh-lyt STAYT</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A country that is officially independent but is actually controlled by a more powerful nation.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1960 many observers believed that communism might win the contest. By 1991 the Soviet Union no longer existed. Today you will see how communist states ruled, why they struggled, and how the system fell almost without a shot in Europe. Keep this week's discussion question in mind: why did communism collapse?</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">LIFE UNDER COMMUNIST RULE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Communist states shared a pattern. A single party ruled and no rival was allowed. The government owned the factories and farms and ran a <span class="gloss" tabindex="0"><strong>command economy</strong><button class="gloss-audio" onclick="speakGloss(event,'kuh-MAND ih-KON-uh-mee')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kuh-MAND ih-KON-uh-mee</span>An economy in which the government, not buyers and sellers, decides what is produced, how much of it is made, and what it costs. <a class="om-maplink" href="#gloss-command-economy">See the glossary box.</a></span></span>: planners in the capital set targets for steel, shoes, and wheat. A secret police, such as the Soviet KGB or the East German Stasi, watched the people. In East Germany, one in every few dozen adults was said to work as an informer. Newspapers, schools, and churches were controlled, and open criticism could mean prison.</p>
+<p style="margin:0 0 14px;">The system brought some real gains. Illiteracy fell, and the Soviet Union produced rockets, scientists, and in 1957 the first artificial satellite, Sputnik. But planners could not know what millions of people wanted. Factories met their quotas by making goods nobody needed, and shops had long lines and empty shelves. Without free prices, there was no signal to say what was scarce. Without the chance to profit, there was little reward for good work or new ideas. Sources of real information were closed off, so leaders were often told what they wished to hear.</p>
+<p style="margin:0 0 14px;">Planning by targets had a flaw built in. A factory was judged on how many goods it produced, or how much they weighed, and not on whether anyone wanted them, so managers chose whatever was cheapest and easiest to count. Ordinary life was shaped by waiting. In East Germany a family might wait ten years or more for a small car, the Trabant, and apartments were handed out from lists. A joke in the Soviet Union said that the workers pretended to work because the state pretended to pay them. People turned to a black market, and to friends and relatives, for what the shops did not have, and many listened in secret to Western radio stations.</p>
+<div class="optima-widget" data-wid="w34-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">It is the 1950s and Stalin is dead. Governments in the countries the Soviet Union controls are hoping for change. You advise the Soviet leader on what to do if one of them demands more freedom.</div><details class="ow-reveal"><summary>Decide first, and jot your answer in your notebook: what would you do, and what would it risk? Then open to compare.</summary><div class="ow-reveal-body">The lesson shows what Soviet leaders chose: tanks into Budapest in 1956 and Warsaw Pact troops into Czechoslovakia in 1968. Force kept the bloc together, at a heavy cost in lives. Allowing change would have risked more demands. Neither course was certain. Read on to see a later leader choose differently, and what followed.</div></details><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">CRACKS IN THE BLOC</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Stalin died in March 1953. In 1956 his successor, Nikita Khrushchev, shocked a party congress with a secret speech describing Stalin's crimes. The hope that this brought for change reached the <span class="gloss" tabindex="0"><strong>satellite states</strong><button class="gloss-audio" onclick="speakGloss(event,'SAT-uh-lyt STAYT')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SAT-uh-lyt STAYT</span>A country that is officially independent but is actually controlled by a more powerful nation. <a class="om-maplink" href="#gloss-satellite-state">See the glossary box.</a></span></span>. In October 1956 Hungarians rose up, demanding free elections and an end to Soviet control. Soviet tanks entered Budapest, and thousands died. In 1968 the Czechoslovak leader Alexander Dubcek tried to build "socialism with a human face" in the Prague Spring, with more freedom of speech. Soviet leader Leonid Brezhnev sent in troops from the Warsaw Pact. The Brezhnev Doctrine declared that the Soviets would act whenever socialism was threatened in a member state.</p>
+<p style="margin:0 0 14px;">The Hungarian rising began on October 23, 1956, when students in Budapest read out their demands, and it spread quickly. Imre Nagy, a communist who had promised reform, became prime minister and announced that Hungary would leave the Warsaw Pact. On November 4 Soviet tanks attacked the city. About 2,500 Hungarians and several hundred Soviet soldiers died, and some 200,000 Hungarians fled. Nagy was executed in 1958. The West protested but did not act, and its attention was on a crisis at Suez in Egypt. In August 1968 some two hundred thousand Warsaw Pact troops entered Czechoslovakia in a single night, and Dubcek was taken to Moscow. The Czechs, who had no hope of winning, mostly resisted without weapons.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">MAO'S CHINA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In China, the communists under Mao Zedong won a long civil war against the Nationalists in 1949. The defeated Nationalists fled to the island of Taiwan. Mao's government seized land and redistributed it, and then, in the Great Leap Forward of 1958, forced peasants into huge communes and ordered them to make steel in backyard furnaces. The harvest was neglected and officials reported false numbers to please their superiors. The result was the worst famine in history. Scholars estimate that between thirty and forty-five million people died by 1962.</p>
+<p style="margin:0 0 14px;">The famine was made worse by lies. Local officials, afraid to report failure, claimed enormous harvests, and the state took grain from the villages on the basis of those claims. When Marshal Peng Dehuai, a respected soldier, told Mao the truth in 1959, he was dismissed from his posts. After that, few dared to speak. The system that was meant to serve the people had made it dangerous to tell its leader what was happening to them.</p>
+<p style="margin:0 0 14px;">In 1966 Mao, fearing that he was losing control of the party, launched the Cultural Revolution. He urged young Red Guards to attack teachers, officials, and anyone linked to the old culture. Schools closed, temples were wrecked, and many were beaten, jailed, or killed. China split from the Soviet Union in the early 1960s, and its quarrel with Moscow weakened the unity of world communism. After Mao died in 1976, Deng Xiaoping allowed farmers and entrepreneurs to work for profit, and China's economy began to grow quickly. The party held on to political power, as it showed in June 1989 when it crushed protests in Tiananmen Square.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">POPE, UNION, AND PRESIDENT</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">By the late 1970s the Soviet economy was stagnating. In 1979 the Soviets invaded Afghanistan, expecting a short campaign, and became trapped in a costly war against local fighters supplied by the West and others. In the same year Karol Wojtyla, a Pole, became Pope John Paul II. When he visited Poland, huge crowds gathered, and the Poles found they were not alone. In August 1980 shipyard workers in Gdansk, led by an electrician, Lech Walesa, formed an independent trade union called Solidarity, which soon had about ten million members. Poland's government declared martial law in 1981 and jailed its leaders, but could not kill the movement.</p>
+<p style="margin:0 0 14px;">In June 1979 the pope returned to Poland for nine days, and a crowd of about a million filled a square in Warsaw to hear him say Mass. He did not call for revolt. He spoke of faith and of the dignity of the person, and the Poles, who had been told that the party spoke for everyone, saw for themselves how many stood outside it. In August 1980 strikes broke out over food prices, and at the Gdansk shipyard Walesa, who had been fired some years before, climbed the fence to join the strikers. After seventeen days the government signed an agreement that allowed independent unions and the right to strike. In the Soviet Union, meanwhile, the Afghan war went on year after year. About 100,000 Soviet soldiers fought there, rebels shot down helicopters with American Stinger missiles from 1986, and some 15,000 Soviet soldiers died. Gorbachev later called the war a bleeding wound.</p>
+<p style="margin:0 0 14px;">In 1981 Ronald Reagan became president of the United States. He called the Soviet Union an "evil empire," built up American arms, backed anti-communist movements, and spoke of freedom's power. Historians still argue about how much this pressure mattered compared with the Soviet system's own failures. The Soviet economy could not match American spending on arms without sacrificing the needs of its people.</p>
+<p style="margin:0 0 14px;">Reagan's pressure was not only words. In 1983 he announced a research program to build a defense against nuclear missiles, which critics called Star Wars, and Soviet leaders feared they could not afford to match it. The Soviet economy also leaned heavily on selling oil, and when world oil prices fell sharply in 1986 the state lost income it had counted on.</p>
+<div class="optima-widget ow-scale" data-wid="w34-2-2" data-ra-skip><div class="widget-kicker">&#9889; WEIGHING CAUSES</div><div class="widget-question">Historians still argue about how much American pressure under Reagan mattered compared with the Soviet system's own failures. Where did the weight lie?</div><div class="widget-row" data-correct="2,3" data-fb="Reasonable. The lesson names Reagan&#x27;s pressure and the Soviet economy&#x27;s own failures, and says historians still argue about the balance." data-hint="Reread the last lines about Reagan and ask what else the lesson says about the Soviet economy."><div class="widget-options"><button data-choice="0" data-fb="Too high. The lesson says historians argue about this, and it points to the Soviet economy&#x27;s own failures as well.">Almost all American pressure</button><button data-choice="1" data-fb="Possible, but the lesson gives as much attention to the Soviet system&#x27;s failures, so this leans harder than it does.">Mostly American pressure</button><button data-choice="2" data-fb="Fits the lesson. It names Reagan&#x27;s arms build-up and the Soviet economy&#x27;s own failures, and says historians still argue about the balance.">Both counted, and the system&#x27;s own failures weighed heavily</button><button data-choice="3" data-fb="Fits the lesson. It notes that the Soviet economy could not match American arms spending without sacrificing the needs of its people, which shows the system&#x27;s own limits.">Mostly the system&#x27;s own failures</button><button data-choice="4" data-fb="Too low. The lesson says Reagan built up arms and backed anti-communist movements, and that historians still argue about how much it mattered.">American pressure had no effect</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Two foreign-language terms appear in the next section. Here is how to say them and what they mean.</p><div id="gloss-glasnost" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>glasnost</strong><button class="gloss-audio" onclick="speakGloss(event,'GLAHZ-nohst')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">GLAHZ-nohst</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Russian word meaning "openness." It names Mikhail Gorbachev's policy of allowing more open discussion and criticism in the Soviet Union.</div>
+    </div><div id="gloss-perestroika" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>perestroika</strong><button class="gloss-audio" onclick="speakGloss(event,'per-uh-STROY-kuh')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">per-uh-STROY-kuh</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A Russian word meaning "restructuring." It names Mikhail Gorbachev's effort to reform the Soviet economy.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">GORBACHEV TRIES TO REFORM</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1985 the party chose a younger man, Mikhail Gorbachev, as leader. He knew the system was failing and believed it could be fixed. He proposed <span class="gloss" tabindex="0"><em>perestroika</em><button class="gloss-audio" onclick="speakGloss(event,'per-uh-STROY-kuh')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">per-uh-STROY-kuh</span>A Russian word meaning "restructuring." It names Mikhail Gorbachev's effort to reform the Soviet economy. <a class="om-maplink" href="#gloss-perestroika">See the glossary box.</a></span></span> to make the economy more efficient and <span class="gloss" tabindex="0"><em>glasnost</em><button class="gloss-audio" onclick="speakGloss(event,'GLAHZ-nohst')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GLAHZ-nohst</span>A Russian word meaning "openness." It names Mikhail Gorbachev's policy of allowing more open discussion and criticism in the Soviet Union. <a class="om-maplink" href="#gloss-glasnost">See the glossary box.</a></span></span> to let people speak and write more freely. In 1986 an explosion at the Chernobyl nuclear plant was hidden at first, and the lie damaged trust in the government. Gorbachev withdrew from Afghanistan and made arms agreements with Reagan. He also told the satellite states' leaders that the Soviet Union would no longer send in tanks to keep them in power.</p>
+<p style="margin:0 0 14px;">This was the decisive choice. Gorbachev expected reformed communism to survive. Instead, once people were free to speak and the fear of Soviet tanks was gone, the whole system began to unravel.</p>
+<p style="margin:0 0 14px;">Abroad, Gorbachev moved just as fast. As he later recalled, he told his foreign minister in 1985 that they could not go on living as they had been. At a summit in Reykjavik in 1986 he and Reagan came close to agreeing to give up all their nuclear missiles, and the talks collapsed over Reagan's missile defense program. A treaty in 1987 did abolish a whole class of medium-range missiles, the first time the two powers had agreed to destroy weapons they already had. In June of that year, standing before the Berlin Wall, Reagan said, "Mr. Gorbachev, tear down this wall!" At Chernobyl, the Soviet government had said nothing for two days, until Swedish scientists measured radiation from the plant.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">1989 AND AFTER</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1989 Poland held partly free elections and Solidarity won nearly every seat it was allowed to contest. In May, Hungary began opening its border to Austria, and thousands of East Germans poured through. Demonstrations grew in Leipzig. On November 9 an East German official, confused about new travel rules, announced at a press conference that they took effect "immediately." Crowds rushed to the Berlin Wall. The guards, without orders, gave way, and Germans began tearing the wall down. A government that would have shot people in 1961 had no will to do so. In weeks the communist governments of Czechoslovakia, Bulgaria, and Romania fell. Romania's dictator, Nicolae Ceausescu, was shot after a hasty trial on Christmas Day. In October 1990 Germany was reunited.</p>
+<p style="margin:0 0 14px;">The Wall fell by accident. The new travel rules were meant to take effect the next day, and the official who read them out, Günter Schabowski, had not been properly briefed. Asked when they began, he shuffled his papers and said, as far as he knew, immediately. East Berliners saw it on the evening news and went to the crossing points. At the Bornholmer Street gate, the officer in charge, Harald Jäger, called his superiors for orders and got none. After hours of pressure from a crowd that grew to thousands, he opened the gate shortly before midnight. A month earlier, in Leipzig, some 70,000 people had marched past armed police and soldiers, and the order to fire was never given.</p>
+<p style="margin:0 0 14px;">The Soviet Union itself lasted only two more years. Its republics demanded independence, and in August 1991 hard-line officials tried to seize power from Gorbachev. The coup failed within three days, after Boris Yeltsin, president of Russia, stood on a tank in Moscow and called on citizens to resist. On December 25, 1991, Gorbachev resigned and the Soviet flag came down over the Kremlin. The Soviet Union broke into fifteen countries.</p>
+<p style="margin:0 0 14px;">The end of the Soviet Union had many authors. In 1990 Russia and other republics declared their sovereignty, and the Baltic states pressed for independence. After the failed coup, Gorbachev returned to a government whose real power had passed to Yeltsin and the republic leaders. In December 1991 the people of Ukraine voted overwhelmingly for independence, and on December 8 the leaders of Russia, Ukraine, and Belarus announced that the Soviet Union no longer existed. Gorbachev resigned seventeen days later.</p>
+<div class="optima-widget ow-seq" data-wid="w34-2-3" data-ra-skip data-n="5" data-fb="That is the order the lesson gives: 1979, 1980, 1985, 1989, and 1991." data-hint="The invasion of Afghanistan and Solidarity both came before Gorbachev."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Tap these events in the order they happened, earliest first.</div><div class="widget-options ow-seq-pool"><button data-pos="1">The Soviets invade Afghanistan</button><button data-pos="2">Shipyard workers in Gdansk form Solidarity</button><button data-pos="3">Gorbachev becomes the party&#x27;s leader</button><button data-pos="4">The Berlin Wall opens</button><button data-pos="5">The Soviet flag comes down over the Kremlin</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Why did it fall? The system's weak economy, its loss of belief, and the pressure of the West all counted. But no one in 1985 predicted collapse, and different choices by Gorbachev, by the guards at the Wall, or by the plotters might have given a different result. As you prepare for the discussion, weigh how much was built into the system and how much rested on people.</p>
+</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; You have reached the end of this module's lessons. Open the short wrap-up survey that closes &ldquo;The Cold War and Communism.&rdquo; Look for it in your Canvas course navigation.</div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The Cold War and Communism</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

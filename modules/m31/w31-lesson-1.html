@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Road to 1914: Alliances, Arms, and Sarajevo</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Great War</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Road to 1914: Alliances, Arms, and Sarajevo</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Road to 1914: Alliances, Arms, and Sarajevo</div>
+        <div style="font-size: 16px; color: #666;">The Great War</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;The Great War.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how the alliance system and the arms race divided Europe into two camps.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how the assassination at Sarajevo led to war within six weeks.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate which decisions of July 1914 might have been made differently.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-dreadnought" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>dreadnought</strong><button class="gloss-audio" onclick="speakGloss(event,'DRED-nawt')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">DRED-nawt</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A modern battleship with heavy guns of one large size, first built by Britain in 1906. The name also came to mean any battleship of that kind.</div>
+    </div><div id="gloss-mobilization" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>mobilization</strong><button class="gloss-audio" onclick="speakGloss(event,'moh-buh-lih-ZAY-shun')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">moh-buh-lih-ZAY-shun</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The calling up of soldiers and the preparing of an army and its supplies for war.</div>
+    </div><div id="gloss-ultimatum" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>ultimatum</strong><button class="gloss-audio" onclick="speakGloss(event,'ul-tuh-MAY-tum')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">ul-tuh-MAY-tum</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A final demand, backed by a threat of force if it is not met by a fixed time.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In the summer of 1914, one murder in a Balkan town set off a war that spread across the world within weeks. Today you will see how Europe came to the edge, who made the choices that pushed it over, and where it might have stepped back.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Two foreign-language terms appear in this lesson. Here is how to say them and what they mean.</p><div id="gloss-entente" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>entente</strong><button class="gloss-audio" onclick="speakGloss(event,'ahn-TAHNT')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">ahn-TAHNT</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French word meaning "understanding." It names a friendly agreement between nations that is less formal than a treaty of alliance.</div>
+    </div><div id="gloss-kaiser" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Kaiser</strong><button class="gloss-audio" onclick="speakGloss(event,'KY-zer')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KY-zer</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The German word for emperor. It comes from the Latin name Caesar.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">BISMARCK'S EUROPE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">After 1871 Bismarck declared that Germany was satisfied. His aim now was peace, because a new war might unite the others against it. He kept France isolated, since France could not forgive the loss of Alsace and Lorraine. He tied Germany to Austria-Hungary and, in 1882, to Italy in the Triple Alliance. And he kept up a secret treaty with Russia, so that Germany would not have to fight on two fronts.</p>
+<p style="margin:0 0 14px;">His skill showed in 1878, when the great powers met in Berlin to settle a crisis in the Balkans. Bismarck chaired the meeting and called himself an honest broker, a man with no stake in the quarrel. It showed again in the treaty he signed with Russia in 1887. Each country promised to stay neutral if the other went to war with a third power, unless Germany attacked France or Russia attacked Austria-Hungary. Few people knew the treaty existed. It kept Russia from joining France, and it worked because one man understood how all the pieces fit together.</p>
+<p style="margin:0 0 14px;">That system depended on the skill of one man. In 1890 the young <span class="gloss" tabindex="0"><em>Kaiser</em><button class="gloss-audio" onclick="speakGloss(event,'KY-zer')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KY-zer</span>The German word for emperor. It comes from the Latin name Caesar. <a class="om-maplink" href="#gloss-kaiser">See the glossary box.</a></span></span> Wilhelm II, who was impatient and eager for glory, dismissed Bismarck. The treaty with Russia was allowed to lapse, though Russia was willing to renew it and the Kaiser's new advisers let it go. Russia and France, who had little in common but fear of Germany, signed a military agreement in 1892 that grew into an alliance in 1894. France lent Russia money and gave it the friend it now lacked. Germany now had enemies on both sides.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE ARMS RACE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Britain had long stayed out of European alliances, relying on its navy. But Germany now wanted a navy too. From 1898 Admiral Tirpitz pushed laws through the German parliament to build a battle fleet. To Britain, which lived on imported food and trade, a strong German fleet seemed a threat to its survival. In 1906 Britain launched HMS Dreadnought, a battleship so powerful that it made older ships obsolete, and both nations raced to build more <span class="gloss" tabindex="0"><strong>dreadnoughts</strong><button class="gloss-audio" onclick="speakGloss(event,'DRED-nawt')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DRED-nawt</span>A modern battleship with heavy guns of one large size, first built by Britain in 1906. The name also came to mean any battleship of that kind. <a class="om-maplink" href="#gloss-dreadnought">See the glossary box.</a></span></span>.</p>
+<p style="margin:0 0 14px;">Tirpitz had a plan behind the ships. He did not expect to beat the Royal Navy. He hoped to build a fleet strong enough that Britain would think twice before attacking it, since even a victory would leave the British too weak against their other rivals. Britain answered by building faster, and it held to a rule of keeping a navy as large as the next two largest combined. Because the Dreadnought was built in about a year and made every older battleship obsolete, including Britain's large lead in them, Germany could start over on nearly equal terms. Talks in 1912 to slow the race failed.</p>
+<p style="margin:0 0 14px;">Britain looked for friends. In 1904 it reached an <span class="gloss" tabindex="0"><em>entente</em><button class="gloss-audio" onclick="speakGloss(event,'ahn-TAHNT')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ahn-TAHNT</span>A French word meaning "understanding." It names a friendly agreement between nations that is less formal than a treaty of alliance. <a class="om-maplink" href="#gloss-entente">See the glossary box.</a></span></span>, an understanding, with France, and in 1907 another with Russia. Together with the Franco-Russian alliance, they formed the Triple Entente. Europe was now divided into two armed camps: Germany, Austria-Hungary, and Italy on one side, and France, Russia, and Britain on the other. Italy would later change its mind. Crises came and went, as in Morocco in 1905 and 1911, and each one left both sides more suspicious.</p>
+<div class="optima-widget ow-reflect" data-wid="w31-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">By 1907 Europe stood in two armed camps. Which step on the way there seems most avoidable to you? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Russia and France had little in common but fear of Germany, and once the treaty lapsed they drew together. Notice how one choice by a few people left Germany with enemies on both sides.">Letting Germany&#x27;s ties with Russia lapse</button><button data-response="Britain saw a threat to its survival and looked for friends. A step one side saw as ordinary strength looked to the other like danger.">Germany building a battle fleet</button><button data-response="For Britain this was a way to feel safer. For Germany it looked like a ring closing, and each side&#x27;s caution made the other more suspicious.">Britain making friends with France and Russia</button><button data-response="Some historians feel that way. Yet each step was chosen by particular people, and later in the lesson you will look for the moments when they might have chosen differently.">None of them; the camps were hard to avoid</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">In 1905 Kaiser Wilhelm landed at Tangier and spoke in favor of Moroccan independence, hoping to split Britain from France. The effect was the opposite. A conference in 1906 sided with France, and British and French officers began secret talks about how they would work together in a war. In 1911 Germany sent a gunboat, the <i>Panther</i>, to the Moroccan port of Agadir. Britain warned Germany to take care, and Germany backed down in return for a piece of the French Congo. Each crisis ended without a war, and each one drew Britain and France closer.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">TIMETABLES FOR WAR</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The general staffs of every great power drew up war plans, and the plans made war more likely. Germany's Schlieffen Plan assumed a war against both France and Russia. It called for knocking out France in about six weeks by marching through neutral Belgium, then turning east to meet the slower Russians. Russia would take weeks to bring its army to the border by <span class="gloss" tabindex="0"><strong>mobilization</strong><button class="gloss-audio" onclick="speakGloss(event,'moh-buh-lih-ZAY-shun')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">moh-buh-lih-ZAY-shun</span>The calling up of soldiers and the preparing of an army and its supplies for war. <a class="om-maplink" href="#gloss-mobilization">See the glossary box.</a></span></span>, and so the Germans could not wait. France had its own plan to attack in the east. All the plans depended on speed, and each country's mobilization looked like an act of war to its neighbors.</p>
+<p style="margin:0 0 14px;">Railways made the plan possible, and they made it rigid. The German staff had worked out for years which army units would board which trains, on which days, to reach which stretch of the frontier. The plan had been drawn up by Count Alfred von Schlieffen, who retired in 1906, and was left to his successor, Helmuth von Moltke, who altered it. Once the order to mobilize was given, the trains would roll on a schedule that could not easily be stopped, rerouted, or improvised. A diplomat who asked for one more day of talks was asking the generals to put a finished machine into reverse.</p>
+<p style="margin:0 0 14px;">Few expected a long war. Most people thought the fighting would be over by Christmas. Some trusted that trade between nations was too valuable to risk, as the writer Norman Angell argued in 1910. Many young men, raised on stories of glory, were eager. Newspapers in every capital fanned the sense of rivalry, and Kaiser Wilhelm spoke of Germany's right to a place in the sun.</p>
+<p style="margin:0 0 14px;">By 1914 every great power on the Continent had universal conscription. Young men served for a time and then stayed in the reserve, so that millions could be called up within days. Germany could put several million trained men into the field, and Russia even more. Large reserves made armies powerful, but they also made delay dangerous, since the first side to mobilize gained an advantage and the other side felt it could not afford to wait.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE BALKAN POWDER KEG</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The spark would come from the Balkans, where the Ottoman Empire was losing ground. Serbia, a small kingdom that dreamed of uniting all the South Slavs, was growing stronger and was backed by Russia. Austria-Hungary, which ruled millions of Slavs, feared that Serbia would pull its empire apart. In 1908 Austria annexed Bosnia, which angered Serbia. The Balkan Wars of 1912 and 1913 almost doubled Serbia's size. Austria's leaders wanted to crush Serbia, but they feared Russia.</p>
+<p style="margin:0 0 14px;">Serbia's hopes had a recent history. In 1903 a group of officers murdered the Serbian king and queen and replaced their dynasty with one friendlier to Russia and cooler toward Austria. When Austria annexed Bosnia in 1908, a territory it had governed since 1878, Russia protested but backed down, because it was still weak after losing a war with Japan in 1905 and Germany stood behind Austria. Many Russian leaders resolved not to give way a second time. By 1914 every one of these crises had ended without a war among the great powers.</p>
+<div class="optima-widget ow-select" data-wid="w31-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; Who feared what?</div><div class="widget-question">For each item, choose the answer that fits the lesson.</div><div class="widget-row" data-correct="3" data-fb="Right. Britain depended on the sea for food and trade, so a strong German fleet seemed a threat to its survival." data-hint="Think about what Britain had to bring in by sea."><div class="widget-row-prompt">1. 1. Why did Britain watch the German fleet so closely?</div><div class="widget-options"><button data-choice="0">It wanted to copy German ship designs.</button><button data-choice="1">It had no navy of its own and relied on allies.</button><button data-choice="2">It feared the fleet would be used against Serbia.</button><button data-choice="3">It lived on imported food and trade, so a rival fleet threatened its survival.</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. A stronger Serbia might pull the empire apart, and Serbia was backed by Russia." data-hint="Think about who lived inside Austria-Hungary&#x27;s borders."><div class="widget-row-prompt">2. 2. Why did Austria-Hungary fear a stronger Serbia?</div><div class="widget-options"><button data-choice="0">Serbia dreamed of uniting the South Slavs, and Austria ruled millions of Slavs.</button><button data-choice="1">Serbia had been given Bosnia by the great powers.</button><button data-choice="2">Serbia was backed by Italy.</button><button data-choice="3">Serbia&#x27;s army had already crossed into Austria.</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. Few expected a long war, and many young men, raised on stories of glory, were eager." data-hint="Think about how people felt about war before it began."><div class="widget-row-prompt">3. 3. What did most people expect of a war in 1914?</div><div class="widget-options"><button data-choice="0">That it would last four years.</button><button data-choice="1">That it would be over by Christmas.</button><button data-choice="2">That Britain would stay out of it.</button><button data-choice="3">That the fighting would stay in the Balkans.</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">SARAJEVO, JUNE 28, 1914</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">June 28 was a Sunday and the couple's wedding anniversary. It was also a day of deep meaning to Serbs, the anniversary of their defeat by the Ottomans at Kosovo in 1389. The archduke had come to watch army maneuvers, and few soldiers lined the streets, which left the open car with only a thin guard. Along the river embankment, spaced out among the crowd, stood several young men, mostly Bosnian Serbs in their teens and early twenties, with pistols and small bombs that had come from Serbia.</p>
+<p style="margin:0 0 14px;">On June 28, 1914, Archduke Franz Ferdinand, heir to the Austrian throne, visited Sarajevo, the capital of Bosnia, with his wife Sophie. A band of young conspirators, helped by Serbian officers in a secret society called the Black Hand, waited along the route. One threw a bomb that bounced off the car and went off under the next one, wounding several officers. The archduke went on to the town hall, where he broke in on the mayor's welcome speech to protest that he had come as a guest and been greeted with bombs. Afterward, he decided to visit the wounded in the hospital. The driver had not been told of the change, took a wrong turn, and stopped to back up in front of a delicatessen. There stood a nineteen-year-old, Gavrilo Princip. He stepped forward and shot the archduke and his wife. Both died within minutes. Ironically, Franz Ferdinand had often argued against war with Serbia, because he feared that a conflict would destroy the empire he was to inherit.</p>
+<p style="margin:0 0 14px;">Princip was arrested on the spot. Because he was under twenty, Austrian law did not allow him to be put to death, and he was sentenced to twenty years in prison. He died there of tuberculosis in 1918. Austria's investigators traced the pistols and bombs back to Serbia, but one of them, an official sent to Sarajevo, reported on July 13 that nothing proved the Serbian government had planned the murder.</p>
+<p style="margin:0 0 14px;">Think about how narrow this was. The first attempt failed, and the second chance came only by an error. Had the driver turned right, the heir to the throne might have lived, and the summer might have ended quietly.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE JULY CRISIS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Austria's leaders saw their chance to deal with Serbia. On July 5 and 6 they asked Germany for support, and Kaiser Wilhelm promised it. This promise is often called the blank check. On July 23 Austria sent Serbia an <span class="gloss" tabindex="0"><strong>ultimatum</strong><button class="gloss-audio" onclick="speakGloss(event,'ul-tuh-MAY-tum')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ul-tuh-MAY-tum</span>A final demand, backed by a threat of force if it is not met by a fixed time. <a class="om-maplink" href="#gloss-ultimatum">See the glossary box.</a></span></span> with demands designed to be hard to accept. Serbia agreed to nearly all of them, but Austria declared war on July 28.</p>
+<p style="margin:0 0 14px;">The month between the murder and the ultimatum was not idle. The Hungarian prime minister, Count Tisza, at first opposed war, and Austria's army needed time, since many of its soldiers were on leave to bring in the harvest. Austria also waited until the French president, Raymond Poincaré, had finished a visit to the tsar in St. Petersburg, so that France and Russia could not plan their reply together. The ultimatum went to Belgrade on the evening of July 23 with a forty-eight-hour limit. Most of its ten demands Serbia could accept. The one it would not was a demand that Austrian officials take part in the investigation on Serbian soil. Serbia handed over its reply just before the deadline on July 25 and ordered its own army to mobilize the same hour. The Austrian minister, who had a bag packed and a train waiting, left Belgrade at once.</p>
+<p style="margin:0 0 14px;">On the morning of July 28 Kaiser Wilhelm finally read Serbia's reply. He wrote beside it that every reason for war had disappeared, and he proposed that Austria occupy Belgrade as a pledge and then talk. By then Austria had declared war, and the proposal reached Vienna weakened and late. The man who had given the blank check now wanted to take it back.</p>
+<p style="margin:0 0 14px;">Then the alliances took over. Russia began to mobilize to protect Serbia. Tsar Nicholas II and his cousin Wilhelm exchanged anxious telegrams, which you will read this week, but their generals were already moving. Russia's generals told the tsar that mobilizing against Austria alone could not be done without ruining the plans for a larger one. On July 29 Nicholas ordered mobilization of the whole army, and then, after a telegram from Wilhelm, canceled it that night. The next afternoon, after a long talk with his foreign minister, Sergei Sazonov, he gave in and the order went out. Germany answered on July 31 with an ultimatum of its own, demanding that Russia stop within twelve hours.</p>
+<p style="margin:0 0 14px;">On August 1 Germany declared war on Russia. That night came the strangest scene of the crisis. A message from the German ambassador in London seemed to say that Britain would stay out if Germany did not attack France. Delighted, the Kaiser told Moltke to send the whole army east. Moltke, white with distress, said it could not be done: an army of millions, planned for years to unfold in one direction, could not be turned around in a night, and what he would get was a mob without supplies. The Kaiser said his uncle, the great Moltke of earlier days, would have given him a different answer. The message from London proved to be a misunderstanding, and the plan went ahead as written.</p>
+<p style="margin:0 0 14px;">On August 3 Germany declared war on France. To carry out its plan, Germany invaded Belgium on August 4. Belgium's king, Albert, and his government had refused German demands for free passage, and the German chancellor, Bethmann Hollweg, told the British ambassador that Britain was going to war over a scrap of paper. He meant the treaty of 1839. In London, the foreign secretary, Sir Edward Grey, watched the lamps being lit outside his window and said to a friend, as he later recalled, "The lamps are going out all over Europe; we shall not see them lit again in our lifetime." Britain had promised in 1839 to defend Belgium's neutrality, and the next day it declared war on Germany.</p>
+<div class="ow-group" data-wid="w31-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">July 5 and 6: what did Austria ask of Germany?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Support. Wilhelm promised it, and that promise is often called the blank check.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">How did Serbia answer Austria&#x27;s demands of July 23?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Serbia agreed to nearly all of them, but Austria declared war on July 28.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did Britain enter the war on August 5?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Germany invaded Belgium on August 4, and Britain had promised in 1839 to defend Belgium&#x27;s neutrality.</div></div><button class="widget-reset">Reset</button></div></div>
+
+<p style="margin:0 0 14px;">Within six weeks of the shooting, Europe was at war. At almost every step, someone could have chosen differently: Germany by restraining Austria, Austria by accepting Serbia's reply, Russia by waiting, Britain by speaking more clearly at the start. In this week's discussion you will weigh which of those choices mattered most.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The Great War</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

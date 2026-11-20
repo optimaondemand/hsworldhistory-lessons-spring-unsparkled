@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: 1789: The Bastille and the Rights of Man</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The French Revolution</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">1789: The Bastille and the Rights of Man</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">1789: The Bastille and the Rights of Man</div>
+        <div style="font-size: 16px; color: #666;">The French Revolution</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;The French Revolution.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how the fall of the Bastille turned a political dispute into a revolution.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Summarize the main changes the National Assembly made between 1789 and 1791.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Identify the tensions in the Declaration of the Rights of Man and in the Constitution of 1791.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-feudal-dues" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>feudal dues</strong><button class="gloss-audio" onclick="speakGloss(event,'FYOO-dul DYOOZ')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">FYOO-dul DYOOZ</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Payments and services that peasants owed to a landlord, often a noble, under old customs.</div>
+    </div><div id="gloss-jacobin" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Jacobin</strong><button class="gloss-audio" onclick="speakGloss(event,'JAK-uh-bin')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">JAK-uh-bin</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A member of a political club that began in Paris in 1789 and later became the leading voice of the most radical revolutionaries.</div>
+    </div><div id="gloss-natural-rights" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>natural rights</strong><button class="gloss-audio" onclick="speakGloss(event,'NACH-uh-rul RYTS')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">NACH-uh-rul RYTS</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">Rights that people are said to have by nature, such as life and liberty, rather than by gift of a government.</div>
+    </div><div id="gloss-veto" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>veto</strong><button class="gloss-audio" onclick="speakGloss(event,'VEE-toh')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">VEE-toh</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The power of a ruler or official to refuse to approve a law.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The National Assembly had a king who gave way and a country on the edge. In the next two years its deputies ended the privileges of the Old Regime, wrote a declaration of rights, and tried to build a constitution. Today you will see why a revolution that set out to limit a king did not stay limited.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">PARIS ON EDGE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In late June some of the French Guards, the city's own regiment, had refused to fire on crowds, and a crowd had freed several who were jailed for it. In early July 1789 Louis XVI moved thousands of soldiers, many of them foreign regiments, toward Paris. On July 11 he dismissed Necker, the minister whom the public trusted most. Parisians feared that the king meant to dissolve the Assembly by force. They were also hungry, since bread was still dear. Necker was loved because he was thought to be the man who might feed them. On July 12 a young journalist named Camille Desmoulins leapt onto a table in a garden cafe and called the crowd to arms. The garden belonged to the king's cousin, so the police could not enter, which made it a place to speak freely. People pinned green leaves to their hats as a badge. By the next day church bells were ringing across Paris, and the city's electors were forming a citizen militia.</p>
+<p style="margin:0 0 14px;">Crowds spent the night of July 12 burning many of the customs posts that ringed the city, where a tax was collected on every cart of food and wine that came in. On July 13 they broke into the monastery of Saint-Lazare and carried off wagonloads of grain. The posts and the grain showed what the crowd was angry about, and it was not only the king's soldiers.</p>
+<p style="margin:0 0 14px;">On the morning of July 14 Parisians took thousands of muskets from the Invalides, a soldiers' hospital. They still needed gunpowder, and some of it was stored in the Bastille. This old fortress, with eight towers, was used as a prison and stood as a symbol of the king's power. Its guns also pointed down the street toward a poor part of the city.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE BASTILLE, JULY 14</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Later that morning a crowd of shopkeepers, craftsmen, and workers gathered at the fortress. Its governor, the Marquis de Launay, had only about a hundred defenders, many of them old soldiers. Delegates went in to ask for the gunpowder, and talks dragged on through the afternoon. Then shots were fired, and the crowd, joined by mutinous French Guards with cannon, forced the garrison to give up. About a hundred of the attackers died. De Launay was seized and killed, and his head was carried through the streets on a pike. Inside the prison the crowd found only seven prisoners: four forgers, two men judged insane, and a young nobleman jailed at his family's request.</p>
+<div class="optima-widget ow-reflect" data-wid="w26-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">The crowd found only seven prisoners in the Bastille. Why do you think so many people risked their lives to take it? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="That was the first reason: they had muskets and still needed powder. Whether it was the whole reason is worth asking as you keep reading.">They needed the gunpowder</button><button data-response="Many people thought so. A symbol can matter more than what is inside it.">It stood for the king&#x27;s power</button><button data-response="That fear was real. Soldiers were gathering around Paris, and the crowd believed the king meant to dissolve the Assembly by force.">They feared the king would use force</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">The end came quickly. Attackers who had pushed into the outer courtyard came under fire from the walls, and when the French Guards hauled up their cannon, de Launay saw that the fortress could not hold. Some accounts say he thought of blowing up the powder stored inside, which would have wrecked the whole neighborhood, and that his own officers talked him out of it. He surrendered on a promise that his men would not be harmed. The promise did not hold.</p>
+<p style="margin:0 0 14px;">The Bastille held little of military value, but it mattered as a symbol. That day the king wrote one word in his hunting diary: "Nothing." He meant that he had killed no game. When he heard the news that night, a famous story says, he asked if it was a revolt. The answer, from a nobleman, was "No, Sire, it is a revolution." Whether or not that line is true, soldiers were wavering, Paris belonged to its own militia, and the king had lost control of his capital. Louis then returned Necker to office and accepted the new red, white, and blue cockade, the badge of the Revolution. On July 17 he drove into Paris, where he was handed the cockade at the city hall. His younger brother, the Count of Artois, and a number of other great nobles had already left France, the first of many. Within days workers began to pull the Bastille down, and the contractor sold its stones as souvenirs, some of them carved into small models of the fortress.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE GREAT FEAR AND THE NIGHT OF AUGUST 4</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">News of Paris spread. In the countryside a wave of panic called the Great Fear swept the villages, as rumors said that hired bandits were on the way. Village bells rang, and men took up pitchforks and went out on the roads to meet bandits who were never found. Peasants armed themselves, and some attacked manor houses and burned records of <span class="gloss" tabindex="0"><strong>feudal dues</strong><button class="gloss-audio" onclick="speakGloss(event,'FYOO-dul DYOOZ')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FYOO-dul DYOOZ</span>Payments and services that peasants owed to a landlord, often a noble, under old customs. <a class="om-maplink" href="#gloss-feudal-dues">See the glossary box.</a></span></span>. The dues were many. A lord's pigeons could eat a peasant's seed, and the peasant was not allowed to kill them. Frightened by the unrest, the Assembly met on the night of August 4. It began when a liberal noble, the Viscount de Noailles, proposed giving up the old dues. Noble after noble stood up to give up privileges, and in a few hours the deputies abolished the tithe, many feudal dues, and the special rights of nobles, clergy, towns, and provinces. The deputies also ended the sale of government offices, the practice you read about in the module on Louis XIV and Absolute Monarchy. In law, the Old Regime was over.</p>
+<p style="margin:0 0 14px;">The scene was more planned than it looked. A small group of liberal deputies, some of them nobles, had prepared the proposal in advance, hoping to calm the countryside by giving up what they could no longer keep. Then the mood in the hall ran away with them. In the days that followed, the deputies argued over how to turn that night's enthusiasm into law, and the decrees of mid-August kept some dues alive and made peasants pay to be rid of others.</p>
+<p style="margin:0 0 14px;">Note how much this took. The nobles did not give up everything. Many dues were turned into payments that peasants had to buy out. Many peasants, who had expected much more, refused to pay. But the principle was now clear: all French people would stand equal before the law and share the burden of taxes.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE RIGHTS OF MAN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">On August 26 the Assembly approved the Declaration of the Rights of Man and of the Citizen. The Marquis de Lafayette, a hero of the American war, helped shape it, and he had shown his draft to his friend Thomas Jefferson. The Declaration had seventeen short articles. It said that men are born and remain free and equal in rights. It named liberty, property, safety, and resistance to oppression as <span class="gloss" tabindex="0"><strong>natural rights</strong><button class="gloss-audio" onclick="speakGloss(event,'NACH-uh-rul RYTS')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NACH-uh-rul RYTS</span>Rights that people are said to have by nature, such as life and liberty, rather than by gift of a government. <a class="om-maplink" href="#gloss-natural-rights">See the glossary box.</a></span></span>. It said that power belongs to the nation, and that the law should be the same for everyone. Its sixth article called law the expression of the general will, which is Rousseau's phrase. It guarded freedom of speech and religion, and it said that every man is innocent until proven guilty.</p>
+<p style="margin:0 0 14px;">Two of its articles show what the deputies were reaching for. Article 1 reads, "Men are born and remain free and equal in rights. Social distinctions may be founded only upon the general good." Article 16 reads, "Any society in which the guarantee of rights is not assured, or the separation of powers not determined, has no constitution at all." (Declaration of the Rights of Man and of the Citizen, 1789, Articles 1 and 16, in a standard English translation.) Where have you met the second idea before?</p>
+<p style="margin:0 0 14px;">You can hear Locke and the American Declaration in these words, and also Rousseau, who held that law should express the will of the people. But the document contained tensions. It said "man" and meant men. Women could not vote, and the writer Olympe de Gouges published a Declaration of the Rights of Woman in 1791 to make the point. Slavery continued in France's colonies. Protestants won full rights in 1789 and Jews won them in 1791, but only after fierce debate.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE MARCH OF THE WOMEN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Bread was still scarce, and the king still delayed signing the new laws. On October 5 thousands of Parisian women, many of them market women, marched twelve miles in the rain to Versailles. They demanded bread and an answer from the king. They are said to have called for the baker, the baker's wife, and the baker's boy, meaning the king, the queen, and their son. That evening the king accepted the August decrees and the Declaration, but the crowd stayed. A crowd forced its way into the palace the next morning, and several royal guards were killed. Lafayette arrived with the National Guard, and the royal family was escorted to Paris. The queen stepped onto a balcony before the crowd, and Lafayette kissed her hand. The royal family was lodged at the Tuileries, an old and neglected palace in the city. The king had become a prisoner in all but name, and the Assembly followed him there.</p>
+<p style="margin:0 0 14px;">The move to Paris had consequences. At Versailles the king and the deputies had been twelve miles from the city. Now they lived in the middle of it, within reach of its crowds, its clubs, and its newspapers. Once the Declaration protected the press, hundreds of new papers appeared in Paris, and writers such as Marat and Desmoulins used them to name enemies and rouse readers. Every vote the Assembly took could be read, argued over, and shouted about in the street by the next morning.</p>
+<div class="ow-group" data-wid="w26-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">The Great Fear<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A wave of panic in the villages, set off by rumors that hired bandits were coming. Peasants armed themselves, and some attacked manor houses and burned the records of what they owed.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did the dismissal of Necker matter?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">On July 11 the king dismissed the minister whom the public trusted most. Parisians, who were also hungry, feared that he meant to dissolve the Assembly by force.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Lafayette<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A hero of the American war who helped shape the Declaration of the Rights of Man. He showed his draft to his friend Thomas Jefferson.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A YEAR AFTER THE BASTILLE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">On July 14, 1790, a year after the Bastille, hundreds of thousands of people gathered in the rain on the Champ de Mars in Paris to celebrate. Lafayette led the National Guard in an oath of loyalty to the nation, the law, and the king, and Louis swore to keep the constitution that the Assembly was writing. Many people wept. For a day, it looked as though the Revolution might succeed without breaking the monarchy.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">BUILDING A NEW ORDER</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Over the next two years the deputies remade France. They replaced the old provinces with 83 equal departments, drawn so that every town lay within a day's ride of its center, and swept away the guilds. A law of 1791 also forbade workers' associations and strikes. They also took over Church lands to pay the government's debts, a step that a bishop, Talleyrand, had proposed. The state issued paper notes backed by the value of that land. At first the notes paid off creditors, and soon they circulated as money. In 1790 the Civil Constitution of the Clergy made priests into paid officials, elected by voters, and required them to swear an oath to the nation. About half of the priests refused, and the pope condemned the measure. Faithful Catholics, including many peasants who had cheered the end of the tithe, began to turn against the Revolution.</p>
+<p style="margin:0 0 14px;">The deputies disagreed about the king. The Constitution of 1791 made France a limited monarchy with a single elected Assembly. The king kept a <span class="gloss" tabindex="0"><strong>veto</strong><button class="gloss-audio" onclick="speakGloss(event,'VEE-toh')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">VEE-toh</span>The power of a ruler or official to refuse to approve a law. <a class="om-maplink" href="#gloss-veto">See the glossary box.</a></span></span> that could only delay laws. The deputies had argued for days over whether he should have an absolute veto, and the delay was a compromise. Only men who paid a certain amount in taxes could vote. The Assembly called those who qualified active citizens and everyone else passive citizens, and roughly two men in three qualified. Outside the Assembly, political clubs grew, and the most famous was the <span class="gloss" tabindex="0"><strong>Jacobin</strong><button class="gloss-audio" onclick="speakGloss(event,'JAK-uh-bin')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">JAK-uh-bin</span>A member of a political club that began in Paris in 1789 and later became the leading voice of the most radical revolutionaries. <a class="om-maplink" href="#gloss-jacobin">See the glossary box.</a></span></span> club, which met in a former convent in Paris and soon had branches across France. The name came from the Dominican friars, called Jacobins in France, who had once lived there.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE FLIGHT TO VARENNES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In June 1791 Louis, disguised as a servant, slipped out of Paris at midnight with his family and drove for the frontier. The queen traveled as a governess. They left behind a written protest against the Revolution's changes. The heavy carriage ran hours behind schedule, and the cavalry that had been posted along the road to protect them gave up waiting and withdrew. The family was held overnight in a grocer's house in Varennes until guards arrived from Paris. At the small town of Varennes the alarm had been raised by a postmaster who recognized him, and the family was brought back. Whatever the king had intended, most French people now believed that he had tried to desert the Revolution. A constitution that depended on the king's honest cooperation had lost its foundation. Yet the Assembly pretended that he had been kidnapped, and in September Louis swore to the new constitution. The Assembly then dissolved itself. Robespierre had persuaded the deputies to vote that none of them could sit in the next Assembly, so the new legislature met in October 1791 without any of the men who had learned the work of making laws. Mirabeau, the most gifted of them, had died in April. He had been secretly advising the king.</p>
+<div class="optima-widget ow-select" data-wid="w26-1-3" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; THE NEW ORDER</div><div class="widget-question">Check what you read about the changes of 1790 and 1791.</div><div class="widget-row" data-correct="1" data-fb="Right. The vote went only to men who paid a certain amount in taxes." data-hint="Women could not vote, and a tax test applied."><div class="widget-row-prompt">1. Under the Constitution of 1791, who could vote?</div><div class="widget-options"><button data-choice="0">Every adult man and woman</button><button data-choice="1">Only men who paid a certain amount in taxes</button><button data-choice="2">Only nobles and clergy</button></div></div><div class="widget-row" data-correct="2" data-fb="Right. The king could only delay laws, not block them for good." data-hint="France had become a limited monarchy, so the king&#x27;s power was not total."><div class="widget-row-prompt">2. What could the king do with his <span class="gloss" tabindex="0"><strong>veto</strong><button class="gloss-audio" onclick="speakGloss(event,'VEE-toh')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">VEE-toh</span>The power of a ruler or official to refuse to approve a law. <a class="om-maplink" href="#gloss-veto">See the glossary box.</a></span></span> under that constitution?</div><div class="widget-options"><button data-choice="0">Block any law forever</button><button data-choice="1">Write laws himself</button><button data-choice="2">Delay laws only</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. About half refused, and the pope condemned the measure." data-hint="Many faithful Catholics began to turn against the Revolution because of this."><div class="widget-row-prompt">3. What did about half of the priests do when the Civil Constitution of the Clergy required an oath to the nation?</div><div class="widget-options"><button data-choice="0">Refuse it</button><button data-choice="1">Swear it gladly</button><button data-choice="2">Leave France</button></div></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Varennes also split the revolutionaries. On July 17, 1791, a crowd gathered on the Champ de Mars to sign a petition calling for the king to be removed. The Assembly had declared martial law, and Lafayette's National Guard fired on the crowd and killed dozens of people. A Revolution that had begun with soldiers refusing to fire on Parisians had now fired on them. After that day moderates and radicals trusted each other less, and the Jacobin club, which had been united around the petition, broke apart over it.</p>
+<p style="margin:0 0 14px;">So the moderate settlement of 1791 had been made with a king who did not trust it and with revolutionaries who did not trust him. Could it have lasted? That question is for you to weigh this week.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The French Revolution</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: Charles I, Parliament, and the English Civil War</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">England: Crown and Parliament</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">Charles I, Parliament, and the English Civil War</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">Charles I, Parliament, and the English Civil War</div>
+        <div style="font-size: 16px; color: #666;">England: Crown and Parliament</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; Before you begin this module, open the short introduction survey that opens &ldquo;England: Crown and Parliament.&rdquo; Look for it in your Canvas course navigation.</div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain why Charles I and Parliament came into conflict over taxes, religion, and power.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how the Civil War was fought and won.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Evaluate why the English republic did not last.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-divine-right" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>divine right of kings</strong><button class="gloss-audio" onclick="speakGloss(event,'dih-VINE RITE uv KINGZ')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">dih-VINE RITE uv KINGZ</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The belief that a king's authority comes directly from God, so that he answers to God alone.</div>
+    </div><div id="gloss-protectorate" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Protectorate</strong><button class="gloss-audio" onclick="speakGloss(event,'pruh-TEK-tuh-rit')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">pruh-TEK-tuh-rit</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The government of England under Oliver Cromwell from 1653 to 1659, in which he ruled as Lord Protector.</div>
+    </div><div id="gloss-puritan" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Puritan</strong><button class="gloss-audio" onclick="speakGloss(event,'PYOOR-ih-tun')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">PYOOR-ih-tun</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">An English Protestant who wanted to purify the Church of England of ceremonies he or she thought were left over from Catholicism.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1649 the English did something no other European nation had done. They put their king on trial and cut off his head. Today you will see how a quarrel over money, religion, and power grew into a civil war, and why the republic that followed did not last.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KING AND HIS PARLIAMENT</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">By 1625 England had a long habit of mixed government. The king ruled, but he needed Parliament to grant him taxes. Parliament had two houses. The House of Lords held great nobles and bishops. The House of Commons held country gentlemen and townsmen chosen by men who owned property. Only the king could call Parliament, and it met only when he wished.</p>
+<p style="margin:0 0 14px;">In 1625 Charles I became king. He was dignified, devout, and honest in his private life. He was also stubborn, secretive, and sure that he answered to God alone. This belief is called the <span class="gloss" tabindex="0"><strong>divine right of kings</strong><button class="gloss-audio" onclick="speakGloss(event,'dih-VINE RITE uv KINGZ')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dih-VINE RITE uv KINGZ</span>The belief that a king's authority comes directly from God, so that he answers to God alone. <a class="om-maplink" href="#gloss-divine-right">See the glossary box.</a></span></span>. He married a French Catholic princess, Henrietta Maria, which made many of his Protestant subjects uneasy.</p>
+<p style="margin:0 0 14px;">Charles's father, James I, had written books defending the divine right of kings, and he had also learned to work with Parliament when he had to. Charles had less patience. Parliament's strongest tool was the purse. Custom allowed the king to collect duties on trade, called tonnage and poundage, and Parliament usually granted them to each new king for life. In 1625 it granted them for one year only, so that Charles would have to ask again. He collected them anyway. The quarrel was not about whether the king could rule. It was about whether he could rule without asking.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE KING RUNS SHORT OF MONEY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Charles needed money for wars with Spain and France, and Parliament was slow to give it. Its members feared waste and wanted a voice in policy. Charles forced his subjects to lend him money and jailed gentlemen who refused. In 1628 Parliament made him accept the Petition of Right. It said that the king could not tax without Parliament's consent or jail people without cause. Charles agreed, and then he ignored it.</p>
+<p style="margin:0 0 14px;">The wars were run by the king's favorite, the Duke of Buckingham, and two of his expeditions, one against Spain in 1625 and one to help French Protestants in 1627, failed badly. Parliament wanted Buckingham punished, and Charles sent its members home rather than lose him. A gentleman who refused a forced loan went to prison. The Petition of Right was written to answer exactly that. In August 1628 a discontented officer stabbed Buckingham to death, and much of the country was glad. Charles was shaken by the loss of his closest friend.</p>
+<p style="margin:0 0 14px;">In 1629 he sent Parliament home and ruled without it for eleven years. He raised money from old fees and from a tax called ship money, which had once been charged only to port towns and which he now charged to the whole kingdom. A country gentleman named John Hampden refused to pay. In 1637 the judges ruled for the king by only a narrow vote, which showed how many people agreed with Hampden.</p>
+<p style="margin:0 0 14px;">Here is how ship money worked. Each county was told how much to pay for the navy, and the sheriff collected it. The king needed no Parliament to approve the order, and the sums were large and regular, which was the point. Charles also revived old fees. Landowners who had never been made knights could be fined for it, and the boundaries of the royal forests, unchanged since the Middle Ages, were redrawn so that landowners could be fined for trespass. Each demand could be defended in law. Together they made the gentry feel that no property was safe. When Hampden's case came before the judges, seven voted for the king and five against.</p>
+<div class="optima-widget ow-reflect" data-wid="w22-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Charles needed money for his wars. Parliament feared waste and wanted a voice in policy. Whose worry seems more reasonable to you? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Charles did need money for wars with Spain and France. The lesson also says he forced his subjects to lend and jailed gentlemen who refused, so the quarrel was about method as well as need.">The king&#x27;s need</button><button data-response="Parliament did want a voice in policy. The lesson notes that Charles accepted the Petition of Right in 1628 and then ignored it, which gave members reason to be wary.">Parliament&#x27;s caution</button><button data-response="That is a fair place to start. Watch how each side&#x27;s fears feed the other&#x27;s.">Both have a point</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">RELIGION AND REBELLION</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Religion made the quarrel dangerous. Charles's Archbishop of Canterbury, William Laud, wanted more ceremony and ritual in church services. Many <span class="gloss" tabindex="0"><strong>Puritans</strong><button class="gloss-audio" onclick="speakGloss(event,'PYOOR-ih-tun')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PYOOR-ih-tun</span>An English Protestant who wanted to purify the Church of England of ceremonies he or she thought were left over from Catholicism. <a class="om-maplink" href="#gloss-puritan">See the glossary box.</a></span></span> saw this as Catholicism creeping back in. In 1637 Charles and Laud tried to force an English prayer book on Scotland, whose church had no bishops. Riots broke out in Edinburgh. The Scots signed a National Covenant and raised an army.</p>
+<p style="margin:0 0 14px;">Laud's changes were easy to see. He had the communion table moved to the east end of the church and fenced off with rails, where the Puritans wanted a plain table in the middle of the room. Writers who attacked his policies were punished harshly. The lawyer William Prynne, who had already lost part of his ears for an earlier pamphlet, was branded and lost what remained of them in 1637. When the new prayer book was read in St. Giles' Cathedral in Edinburgh in July 1637, a riot broke out. Tradition says a market woman named Jenny Geddes threw her stool at the preacher. In February 1638 Scots of every rank signed the Covenant, a promise to defend their church. Many of the officers who led their army had served in the great wars in Germany.</p>
+<p style="margin:0 0 14px;">Not all Puritans stayed to fight over the church. During the 1630s thousands of them sailed across the Atlantic and founded colonies in New England, including Massachusetts Bay. They wanted to build communities in which they could worship in the way that they thought was right. Their departure drained England of some of its most determined reformers, but it planted a Puritan culture in America that would shape its history.</p>
+<p style="margin:0 0 14px;">Charles had no money to fight them, so in 1640 he called a Parliament. It would not help him until he listened to its complaints, and he dismissed it after three weeks. When the Scots invaded England, he had to call another. This one met in November 1640 and became known as the Long Parliament, because it sat for years.</p>
+<p style="margin:0 0 14px;">The Scots army took Newcastle and would not leave until it was paid, and only Parliament could vote the money. The Long Parliament used the moment. Within a year it ended ship money and the other fees, passed a law that Parliament must meet at least every three years, and put the king's chief minister, Thomas Wentworth, Earl of Strafford, on trial. When the trial did not reach a verdict, Parliament passed a bill to execute him instead. Charles had promised to protect him. In May 1641 he signed the bill.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE ROAD TO WAR</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The Long Parliament ended ship money and executed the king's chief minister. In October 1641 a rebellion broke out in Ireland, and the English argued over who should command an army to put it down. Neither side trusted the other with a sword.</p>
+<p style="margin:0 0 14px;">The Irish rising began in Ulster, where native Irish rose against Protestant settlers who had taken their land. Reports in England, many of them exaggerated, told of thousands of Protestants murdered. Parliament refused to let the king command an army that might be turned against it, and the king refused to give up the command. In November a long list of complaints against the king, the Grand Remonstrance, passed the Commons by only eleven votes, and the narrow margin showed how many members were afraid of going further.</p>
+<p style="margin:0 0 14px;">Then in January 1642 Charles made a serious mistake. He marched into the House of Commons with armed men to arrest five of its leaders. The five had been warned and were gone. "I see all the birds have flown," he said. No king had ever entered the Commons by force. Both sides now prepared for war, and in August Charles raised his royal banner at Nottingham.</p>
+<p style="margin:0 0 14px;">Charles arrived on January 4 with several hundred armed men, who waited in the lobby while he walked in. He asked the Speaker, William Lenthall, where the five were, and Lenthall answered that he could see and speak only as the House directed him. The five, among them John Pym and John Hampden, had slipped away by river. A week later Charles left London. He would not come back until he was brought there as a prisoner.</p>
+<div class="ow-group" data-wid="w22-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What was the Petition of Right?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">In 1628 Parliament made Charles accept it. It said the king could not tax without Parliament&#x27;s consent or jail people without cause.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Who was William Laud?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Charles&#x27;s Archbishop of Canterbury. He wanted more ceremony and ritual in church services, and many saw this as Catholicism creeping back in.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What happened in Scotland in 1637?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Charles and Laud tried to force an English prayer book on Scotland, whose church had no bishops. Riots broke out in Edinburgh, and the Scots signed a National Covenant and raised an army.</div></div><button class="widget-reset">Reset</button></div></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">CAVALIERS AND ROUNDHEADS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The king's supporters were called Cavaliers, and Parliament's were called Roundheads, after the short haircuts of London apprentices. The war was not simply rich against poor. Families divided and brothers fought on opposite sides. The king was strong in the north and west. Parliament held London, the great ports, and the navy.</p>
+<p style="margin:0 0 14px;">The first major battle, at Edgehill in October 1642, ended in a draw. The king's best cavalry commander was his nephew, Prince Rupert, a dashing young officer whose charges swept away whatever they struck. Parliament had other advantages. London's merchants lent it money, and in 1643 it created a new tax, the excise, a duty on goods such as beer and tobacco that raised money steadily. It also made an alliance with the Scots, who sent an army into England in return for a promise to reform the English church. A war lasts as long as one side can pay its soldiers, and Parliament could pay more steadily than the king.</p>
+<p style="margin:0 0 14px;">The early battles settled little. Then a gentleman farmer named Oliver Cromwell rose to prominence. He was a devout Puritan with no military training, but he built a cavalry force of disciplined, religious men who won at Marston Moor in 1644. In 1645 Parliament created the New Model Army, in which officers were promoted for ability rather than birth. It crushed the king at Naseby that June, and Charles gave himself up the next year.</p>
+<p style="margin:0 0 14px;">Cromwell had seen the problem plainly. In a letter he wrote that he would rather have a plain captain who knew what he was fighting for than a gentleman who was nothing else. Parliament then passed a law requiring its members to give up their army commands, which cleared out some mediocre aristocratic officers, and Sir Thomas Fairfax took command of the New Model Army. Its soldiers were paid more regularly than most armies of the time, drilled hard, and many of them read the Bible daily. At Naseby, on June 14, 1645, they destroyed the king's main army and captured his private letters, which showed that he was seeking help from foreign troops. In May 1646 he surrendered to the Scots.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A WAR OF IDEAS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The war also stirred up ideas that frightened the men who had started it. In 1647 army officers and common soldiers met in the church at Putney to debate what kind of government England should have. A group called the Levellers wanted most men to have the vote. Colonel Thomas Rainsborough said that "the poorest he that is in England hath a life to live, as the greatest he." Cromwell's son-in-law, Henry Ireton, answered that those with no property had no lasting stake in the kingdom. If they could vote, they might vote to take property away from others.</p>
+<p style="margin:0 0 14px;">The Levellers were led by John Lilburne, a London pamphleteer who had been whipped and jailed under Charles for his writings. They drew up a draft constitution, the Agreement of the People, which would have widened the vote and placed power in the people's hands. The argument at Putney was left unsettled. In November 1647 Charles escaped from custody, and soon afterward he made a secret agreement with the Scots, who promised to invade England on his behalf in return for church reform. Rainsborough was killed by royalists in 1648. In 1649 Cromwell crushed a Leveller mutiny in the army, and the movement was broken.</p>
+<p style="margin:0 0 14px;">Neither side won the argument that day. But it showed that once the old order cracked, people began to ask who should rule and why. These questions would be debated for centuries.</p>
+<div class="optima-widget ow-select" data-wid="w22-1-3" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHO SAID OR DID WHAT?</div><div class="widget-question">Choose what the lesson says.</div><div class="widget-row" data-correct="2" data-fb="Right. A group called the Levellers wanted most men to have the vote." data-hint="Think of the group named for wanting to level out who could take part."><div class="widget-row-prompt">1. Wanted most men to have the vote, and made the case at Putney</div><div class="widget-options"><button data-choice="0">The Cavaliers</button><button data-choice="1">The Scots</button><button data-choice="2">The Levellers</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. Ireton, Cromwell&#x27;s son-in-law, feared that voters with no property might vote to take property from others." data-hint="Rainsborough spoke for the poorest man. Who answered him?"><div class="widget-row-prompt">2. Answered that men with no property had no lasting stake in the kingdom</div><div class="widget-options"><button data-choice="0">Thomas Rainsborough</button><button data-choice="1">Henry Ireton</button><button data-choice="2">Oliver Cromwell</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. In January 1642 Charles entered the Commons with armed men, but the five had been warned and were gone." data-hint="No king had ever entered the Commons by force. Whose action was it?"><div class="widget-row-prompt">3. Marched into the House of Commons with armed men to arrest five of its leaders</div><div class="widget-options"><button data-choice="0">Oliver Cromwell</button><button data-choice="1">Charles I</button><button data-choice="2">The Scots</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE TRIAL OF A KING</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Even in defeat, Charles would not settle. He plotted in secret with the Scots, who invaded England again in 1648. The army was furious. In December soldiers kept out the members of Parliament who still wanted a deal with the king. The members left in the Commons put Charles on trial. He refused to recognize the court. He was found guilty of treason and beheaded outside his palace at Whitehall on January 30, 1649. England had become a republic.</p>
+<p style="margin:0 0 14px;">The soldier who kept the members out was Colonel Thomas Pride, whose men stood at the door and turned the king's friends away. The remaining Commons, which came to be called the Rump, set up a special court with John Bradshaw as its president. Charles would not enter a plea. He said that no court had authority over a king and that he stood for the liberty of his people. On the morning of the execution he put on two shirts so that he would not shiver in the cold and seem afraid. He walked through his own Banqueting House and stepped out onto a scaffold in front of it, and witnesses said that the crowd groaned when the blow fell. Soon afterward a book said to be the king's own meditations, the <em>Eikon Basilike</em>, appeared and sold widely. It made him a martyr in the eyes of many.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE REPUBLIC THAT FAILED</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">After the king's death the Commons abolished the monarchy and the House of Lords and declared England a commonwealth. Cromwell was sent to put down resistance in Ireland, and then to deal with the Scots. He defeated them at Dunbar in 1650. The next year the Scots crowned Charles's son as Charles II and marched into England, where Cromwell destroyed their army at Worcester. The young Charles escaped. He hid for a day in an oak tree at Boscobel while soldiers searched below, made his way to the south coast, and sailed for France. Had he been caught, the monarchy would have had no heir to call home.</p>
+<p style="margin:0 0 14px;">The republic was not a golden age of liberty. Cromwell's troops killed most of the garrison and many civilians at Drogheda in Ireland. In 1653 he dissolved Parliament by force and took the title Lord Protector, which began what is called the <span class="gloss" tabindex="0"><strong>Protectorate</strong><button class="gloss-audio" onclick="speakGloss(event,'pruh-TEK-tuh-rit')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">pruh-TEK-tuh-rit</span>The government of England under Oliver Cromwell from 1653 to 1659, in which he ruled as Lord Protector. <a class="om-maplink" href="#gloss-protectorate">See the glossary box.</a></span></span>. He refused the crown, but he ruled with the army behind him. When he died in 1658, no one could hold the system together. In 1660 the English invited Charles's son home as Charles II.</p>
+<p style="margin:0 0 14px;">Cromwell dissolved the Rump by marching in with soldiers and ordering the mace, the symbol of Parliament's authority, taken away. A written constitution, the Instrument of Government, made him Lord Protector. It limited his powers on paper, but the army's weight stood behind him. In 1655 he divided England into districts under army officers called major-generals, and many people resented soldiers who interfered with their lives. The Puritan government banned Christmas feasts, the theaters had been closed since the war began, and many people were tired of it all. His son Richard had no hold over the army and resigned within months. In 1660 General George Monck marched from Scotland to London, a new Parliament was called, and Charles II came home. The men who had signed the old king's death warrant were hunted down. Cromwell's own body was dug up and hanged at Tyburn.</p>
+<p style="margin:0 0 14px;">Machiavelli had warned that republics born in civil war often end under the sword, and England seems to prove him right. Nothing was settled in 1660 either. How could a crown be limited without destroying it? The question had to be answered again, and the next lesson shows how.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">England: Crown and Parliament</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

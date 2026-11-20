@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: The Age of Exploration: Voyages and Sponsors</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">Supplementary Lessons</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Age of Exploration: Voyages and Sponsors</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">APPENDIX &middot; LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">The Age of Exploration: Voyages and Sponsors</div>
+        <div style="font-size: 16px; color: #666;">Why Europeans Went to Sea, and Who Paid for It</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain the economic, technological, and religious reasons that Europeans began to sail far from home in the 1400s.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Identify the major voyages from 1488 to 1522 and the rulers or companies that paid for them.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe how chance and personal choice shaped which nations led the way.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">An atlas or online map</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-astrolabe" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>astrolabe</strong><button class="gloss-audio" onclick="speakGloss(event,'AS-truh-layb')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">AS-truh-layb</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A hand-held instrument that measures the height of the sun or a star above the horizon, which helps a sailor find his latitude.</div>
+    </div><div id="gloss-caravel" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>caravel</strong><button class="gloss-audio" onclick="speakGloss(event,'KAIR-uh-vel')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">KAIR-uh-vel</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A small, fast Portuguese sailing ship with triangular sails that could sail against the wind better than older ships.</div>
+    </div><div id="gloss-circumnavigate" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>circumnavigate</strong><button class="gloss-audio" onclick="speakGloss(event,'sur-kum-NAV-ih-gayt')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">sur-kum-NAV-ih-gayt</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">To sail all the way around the world.</div>
+    </div><div id="gloss-sponsor" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>sponsor</strong><button class="gloss-audio" onclick="speakGloss(event,'SPON-ser')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">SPON-ser</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A person, ruler, or company that pays for a voyage in the hope of a return.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0;">In 1400 no European ship had ever reached India by sea or crossed the Atlantic and returned. By 1522 one fleet had sailed around the whole earth. Today you will learn what drove that change, who paid for each voyage, and why a few small nations on the edge of Europe led the way.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WHY GO?</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Europeans wanted the goods of Asia. Pepper, cinnamon, cloves, and silk reached Europe by long and costly routes, passing through many hands. Each merchant, port, and ruler along the way took a share, so a sack of pepper cost far more in Lisbon than in India. Anyone who could sail directly to the source could keep that difference. Africa mattered too. Gold from West Africa crossed the Sahara by camel, and a ship that reached the African coast might meet those traders on the shore.</p>
+<p style="margin:0 0 14px;">Faith was part of the mix. Portugal and Spain had spent centuries fighting Muslim kingdoms on their own soil, and the habit of holy war did not end when the fighting did. Many Europeans hoped to find Christian allies beyond the Muslim world, and they hoped to spread their faith. Add rivalry. In 1453 the Ottoman Turks took Constantinople, and later Ottoman power over the eastern Mediterranean made the old trade routes more tense and more expensive. Historians argue about how much that mattered, since spices kept flowing east of Europe by several routes. It is safer to say that merchants and kings felt hemmed in and went looking for another way.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE TOOLS OF THE SEA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Desire alone was not enough. Sailors also needed better tools. The Portuguese <span class="gloss" tabindex="0"><strong>caravel</strong><button class="gloss-audio" onclick="speakGloss(event,'KAIR-uh-vel')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAIR-uh-vel</span>A small, fast Portuguese sailing ship with triangular sails that could sail against the wind better than older ships. <a class="om-maplink" href="#gloss-caravel">See the glossary box.</a></span></span> was light and quick, and its triangular sails let it work its way against the wind. That mattered on the African coast, where winds blow south for hundreds of miles. A ship that sailed south easily had to find a way home. The solution was to swing far out into the Atlantic and catch the westerly winds that carried ships back, a trick that took the Portuguese decades to master.</p>
+<p style="margin:0 0 14px;">Navigators also learned to find their position far from land. With the compass for direction and the <span class="gloss" tabindex="0"><strong>astrolabe</strong><button class="gloss-audio" onclick="speakGloss(event,'AS-truh-layb')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AS-truh-layb</span>A hand-held instrument that measures the height of the sun or a star above the horizon, which helps a sailor find his latitude. <a class="om-maplink" href="#gloss-astrolabe">See the glossary box.</a></span></span> for the height of the sun, a pilot could estimate how far north or south he had come. Mapmakers collected each captain's reports and drew new charts. This was a slow, practical, and very careful kind of knowledge. It belonged to people who tried things, failed, wrote down what happened, and tried again.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">PORTUGAL POINTS THE WAY</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Portugal was small and poor, but its crown could focus its effort. Prince Henry, later called the Navigator, was a <span class="gloss" tabindex="0"><strong>sponsor</strong><button class="gloss-audio" onclick="speakGloss(event,'SPON-ser')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SPON-ser</span>A person, ruler, or company that pays for a voyage in the hope of a return. <a class="om-maplink" href="#gloss-sponsor">See the glossary box.</a></span></span> of many voyages down the African coast from the 1420s. He rarely sailed himself. He paid for ships and crews, and each expedition pushed a little farther. After his death in 1460 the crown carried on. In 1488 Bartolomeu Dias rounded the southern tip of Africa, which later generations called the Cape of Good Hope, and found that the Indian Ocean lay open beyond it.</p>
+<p style="margin:0 0 14px;">Ten years later King Manuel I sent Vasco da Gama to finish the job. Da Gama left Lisbon in 1497 with four ships, rounded the Cape, hired a pilot in East Africa who knew the monsoon winds, and reached Calicut in India in May 1498. The voyage cost many lives, and he lost a ship and a large part of his crew. Yet the cargo he brought home paid for the expedition many times over. Portugal had opened a sea road to Asia. In 1500 another Portuguese captain, Pedro Alvares Cabral, bound for India, swung so far west that he landed in Brazil, and Portugal claimed it.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A GENOESE CAPTAIN AND A SPANISH QUEEN</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Christopher Columbus was an Italian sailor from Genoa who thought he could reach Asia by sailing west. His plan rested on a mistake. He believed the earth was much smaller than it is, and the experts who advised the Portuguese king knew he was wrong. They were right, and when Columbus asked Portugal for ships, the answer was no. He then spent years pleading with the rulers of Spain. Queen Isabella of Castile and King Ferdinand of Aragon first said no as well, since they were busy finishing their war against the last Muslim kingdom in Spain, Granada.</p>
+<p style="margin:0 0 14px;">Granada fell in January 1492, and the Spanish crowns agreed to be his <span class="gloss" tabindex="0"><strong>sponsor</strong><button class="gloss-audio" onclick="speakGloss(event,'SPON-ser')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SPON-ser</span>A person, ruler, or company that pays for a voyage in the hope of a return. <a class="om-maplink" href="#gloss-sponsor">See the glossary box.</a></span></span>. Columbus left in August with three ships and sighted land in October. He had found islands in the Caribbean, not Asia. Here is a puzzle to consider. If the Portuguese advisors had been wrong instead of right, Portugal might have claimed the Atlantic. If Granada had fallen a year later, Columbus might have gone to France or England. As it happened, Spain gained a huge new field of action, and soon men like Cortés and Pizarro were using it. To keep the peace between the two rivals, the Treaty of Tordesillas in 1494 drew a line down the Atlantic. Spain could claim lands to the west of it, and Portugal to the east.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">ENGLAND, FRANCE, AND THE NORTHERN SEARCH</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Other kingdoms wanted a share. In 1497 John Cabot, another Italian, sailed from Bristol for King Henry VII of England and reached the coast of North America, probably Newfoundland. England did little with the claim for decades. France sent Jacques Cartier, who explored the Gulf of St. Lawrence and the great river beyond it in the 1530s for King Francis I, hoping to find a passage to Asia. He did not find one.</p>
+<p style="margin:0 0 14px;">In the next century the sponsors changed. Early voyages were paid for by kings, but the Dutch and English now chartered trading companies, which raised money from many investors. In 1609 the Dutch East India Company hired the Englishman Henry Hudson to look for a northern route to Asia, and he explored the river that now carries his name. The rise of the company as a <span class="gloss" tabindex="0"><strong>sponsor</strong><button class="gloss-audio" onclick="speakGloss(event,'SPON-ser')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SPON-ser</span>A person, ruler, or company that pays for a voyage in the hope of a return. <a class="om-maplink" href="#gloss-sponsor">See the glossary box.</a></span></span> marks a shift. Private merchants, not only crowns, were now ready to gamble on distant ventures.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">AROUND THE WORLD</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">The greatest voyage of the age was also the strangest. Ferdinand Magellan was a Portuguese captain who had quarreled with his own king. He offered his plan to the young king of Spain, Charles I, who is better known as the Holy Roman Emperor Charles V. Magellan proposed to reach the Spice Islands by sailing west around South America. Charles agreed to pay for five ships in 1519. The crews faced mutiny, storms, hunger, and scurvy. Magellan found the strait at the tip of South America that now bears his name and crossed the Pacific, which took more than three months and nearly destroyed the fleet.</p>
+<p style="margin:0 0 14px;">Magellan did not live to see the end. He was killed in a fight in the Philippines in April 1521. A Spanish officer, Juan Sebastian Elcano, took command, and in September 1522 the last ship, the Victoria, reached Spain with eighteen survivors. They had managed to <span class="gloss" tabindex="0"><strong>circumnavigate</strong><button class="gloss-audio" onclick="speakGloss(event,'sur-kum-NAV-ih-gayt')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sur-kum-NAV-ih-gayt</span>To sail all the way around the world. <a class="om-maplink" href="#gloss-circumnavigate">See the glossary box.</a></span></span> the globe. Only one ship and a handful of men came back from a fleet of five ships and around 240 men, but the cargo of cloves still earned a profit. The voyage proved that the earth could be circled by sea and that the Pacific was far larger than anyone in Europe had guessed.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WHAT TO REMEMBER</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Look at the pattern. Each voyage needed a <span class="gloss" tabindex="0"><strong>sponsor</strong><button class="gloss-audio" onclick="speakGloss(event,'SPON-ser')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SPON-ser</span>A person, ruler, or company that pays for a voyage in the hope of a return. <a class="om-maplink" href="#gloss-sponsor">See the glossary box.</a></span></span> with money and a captain with courage, and the rewards were uncertain. Prince Henry, Manuel, Isabella, and Charles each judged that the risk was worth it. Their captains faced the sea with real daring, and many paid with their lives. Some sailors were also ruthless toward the peoples they met, and later lessons show how the contacts that began here changed three continents.</p>
+<p style="margin:0 0 14px;">Nothing about this was fixed in advance. Portugal's choice to keep exploring, Granada's fall in the year Columbus sailed, and a Portuguese captain's quarrel with his king all changed who went where. On your map, trace the routes of Dias, da Gama, Columbus, and Magellan, and note which crown paid for each. Then ask yourself why the nations on the Atlantic edge of Europe, and not the great powers in its center, took the lead.</p>
+</div>
+    </div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Appendix</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Appendix</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+</script>
+</body>
+</html>

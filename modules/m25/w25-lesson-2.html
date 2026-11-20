@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Lesson: France Goes Bankrupt: Louis XVI and the Estates-General</title>
+<style>
+body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+.canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; }
+@media print { body { background: #fff; } .canvas-frame { box-shadow: none; } }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+
+
+.gloss { border-bottom: 1px dotted #55C8E8; cursor: help; position: relative; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; z-index: 30; bottom: 100%; left: 0; width: 260px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; margin-bottom: 6px; box-shadow: 0 6px 18px rgba(14,28,66,0.18); font-size: 13px; line-height: 1.5; color: #1a2340; }
+.gloss-pron { display: block; color: #55C8E8; font-style: italic; margin-bottom: 4px; }
+.gloss-audio { background: none; border: none; padding: 0 0 0 2px; font-size: 12px; cursor: pointer; vertical-align: middle; }
+
+
+.om-figure { margin: 0; }
+.om-svg { display: block; width: 100%; height: auto; border: 1px solid #D0D9E8; border-radius: 6px; }
+.om-label { pointer-events: none; }
+.om-hi { animation: omflash 1.6s ease-out 1; }
+@keyframes omflash { 0%,100% { fill: #0E1C42; } 30%,60% { fill: #C0392B; } }
+.om-caption { font-size: 13px; color: #6b7a99; line-height: 1.5; margin-top: 10px; }
+.om-maplink { color: #55C8E8; text-decoration: none; border-bottom: 1px dotted #55C8E8; cursor: pointer; }
+@media print { .om-svg { break-inside: avoid; } }
+
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55C8E8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;"><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module</div>
+        <div style="font-size: 17px; color: #0E1C42;">The Old Regime in Crisis</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Item</div>
+        <div style="font-size: 17px; color: #0E1C42;">Lesson</div>
+    </div><div style="flex: 1; min-width: 140px; padding: 12px 16px; ">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0E1C42;">France Goes Bankrupt: Louis XVI and the Estates-General</div>
+    </div></div>
+<div style="padding: 24px 34px;">
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] - one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] - one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0E1C42; margin-bottom: 6px;">LESSON</div>
+        <div style="font-size: 22px; color: #0E1C42; margin-bottom: 4px;">France Goes Bankrupt: Louis XVI and the Estates-General</div>
+        <div style="font-size: 16px; color: #666;">The Old Regime in Crisis</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; OBJECTIVES</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe the three estates and explain why France's tax system could not be reformed easily.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain how debt, failed reforms, and a bad harvest forced Louis XVI to call the Estates-General.</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Identify the dispute over voting that turned the Estates-General into a National Assembly.</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#128218; MATERIALS</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">This lesson page</div></div><div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #C7922C; font-size: 16px; flex-shrink: 0;">&#9654;</span><div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A notebook for your own notes</div></div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#9200; THIS LESSON AT A GLANCE</div>
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Review the glossary</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 5 min</span>
+    </div><div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:10px; padding:10px 14px; background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px;">
+        <div style="font-size:15px; color:#1a2340;">Read the lesson</div>
+        <span style="display:inline-block; background:#FDF3E3; color:#C7922C; border:1px solid #C7922C; border-radius:999px; padding:2px 11px; font-size:11px; margin-left:10px; vertical-align:middle; white-space:nowrap;">&#9200; 30 min</span>
+    </div>
+    </div>
+<div style="background: #FDF3E3; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Glossary of Subject Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">A few words worth reviewing before you read on.</p><div id="gloss-estate" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>estate</strong><button class="gloss-audio" onclick="speakGloss(event,'ih-STAYT')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">ih-STAYT</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">One of the three social orders of old France: the clergy, the nobles, and everyone else.</div>
+    </div><div id="gloss-estates-general" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Estates-General</strong><button class="gloss-audio" onclick="speakGloss(event,'ih-STAYTS JEN-ur-ul')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">ih-STAYTS JEN-ur-ul</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The old French assembly of representatives of the three estates, which the king called only when he chose to.</div>
+    </div><div id="gloss-national-debt" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>national debt</strong><button class="gloss-audio" onclick="speakGloss(event,'NASH-uh-nul DET')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">NASH-uh-nul DET</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The total amount of money a government has borrowed and still owes.</div>
+    </div><div id="gloss-old-regime" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>Old Regime</strong><button class="gloss-audio" onclick="speakGloss(event,'OHLD ray-ZHEEM')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">OHLD ray-ZHEEM</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">The political and social order of France before the Revolution, in which the king ruled and the clergy and nobles held special privileges.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">&#127919; TODAY'S FOCUS</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1789 the richest kingdom in Europe could not pay its bills. Today you will see why France could not fix the problem for twenty years, and how a hailstorm, a bad harvest, and a king's hesitation led to a meeting that France had not held since 1614.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KINGDOM OF PRIVILEGES</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Historians call the France of Louis XVI the <span class="gloss" tabindex="0"><strong>Old Regime</strong><button class="gloss-audio" onclick="speakGloss(event,'OHLD ray-ZHEEM')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">OHLD ray-ZHEEM</span>The political and social order of France before the Revolution, in which the king ruled and the clergy and nobles held special privileges. <a class="om-maplink" href="#gloss-old-regime">See the glossary box.</a></span></span>. It was a land of about 28 million people, divided by law into three <span class="gloss" tabindex="0"><strong>estates</strong><button class="gloss-audio" onclick="speakGloss(event,'ih-STAYT')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-STAYT</span>One of the three social orders of old France: the clergy, the nobles, and everyone else. <a class="om-maplink" href="#gloss-estate">See the glossary box.</a></span></span>. The First Estate was the clergy, about 130,000 men and women. The Church owned a large share of the land, perhaps a tenth of it, and collected a tithe, a tax of about a tenth of the crop. The Second Estate was the nobility, a few hundred thousand people. Not every noble was rich, and some commoners had more money than many nobles. The Third Estate was everyone else, more than ninety-eight out of every hundred French men and women, from wealthy merchants and lawyers to peasants and city workers.</p>
+<p style="margin:0 0 14px;">What mattered was privilege. Nobles and clergy were largely free from the main direct tax on commoners, the <span class="gloss" tabindex="0"><em>taille</em><button class="gloss-audio" onclick="speakGloss(event,'TIE')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TIE</span>A French word for the main direct tax on land and income that commoners paid and that nobles and clergy mostly did not. <a class="om-maplink" href="#gloss-taille">See the glossary box.</a></span></span>. Peasants also paid the tithe, dues to their landlords, and a hated tax on salt. Salt cost far more in some provinces than in others, so smuggling it was a trade. Landlords also charged fees for using the village mill and oven. Many offices, and even noble rank, could be bought, so rich commoners found themselves shut out of the top. A few of the wealthy and powerful held most of the exemptions, and they also held the places in the courts and in the Church that could defend them.</p>
+<p style="margin:0 0 14px;">Even collecting taxes was a privilege. Many of the indirect taxes, including the salt tax, were gathered by the Farm General, a private company of wealthy financiers that paid the crown a fixed sum in advance and kept whatever it could collect above that. The company had its own armed agents, and ordinary people hated them. The crown got its money early and the financiers grew rich, but a large part of what the taxpayers paid never reached the treasury.</p>
+</div>
+    </div>
+<div style="background: #EEF1F8; border-top: 3px solid #55C8E8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">Foreign Language Vocabulary</div>
+        <p style="font-size:14px; color:#6b7a99; margin-bottom:12px;">Two foreign-language terms appear in this lesson. Here is how to say them and what they mean.</p><div id="gloss-parlement" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>parlement</strong><button class="gloss-audio" onclick="speakGloss(event,'par-luh-MAHN')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">par-luh-MAHN</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French word for one of the high law courts of old France. A parlement could refuse to register a royal law, which delayed it, but it was a court and not an elected assembly like the British Parliament.</div>
+    </div><div id="gloss-taille" style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #D0D9E8;">
+        <div style="font-size:16px; color:#0E1C42;"><strong>taille</strong><button class="gloss-audio" onclick="speakGloss(event,'TIE')" aria-label="Play pronunciation">&#128266;</button></div>
+        <span class="gloss-pron" style="font-size:13px;">TIE</span>
+        <div style="font-size:14px; color:#1a2340; line-height:1.5;">A French word for the main direct tax on land and income that commoners paid and that nobles and clergy mostly did not.</div>
+    </div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE BILL FOR AMERICA</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Louis XVI became king in 1774 at nineteen. He was kind, devout, and shy, and he loved hunting and tinkering with locks. He was also not trained to rule. A lady of the court wrote that when word came that his grandfather had died, the young king and queen fell to their knees and prayed that God would guide them, since they were too young to reign. His queen, Marie Antoinette, came from Austria, and many French people distrusted her from the start. Rumor blamed her spending, and a scandal in 1785 over a diamond necklace she had never bought made her a target. Pamphlets called her Madame Deficit. In fact the court's costs were a small part of the budget, and the great costs were war and interest.</p>
+<p style="margin:0 0 14px;">Louis chose able ministers, but they met the same wall. The economist Turgot wanted free trade in grain and fewer privileges, and he was dismissed in 1776. In 1775, after a poor harvest, bread prices rose and riots broke out in towns near Paris. Turgot also tried to replace forced road labor with a tax on landowners and to abolish the guilds. The privileged resisted, and the king let him go. The Swiss banker Jacques Necker paid for the American war by borrowing, not by taxing. In 1781 he published an account of the budget that looked healthy because it left out the cost of the war. It claimed a surplus of ten million livres. When that cost was clear, the <span class="gloss" tabindex="0"><strong>national debt</strong><button class="gloss-audio" onclick="speakGloss(event,'NASH-uh-nul DET')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NASH-uh-nul DET</span>The total amount of money a government has borrowed and still owes. <a class="om-maplink" href="#gloss-national-debt">See the glossary box.</a></span></span> had swelled. By 1788 about half of the king's income went just to pay interest.</p>
+<p style="margin:0 0 14px;">Borrowing felt painless at the time. Necker raised money by selling life annuities and lottery loans at high rates of interest, and none of it required a new tax. But every loan had to be repaid with interest, and interest was paid out of future taxes. A king who borrows to avoid a quarrel with the privileged has not avoided it. He has only put it off, and made it larger.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">THE REFORMS THAT FAILED</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">In 1786 a new minister named Calonne proposed a land tax on every owner of land, with no exemptions. He also wanted to abolish customs barriers between provinces. He told the king that the crown was spending more than a hundred million livres a year beyond its income. The king called an Assembly of Notables, a hand-picked group of nobles, bishops, and officials, to approve it. He had chosen them because he expected them to agree. They refused. Even the Marquis de Lafayette, one of the notables, called for the Estates-General. Calonne was dismissed, and his successor Brienne tried again. This time the <span class="gloss" tabindex="0"><em>parlement</em><button class="gloss-audio" onclick="speakGloss(event,'par-luh-MAHN')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">par-luh-MAHN</span>A French word for one of the high law courts of old France. A parlement could refuse to register a royal law, which delayed it, but it was a court and not an elected assembly like the British Parliament. <a class="om-maplink" href="#gloss-parlement">See the glossary box.</a></span></span> of Paris refused to register the new taxes. The judges said that only the Estates-General could approve them.</p>
+<div class="optima-widget" data-wid="w25-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">It is 1786. About half of the king's income goes to pay interest on his debts. A few wealthy and powerful people hold most of the tax exemptions, and they also hold places in the courts and the Church. You advise the king.</div><details class="ow-reveal"><summary>Decide first, and jot your answer in your notebook: what would you try, and who would stand in your way? Then open to compare.</summary><div class="ow-reveal-body">A tax that fell on everyone would raise money, and it would also be fairer. But the people who would pay it are the very people who hold the exemptions, and some of them sit in the bodies that would have to agree. A reform that needs the approval of those it hurts is hard to carry out. A reformer had several roads to try, such as persuasion, pressure, or calling a wider assembly, and none of them was certain to work.</div></details><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">The parlements had resisted before. In August 1787 the king sent the judges of the Paris parlement away to the town of Troyes for refusing to register new taxes. Crowds in Paris cheered the judges, and within weeks the king had to call them back. Privileged courts were now defending their privileges in the name of liberty against royal despotism, and many ordinary people believed them.</p>
+<p style="margin:0 0 14px;">That was an answer with a long history. The <span class="gloss" tabindex="0"><strong>Estates-General</strong><button class="gloss-audio" onclick="speakGloss(event,'ih-STAYTS JEN-ur-ul')" aria-label="Play pronunciation">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-STAYTS JEN-ur-ul</span>The old French assembly of representatives of the three estates, which the king called only when he chose to. <a class="om-maplink" href="#gloss-estates-general">See the glossary box.</a></span></span> was the old assembly of the three estates. The kings of France had not called it since 1614, because it made kings answer to the nation. Some of those who demanded it were honestly seeking reform. Others hoped to protect their own exemptions. Once the government invited opinions on how the meeting should be held, pamphlets poured out, hundreds of them in a few weeks. The king tried to force the parlements to obey. In May 1788 his ministers issued edicts that stripped the parlements of much of their power. Riots broke out in Grenoble and elsewhere, and the army was reluctant to act. In Grenoble, townspeople on the rooftops pelted the troops with tiles. In August 1788 Louis gave in and promised to call the Estates-General for the next spring. By then the treasury was empty, and the government stopped paying many of its bills. This was a kind of bankruptcy. He also brought Necker back. Crowds cheered his return. When the parlement of Paris declared that the meeting should follow the forms of 1614, with separate votes by estate, its popularity vanished overnight.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">HAIL AND HUNGER</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Then nature added to the crisis. In July 1788 a terrible hailstorm flattened crops across northern France. The harvest failed, grain grew scarce, and the winter of 1788 to 1789 was among the coldest in memory. Frozen rivers stopped the mills that ground the grain. The price of bread soared. In Paris a four-pound loaf that normally cost about eight sous rose to nearly fifteen, when a laborer might earn about twenty sous in a day. A working family might spend most of its income on bread. By spring many were hungry and angry, in the cities and in the countryside.</p>
+<div class="optima-widget ow-seq" data-wid="w25-2-2" data-ra-skip data-n="5" data-fb="That is the order the lesson gives: 1774, 1776, 1786, July 1788, and August 1788." data-hint="The hailstorm came in July 1788, a month before Louis gave in and made his promise."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Tap these events in the order they happened, earliest first.</div><div class="widget-options ow-seq-pool"><button data-pos="1">Louis XVI becomes king at the age of nineteen</button><button data-pos="2">The minister Turgot is dismissed</button><button data-pos="3">Calonne proposes a land tax on every owner of land</button><button data-pos="4">A hailstorm flattens crops across northern France</button><button data-pos="5">Louis promises to call the old national assembly for the next spring</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+
+<p style="margin:0 0 14px;">Hunger fell unevenly. A peasant who owned a bit of land might grow some of his own food, but many villagers owned none and bought their bread with wages that were not rising. Winter stopped the work of day laborers in the countryside, and the poor took to the roads in search of food or work. Towns set guards over the grain wagons, and bakers' shops were attacked. In the capital the price of bread became the news of the day.</p>
+<p style="margin:0 0 14px;">Think about how different things might have looked with an ordinary harvest. Reform would still have been hard, but hungry crowds would not have filled the streets. Great events often turn on chances like this, which no minister could control.</p>
+<div class="optima-widget ow-scale" data-wid="w25-2-3" data-ra-skip><div class="widget-kicker">&#9889; HOW MUCH WAS CHANCE?</div><div class="widget-question">A hailstorm and a failed harvest struck France in 1788, in the middle of a long money crisis. How much of the crisis came from chance rather than from long-standing problems?</div><div class="widget-row" data-correct="1,2" data-fb="Reasonable. Chance played a part, but it worked on long-standing problems." data-hint="Think about the debt, the exemptions, and the failed reforms, and then about the hailstorm."><div class="widget-options"><button data-choice="0" data-fb="Look again. The lesson says that with an ordinary harvest, hungry crowds would not have filled the streets.">None of it</button><button data-choice="1" data-fb="Reasonable. The debt, the exemptions, and the failed reforms were long-standing, though the hailstorm made things worse.">A little</button><button data-choice="2" data-fb="Reasonable. Chance, such as the hailstorm, mattered alongside long-standing problems like the debt and the exemptions.">Some of it</button><button data-choice="3" data-fb="Try lower. The debt, the exemptions, and the failed reforms had been building for years before the hailstorm.">A great deal</button><button data-choice="4" data-fb="Not all. Reform had already failed more than once before the hailstorm came.">All of it</button></div></div><button class="widget-reset">Reset</button></div>
+
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">WHAT IS THE THIRD ESTATE?</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Across France, people wrote lists of complaints to send to the king. Most of them were respectful and asked for fair taxes, regular meetings of the Estates-General, and a written constitution. Few asked to end the monarchy. Villagers met to write them, often with help from a local lawyer or priest. Peasant lists asked to end the salt tax, the lord's hunting rights, and the lord's fees. Town lists asked for freedom of the press and fair taxes. Many lists from nobles asked for a constitution, too. Nearly all men over twenty-five who paid taxes could vote for delegates, a wider vote than most countries allowed. A priest named Emmanuel Joseph Sieyès wrote a pamphlet that was more daring. It said that the Third Estate was the whole nation, that it had been treated as nothing in politics, and that it now deserved to be something. The pamphlet asked three questions and answered each in a word: everything, nothing, something.</p>
+<p style="margin:0 0 14px;">The leading question was how to vote. If each estate had one vote, the clergy and nobles could always outvote the commoners two to one. If every deputy voted as an individual, the Third Estate would have the strength to win, because it had as many deputies as the other two combined, about six hundred against about three hundred each for the clergy and the nobles. Most of the Third Estate's deputies were lawyers and officials, and only a handful were peasants or workers. The king allowed that doubling, but he left the method of voting undecided. It was a dangerous silence.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">VERSAILLES, SPRING 1789</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">A procession through Versailles on May 4 made the differences among the estates plain. The clergy walked in their robes, the nobles in plumed hats and coats trimmed with gold, and the Third Estate, last in line, in plain black. Everyone could see at a glance who counted for most under the old rules, and the Third Estate's deputies, who had been chosen to speak for the great majority of France's 28 million people, saw it too.</p>
+<p style="margin:0 0 14px;">On May 5, 1789, about 1,200 deputies filed into Versailles in a grand ceremony. The Third Estate wore plain black. Necker spoke for hours and said nothing about how to vote. For weeks nothing happened. In the middle of those weeks, on June 4, the king's eldest son, a boy of seven, died after a long illness. Many parish priests, poor men who had more in common with their villagers than with bishops, began crossing over to join the commoners. The nobles and clergy insisted on voting by estate, and the Third Estate refused to start work on those terms.</p>
+<p style="margin:0 0 14px;">On June 17 the deputies of the Third Estate declared themselves the National Assembly, speaking for the nation. Three days later they found their meeting hall locked, so they gathered on a nearby indoor tennis court and swore not to separate until France had a constitution. Soldiers stood at the doors of the hall, which the king's officers said had been closed to prepare for a royal session. Nearly every deputy signed the oath, and only one refused. On June 23 Louis came to the hall and ordered the estates to meet separately and to cancel what the Third Estate had decided. He told them to leave. They did not. Their presiding officer, Bailly, replied that an assembled nation could not take orders. On June 27 Louis told the nobles and clergy to join them. The king had given way, but he was also quietly moving troops toward Paris and Versailles. Why did he do both?</p>
+<p style="margin:0 0 14px;">The royal session of June 23 ended with a scene that France remembered. After the king left, the master of ceremonies came back to remind the deputies that they had been told to go. They stayed in their seats. Mirabeau, a noble who had been elected by the Third Estate, is said to have answered that they were there by the will of the people and would leave only at the point of bayonets. No one wrote down his exact words at the time, and the sharp version that history keeps is probably a polished one. What is certain is that the deputies did not leave, and that the king did not send soldiers to move them.</p>
+<p style="margin:0 0 14px;">His advisers pulled in opposite directions. Necker urged him to give ground. The queen and the king's younger brother, the Count of Artois, urged him to stand firm. Louis listened to each in turn, and he followed neither all the way.</p>
+</div>
+    </div>
+<div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 14px;">A KING WHO COULD NOT CHOOSE</div>
+        <div style="font-size:17px; color:#1a2340; line-height:1.7;">
+<p style="margin:0 0 14px;">Compare the two kingdoms. Britain's ruling class was taxed, sat in Parliament, and could argue its way to a new settlement. France's ruling class was exempt, and the one body that could call everyone together had been silent for 175 years. The Old Regime was strained by debt, but what finally broke it was the unwillingness of the privileged to share the load, and a king who could neither lead reform nor crush resistance. The Old Regime did not fall because of one thing, and a different king, a better harvest, or a steadier minister might have changed the outcome. Next week you will see what happened next.</p>
+</div>
+    </div>
+<div style="font-size:13px; color:#6b7a99; border-top:1px dashed #D0D9E8; padding-top:10px; margin-top:4px; margin-bottom:16px;">&#128204; You have reached the end of this module's lessons. Open the short wrap-up survey that closes &ldquo;The Old Regime in Crisis.&rdquo; Look for it in your Canvas course navigation.</div>
+
+</div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 17px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55C8E8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">The Old Regime in Crisis</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online</div>
+</div>
+</div>
+<script>
+
+function speakGloss(evt, phonetic) {
+  evt.stopPropagation();
+  evt.preventDefault();
+  if (!window.speechSynthesis) { return; }
+  var u = new SpeechSynthesisUtterance(phonetic);
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(u);
+}
+
+
+function omShowFeature(evt, mapId, featId) {
+  evt.preventDefault();
+  var el = document.getElementById(featId);
+  var box = document.getElementById(mapId);
+  if (box) { box.scrollIntoView({behavior:'smooth', block:'center'}); }
+  if (el) {
+    el.classList.remove('om-hi');
+    void el.offsetWidth;
+    el.classList.add('om-hi');
+  }
+}
+
+
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+
+</script>
+</body>
+</html>

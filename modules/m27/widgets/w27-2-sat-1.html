@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Practice: Russia, 1812</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:12px;background:transparent;font-family:Georgia,'Times New Roman',serif;color:#0E1C42}
+.sat-widget{background:linear-gradient(135deg,#E8F6FB 0%,#F4F9FC 100%);border:1px solid #C5DCE5;border-left:5px solid #2196D0;border-radius:8px;padding:18px 22px;font-size:16px;line-height:1.5}
+.kicker{font-size:11px;color:#1B6A94;margin-bottom:10px;letter-spacing:.4px;font-family:Arial,Helvetica,sans-serif}
+.testlabel{display:inline-block;background:#1B6A94;color:#fff;font-weight:bold;font-size:12px;letter-spacing:.3px;padding:2px 8px;border-radius:4px;margin-right:6px}
+.q{border-top:1px solid #C5DCE5;padding-top:16px;margin-top:16px}
+.q:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.qnum{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:bold;color:#1B6A94;margin-bottom:8px}
+.passage{background:#fff;border:1px solid #D0D9E8;border-radius:6px;padding:12px 16px;margin:0 0 12px;font-size:15px;line-height:1.6;color:#1a2340}
+.stem{font-size:17px;margin:0 0 12px;line-height:1.55}
+.prompt{background:#FFF8E8;border:1px dashed #C7922C;border-radius:6px;padding:8px 12px;margin-bottom:12px;font-size:14px;color:#6b4a0a;font-family:Arial,Helvetica,sans-serif}
+button{font-family:Arial,Helvetica,sans-serif;cursor:pointer}
+button:focus-visible{outline:3px solid #2196D0;outline-offset:2px}
+.btn{background:#0E1C42;color:#fff;border:1px solid #0E1C42;border-radius:8px;padding:8px 16px;font-size:14px}
+.btn:hover:not(:disabled){background:#1d3270}
+.btn.ghost{background:#fff;color:#0E1C42;border:1.5px solid #D0D9E8}
+.btn.ghost:hover:not(:disabled){border-color:#55C8E8;background:#F4F6FA}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.choices{margin:14px 0 4px}
+.choice{margin-bottom:10px}
+.choice button.opt{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:#fff;border:1.5px solid #D0D9E8;border-radius:8px;padding:10px 14px;font-size:15px;color:#0E1C42;line-height:1.45;transition:background .2s,border-color .2s}
+.choice button.opt:hover:not(:disabled){background:#F4F6FA;border-color:#55C8E8}
+.choice button.opt .ltr{font-weight:bold;min-width:18px}
+.choice button.opt.selected{background:#0E1C42;color:#fff;border-color:#0E1C42}
+.choice button.opt.correct{background:#D8F0DD;border-color:#2A9D5C;color:#1A6B3D}
+.choice button.opt.incorrect{background:#FDECEC;border-color:#C0392B;color:#8A1F16}
+.choice button.opt:disabled{cursor:default}
+.cfb{display:none;margin:6px 0 0 4px;padding:8px 12px;font-size:14px;line-height:1.5;border-radius:4px;font-family:Arial,Helvetica,sans-serif}
+.cfb.show{display:block}
+.cfb.right{background:#D8F0DD;border-left:3px solid #2A9D5C;color:#1A6B3D}
+.cfb.wrong{background:#FDECEC;border-left:3px solid #C0392B;color:#8A1F16}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.hints{margin-top:10px}
+.hint{background:#fff;border-left:3px solid #55C8E8;padding:8px 12px;margin-bottom:6px;font-size:14px;line-height:1.5;border-radius:4px;font-family:Arial,Helvetica,sans-serif;color:#1a2340}
+.note{display:none;margin-top:10px;background:#fff;border-left:3px solid #2196D0;padding:8px 12px;font-size:14px;line-height:1.5;border-radius:4px;font-family:Arial,Helvetica,sans-serif}
+.note.show{display:block}
+.reset,.resetall{background:transparent;border:1px solid #C7922C;color:#8A6112;border-radius:6px;padding:6px 12px;font-size:12px;margin-top:12px}
+.reset:hover,.resetall:hover{background:#FDF3E3}
+.resetall{display:block;margin-top:18px}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){.choice button.opt{transition:none}}
+</style></head><body>
+<div class="sat-widget">
+<div class="kicker"><span class="testlabel">SAT practice</span> READ AND ANSWER</div>
+<section class="q" data-i="0"><div class="qnum">Question 1</div><blockquote class="passage" style="margin:0 0 12px"><p style="margin:0">By 1812 Tsar Alexander was trading with Britain again. Napoleon decided to punish him. In June he crossed the Niemen River with about 600,000 men, drawn by conscription from France and its allies and subjects. Only about half were French. The rest were Poles, Germans, Italians, and others who spoke a dozen languages. The Russian generals kept refusing the great battle Napoleon wanted, and they fell back and burned what they left, so the army ran short of food. Horses died on green fodder, fever and dysentery spread, and thousands dropped out of the ranks before the first great battle was fought. The Russian plan of falling back and burning the countryside therefore harmed Napoleon's army before the great battle he wanted had even begun, because <strong>_____</strong></p></blockquote><div class="stem">Which choice most logically completes the text?</div><div class="prompt">Come up with your own answer before looking at the choices.</div><button type="button" class="btn reveal">Reveal answer choices</button><div class="choices" hidden><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">A.</span><span>the Russian armies were losing men and horses faster than the French, since they had burned their own food.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">B.</span><span>the soldiers from Poland, Germany, and Italy had been trained to march long distances on very little food.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">C.</span><span>the army was losing men and horses to hunger and disease even though no great battle had yet been fought.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">D.</span><span>the Russian generals had already won the great battle that Napoleon wanted so badly, though no one yet knew it.</span></button><div class="cfb" role="status"></div></div></div><div class="bar" hidden><button type="button" class="btn submit" disabled>Submit answer</button><button type="button" class="btn ghost hintbtn" disabled>Show hint</button></div><div class="hints" aria-live="polite"></div><div class="note"><strong>Question type:</strong> This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.</div><div class="qstatus" role="status" style="position:absolute;left:-9999px"></div><button type="button" class="reset">Reset question</button></section><section class="q" data-i="1"><div class="qnum">Question 2</div><blockquote class="passage" style="margin:0 0 12px"><p style="margin:0">At Borodino on September 7 the two sides fought a bloody battle that settled little. Napoleon entered Moscow a week later and found it nearly empty, since most of its people and its supplies had gone. Fires broke out across the city, and much of it burned. He waited for the tsar to ask for peace, but no message came. Napoleon waited more than a month while the days grew shorter.</p><p style="margin:10px 0 0">In October he began the retreat. Cold, hunger, and Cossack raiders destroyed the army. At the Berezina River in late November, with Russian armies closing in, his engineers worked in icy water to build bridges under fire, and part of the army got across. Only a small fraction of the men who crossed the Niemen ever came home. Napoleon left the survivors in early December and raced to Paris to raise a new army. Had the tsar sued for peace, or had Napoleon turned back sooner, the story might have been different.</p></blockquote><div class="stem">Which choice best states the main idea of the text?</div><div class="prompt">Come up with your own answer before looking at the choices.</div><button type="button" class="btn reveal">Reveal answer choices</button><div class="choices" hidden><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">A.</span><span>The Battle of Borodino was a clear French victory that opened the way for Napoleon to take Moscow and bring the war to an end.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">B.</span><span>Napoleon waited in Moscow for a peace that never came, and the retreat that followed destroyed most of his army.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">C.</span><span>Engineers working in icy water at the Berezina River saved the French army from complete destruction in the late autumn of 1812.</span></button><div class="cfb" role="status"></div></div><div class="choice"><button type="button" class="opt" aria-pressed="false"><span class="ltr">D.</span><span>Cold, hunger, and Cossack raiders, rather than any choice Napoleon made, were the only reason the army was ruined in Russia.</span></button><div class="cfb" role="status"></div></div></div><div class="bar" hidden><button type="button" class="btn submit" disabled>Submit answer</button><button type="button" class="btn ghost hintbtn" disabled>Show hint</button></div><div class="hints" aria-live="polite"></div><div class="note"><strong>Question type:</strong> This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.</div><div class="qstatus" role="status" style="position:absolute;left:-9999px"></div><button type="button" class="reset">Reset question</button></section>
+<button type="button" class="resetall" id="resetall">Reset all</button>
+</div>
+<script type="application/json" id="sat-data">{"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","qs":[{"correct":2,"fb":["The passage says the French army ran short of food. It never says the Russians were losing men faster, so this adds new information.","This adds new information. The passage says the soldiers spoke a dozen languages, but it says nothing about their training.","The passage establishes the retreat, the burned land, and the dying horses, and this choice follows from them with no added assumptions.","This contradicts the passage, which says the Russian generals kept refusing the great battle and that the first great battle had not yet been fought."],"h2":"This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","h3":"Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."},{"correct":1,"fb":["This distorts the passage, which says Borodino was a bloody battle that settled little and that Moscow was found nearly empty.","This covers the whole passage: the wait for a message that never came, then the retreat that destroyed the army. It matches a one-sentence summary of the text.","This is too narrow. The Berezina crossing is one detail, and the passage says only part of the army got across.","This goes too far. The passage ends by saying that if the tsar had sued for peace, or Napoleon had turned back sooner, the story might have been different."],"h2":"This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","h3":"Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."}]}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('sat-data').textContent);
+  var resets = [];
+  [].slice.call(document.querySelectorAll('.q')).forEach(function(sec, qi){
+    var d = D.qs[qi];
+    var $ = function(c){ return sec.querySelector(c); };
+    var reveal=$('.reveal'), choices=$('.choices'), submit=$('.submit'), hintBtn=$('.hintbtn'),
+        hints=$('.hints'), note=$('.note'), status=$('.qstatus'), bar=$('.bar');
+    var picked=-1, shown=0, submitted=false;
+    var opts=[].slice.call(sec.querySelectorAll('button.opt'));
+    var cfbs=[].slice.call(sec.querySelectorAll('.cfb'));
+    function renderHints(){
+      hints.innerHTML='';
+      var texts=[D.h1,d.h2,d.h3];
+      for(var i=0;i<shown;i++){var h=document.createElement('div');h.className='hint';h.textContent=texts[i];hints.appendChild(h);}
+      hintBtn.textContent = shown===0 ? 'Show hint' : (shown<3 ? 'Show another hint' : 'Hide hints');
+      note.classList.toggle('show', shown>=2 || submitted);
+    }
+    reveal.addEventListener('click',function(){
+      choices.hidden=false; reveal.hidden=true; hintBtn.disabled=false; bar.hidden=false;
+      status.textContent='Answer choices are now showing.';
+    });
+    opts.forEach(function(b,i){
+      b.addEventListener('click',function(){
+        if(submitted) return;
+        picked=i;
+        opts.forEach(function(o){o.classList.remove('selected');o.setAttribute('aria-pressed','false');});
+        b.classList.add('selected'); b.setAttribute('aria-pressed','true');
+        submit.disabled=false;
+      });
+    });
+    hintBtn.addEventListener('click',function(){
+      if(submitted) return;
+      if(shown>=3){shown=0;} else {shown++;}
+      renderHints();
+    });
+    submit.addEventListener('click',function(){
+      if(picked<0||submitted) return;
+      submitted=true;
+      opts.forEach(function(o,i){
+        o.disabled=true; o.classList.remove('selected');
+        if(i===d.correct) o.classList.add('correct');
+        else if(i===picked) o.classList.add('incorrect');
+        cfbs[i].textContent=d.fb[i];
+        cfbs[i].className='cfb show '+(i===d.correct?'right':'wrong');
+      });
+      submit.disabled=true; hintBtn.disabled=true;
+      status.textContent = picked===d.correct ? 'Correct.' : 'Not quite. The correct choice is marked, with an explanation under every choice.';
+      renderHints();
+    });
+    function doReset(){
+      picked=-1; shown=0; submitted=false;
+      choices.hidden=true; reveal.hidden=false; bar.hidden=true;
+      submit.disabled=true; hintBtn.disabled=true;
+      opts.forEach(function(o){o.disabled=false;o.className='opt';o.setAttribute('aria-pressed','false');});
+      cfbs.forEach(function(c){c.className='cfb';c.textContent='';});
+      hints.innerHTML=''; note.classList.remove('show'); status.textContent='';
+      hintBtn.textContent='Show hint';
+    }
+    $('.reset').addEventListener('click',doReset);
+    resets.push(doReset);
+  });
+  document.getElementById('resetall').addEventListener('click',function(){ resets.forEach(function(f){f();}); });
+})();
+</script>
+<script>(function(){try{var f=window.frameElement;if(!f)return;function fit(){f.style.height=(document.documentElement.scrollHeight+4)+'px';}fit();if(window.ResizeObserver)new ResizeObserver(fit).observe(document.body);window.addEventListener('load',fit);}catch(e){}})();</script>
+</body></html>
